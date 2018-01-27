@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="573f7e01-d7d5-4fe5-b8de-fc5ec289e5fd" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vistas/img/plantilla/Beneficios.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vistas/img/plantilla/TipsFinancieros.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vistas/img/plantilla/atencionUsuarios.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vistas/img/plantilla/fondo-paginas-externas_contacto.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vistas/img/plantilla/fondo-paginas-externas_servicios.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vistas/img/plantilla/paginExternaQuienesSomos.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vistas/img/plantilla/paginaExternaCanales.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vistas/img/plantilla/preguntasFrecuentes.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vistas/img/plantilla/fondo-paginas-externas_contacto.png" afterPath="$PROJECT_DIR$/vistas/img/plantilla/fondo-paginas-externas_contacto.png" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -146,12 +138,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1517080655560</updated>
-      <workItem from="1517080657090" duration="3988000" />
+      <workItem from="1517080657090" duration="5106000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3988000" />
+    <option name="totallyTimeSpent" value="5106000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
