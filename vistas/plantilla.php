@@ -102,7 +102,7 @@ session_start();
      if(isset($_GET["ruta"])){
 
         if($_GET["ruta"]== "inicio" ||
-           $_GET["ruta"]== "comercio" ||
+           $_GET["ruta"]== "contacto" ||
            $_GET["ruta"]== "slide" ||
            $_GET["ruta"]== "categorias" ||
            $_GET["ruta"]== "subcategorias" ||
