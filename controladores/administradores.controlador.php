@@ -31,7 +31,7 @@ class   ControladorAdministradores{
 
 					echo '<script>
 
-						window.location = "index.php=inicio";
+						window.location = "inicio";
 
 					</script>';
 
