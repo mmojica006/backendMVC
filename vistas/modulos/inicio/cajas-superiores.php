@@ -1,9 +1,3 @@
-<?php
-
-
-
-?>
-
 <!--=====================================
 CAJAS SUPERIORES
 ======================================-->
@@ -17,7 +11,7 @@ CAJAS SUPERIORES
     <!-- inner -->
     <div class="inner">
       
-      <h3>$<?php echo number_format($ventas["total"]); ?></h3>
+      <h3>$150.000</h3>
 
       <p>Ventas</p>
     
@@ -32,7 +26,7 @@ CAJAS SUPERIORES
     </div>
     <!-- icon -->
     
-    <a href="ventas" class="small-box-footer">Más Info <i class="fa fa-arrow-circle-right"></i></a>
+    <a href="#" class="small-box-footer">Más Info <i class="fa fa-arrow-circle-right"></i></a>
   
   </div>
   <!-- small-box -->
@@ -51,7 +45,7 @@ CAJAS SUPERIORES
     <!-- inner -->
     <div class="inner">
       
-      <h3><?php echo number_format($visitas["total"]); ?></h3>
+      <h3>53</h3>
 
       <p>Visitas</p>
     
@@ -66,7 +60,7 @@ CAJAS SUPERIORES
     </div>
     <!-- icon -->
 
-    <a href="visitas" class="small-box-footer">Más Info <i class="fa fa-arrow-circle-right"></i></a>
+    <a href="#" class="small-box-footer">Más Info <i class="fa fa-arrow-circle-right"></i></a>
   
   </div>
   <!-- small box -->
@@ -85,7 +79,7 @@ CAJAS SUPERIORES
     <!-- inner -->
     <div class="inner">
     
-      <h3><?php echo number_format($totalUsuarios); ?></h3>
+      <h3>44</h3>
 
       <p>Usuarios</p>
     
@@ -100,7 +94,7 @@ CAJAS SUPERIORES
     </div>
     <!-- icon -->
 
-    <a href="usuarios" class="small-box-footer">Más Info <i class="fa fa-arrow-circle-right"></i></a>
+    <a href="#" class="small-box-footer">Más Info <i class="fa fa-arrow-circle-right"></i></a>
   
   </div>
   <!-- small box -->
@@ -119,7 +113,7 @@ CAJAS SUPERIORES
     <!-- inner -->
     <div class="inner">
     
-      <h3><?php echo number_format($totalProductos); ?></h3>
+      <h3>65</h3>
 
       <p>Productos</p>
 
@@ -134,7 +128,7 @@ CAJAS SUPERIORES
     </div>
     <!-- icon -->
     
-    <a href="productos" class="small-box-footer">Más Info <i class="fa fa-arrow-circle-right"></i></a>
+    <a href="#" class="small-box-footer">Más Info <i class="fa fa-arrow-circle-right"></i></a>
   
   </div>
   <!-- small box -->
