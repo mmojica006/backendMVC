@@ -125,6 +125,17 @@
 	}
 
 
+	static public function ctrActualizarColores($datos){
+
+		$tabla = "plantilla";
+		$id = 1;
+
+		$respuesta = ModeloSitio::mdlActualizarColores($tabla, $id, $datos);
+
+		return $respuesta;
+
+
+	}
 
 
 

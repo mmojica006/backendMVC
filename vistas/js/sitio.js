@@ -8,3 +8,7 @@ increaseArea: '20%' // optional
   $('.knob').knob();
        /* SideBar Menu */
   $('.sidebar-menu').tree();
+
+  //Colorpicker
+$('.my-colorpicker').colorpicker();
+

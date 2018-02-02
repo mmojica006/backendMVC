@@ -44,7 +44,7 @@
         ADMINISTRAR REDES SOCIALES
         ======================================*/
   
-       // include "sitio/redSocial.php";
+        include "sitio/redSocial.php";
         
       ?>
       

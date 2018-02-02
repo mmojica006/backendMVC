@@ -35,9 +35,13 @@
   <link rel="stylesheet"
         href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
 
+           <!-- Bootstrap Color Picker -->
+  <link rel="stylesheet" href="vistas/bower_components/bootstrap-colorpicker/dist/css/bootstrap-colorpicker.min.css">
+
+
   <!-- CSS PERSONALIZADOS -->
 
-
+  <link rel="stylesheet" href="vistas/css/plantilla.css">
 
 
 
@@ -64,6 +68,10 @@
 
     <!-- SweetAlert 2 https://sweetalert2.github.io/-->
   <script src="vistas/plugins/sweetalert2/sweetalert2.all.js"></script>
+
+    <!-- bootstrap color picker https://farbelous.github.io/bootstrap-colorpicker/v2/-->
+  <script src="vistas/bower_components/bootstrap-colorpicker/dist/js/bootstrap-colorpicker.min.js"></script>
+
 
 
 

@@ -85,17 +85,14 @@ $("#subirLogo").change(function(){
 
 })
 
-/*=============================================
-SUBIR ICONO
-=============================================*/
+
 
 $("#subirIcono").change(function(){
 
 	var imagenIcono = this.files[0];
 	
-	/*=============================================
-  	VALIDAMOS EL FORMATO DE LA IMAGEN SEA JPG O PNG
-  	=============================================*/
+
+
 
   	if(imagenIcono["type"] != "image/jpeg" && imagenIcono["type"] != "image/png"){
 
@@ -187,6 +184,8 @@ $(".cambioColor").change(function(){
 
 	$("#guardarColores").click(function(){
 
+
+
 		var datos = new FormData();
 		datos.append("barraSuperior", barraSuperior);
 		datos.append("textoSuperior", textoSuperior);
@@ -196,7 +195,7 @@ $(".cambioColor").change(function(){
 
 		$.ajax({
 
-			url:"ajax/comercio.ajax.php",
+			url:"ajax/sitio.ajax.php",
 			method: "POST",
 			data: datos,
 			cache: false,
@@ -341,7 +340,7 @@ $("#guardarRedesSociales").click(function(){
 
 	$.ajax({
 
-		url:"ajax/comercio.ajax.php",
+		url:"ajax/sitio.ajax.php",
 		method: "POST",
 		data: datos,
 		cache: false,
@@ -389,7 +388,7 @@ $(".cambioScript").change(function(){
 
 		$.ajax({
 
-			url:"ajax/comercio.ajax.php",
+			url:"ajax/sitio.ajax.php",
 			method: "POST",
 			data: datos,
 			cache: false,

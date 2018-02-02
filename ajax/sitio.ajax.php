@@ -55,7 +55,7 @@ class AjaxSitio{
 					   "colorFondo"=>$this->colorFondo,
 					   "colorTexto"=>$this->colorTexto);
 
-		$respuesta = ControladorComercio::ctrActualizarColores($datos);
+		$respuesta = ControladorSitio::ctrActualizarColores($datos);
 
 		echo $respuesta;
 
@@ -72,7 +72,7 @@ class AjaxSitio{
 		$item = "redesSociales";
 		$valor = $this->redesSociales;
 
-		$respuesta = ControladorComercio::ctrActualizarLogoIcono($item, $valor);
+		$respuesta = ControladorSitio::ctrActualizarLogoIcono($item, $valor);
 
 		echo $respuesta;
 
@@ -92,7 +92,7 @@ class AjaxSitio{
 					   "pixelFacebook"=>$this->pixelFacebook,
 					   "googleAnalytics"=>$this->googleAnalytics);
 
-		$respuesta = ControladorComercio::ctrActualizarScript($datos);
+		$respuesta = ControladorSitio::ctrActualizarScript($datos);
 
 		echo $respuesta;
 
