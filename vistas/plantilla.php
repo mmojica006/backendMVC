@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Tienda Online | Panel de Control</title>
 
-  <link rel="icon" href="vistas/img/plantilla/icono.png">
+ <link rel="icon" href="vistas/img/plantilla/icono.png">
 
 
 

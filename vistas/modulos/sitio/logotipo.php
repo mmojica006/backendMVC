@@ -42,7 +42,7 @@ $plantilla = ControladorSitio::ctrSeleccionarPlantilla();
 
 			<input type="file" id="subirLogo">
 
-			<p class="help-block">Tamaño recomendado 500px * 100px</p>	
+			<p class="help-block">Tamaño recomendado 380px * 100px</p>
 
 		</div>	
 

@@ -371,9 +371,7 @@ CAMBIAR CÓDIGOS
 
 $(".cambioScript").change(function(){
 
-	var apiFacebook = $("#apiFacebook").val();
 
-	var pixelFacebook = $("#pixelFacebook").val();
 
 	var googleAnalytics = $("#googleAnalytics").val();
 
@@ -382,8 +380,6 @@ $(".cambioScript").change(function(){
 
 
 		var datos = new FormData();
-		datos.append("apiFacebook", apiFacebook);
-		datos.append("pixelFacebook", pixelFacebook);
 		datos.append("googleAnalytics", googleAnalytics);
 
 		$.ajax({

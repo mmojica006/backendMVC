@@ -36,7 +36,7 @@
 
 				unlink("../".$plantilla["logo"]);
 
-				$nuevoAncho = 500;
+				$nuevoAncho = 380;
 				$nuevoAlto = 100;
 
 				$destino = imagecreatetruecolor($nuevoAncho, $nuevoAlto);
@@ -136,6 +136,18 @@
 
 
 	}
+
+     static public function ctrActualizarScript($datos){
+
+         $tabla = "plantilla";
+         $id = 1;
+
+         $respuesta = ModeloSitio::mdlActualizarScript($tabla, $id, $datos);
+
+         return $respuesta;
+
+
+     }
 
 
 

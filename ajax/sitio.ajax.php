@@ -82,15 +82,12 @@ class AjaxSitio{
 	CAMBIAR SCRIPT
 	=============================================*/
 
-	public $apiFacebook;
-	public $pixelFacebook;
+
 	public $googleAnalytics;
 
 	public function ajaxCambiarScript(){
 
-		$datos = array("apiFacebook"=>$this->apiFacebook,
-					   "pixelFacebook"=>$this->pixelFacebook,
-					   "googleAnalytics"=>$this->googleAnalytics);
+		$datos = array("googleAnalytics"=>$this->googleAnalytics);
 
 		$respuesta = ControladorSitio::ctrActualizarScript($datos);
 
@@ -156,11 +153,9 @@ if(isset($_POST["redesSociales"])){
 CAMBIAR SCRIPT
 =============================================*/	
 
-if(isset($_POST["apiFacebook"])){
+if(isset($_POST["googleAnalytics"])){
 
 	$script = new AjaxSitio();
-	$script -> apiFacebook = $_POST["apiFacebook"];
-	$script -> pixelFacebook = $_POST["pixelFacebook"];
 	$script -> googleAnalytics = $_POST["googleAnalytics"];
 	$script -> ajaxCambiarScript();
 

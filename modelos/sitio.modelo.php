@@ -68,4 +68,26 @@ class ModeloSitio{
 	}
 
 
+    static public function mdlActualizarScript($tabla, $id, $datos){
+
+        $stmt = Conexion::conectar()->prepare("UPDATE $tabla SET  googleAnalytics = :googleAnalytics WHERE id = :id");
+        $stmt->bindParam(":googleAnalytics", $datos["googleAnalytics"], PDO::PARAM_STR);
+        $stmt->bindParam(":id", $id, PDO::PARAM_INT);
+
+        if($stmt->execute()){
+
+            return "ok";
+
+        }else{
+
+            return "error";
+
+        }
+
+        $stmt->close();
+        $stmt = null;
+
+    }
+
+
 }

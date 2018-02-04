@@ -63,7 +63,7 @@
         ADMINISTRAR CÓDIGOS
         ======================================*/
   
-       // include "sitio/codigos.php";
+        include "sitio/codigos.php";
 
         /*=====================================
         ADMINISTRAR COMERCIO
