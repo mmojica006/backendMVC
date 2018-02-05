@@ -29,7 +29,8 @@
    <!-- jvectormap -->
   <link rel="stylesheet" href="vistas/bower_components/jvectormap/jquery-jvectormap.css">
 
-
+    <!-- bootstrap slider -->
+    <link rel="stylesheet" href="vistas/plugins/bootstrap-slider/slider.css">
 
   <!-- Google Font -->
   <link rel="stylesheet"
@@ -42,6 +43,7 @@
   <!-- CSS PERSONALIZADOS -->
 
   <link rel="stylesheet" href="vistas/css/plantilla.css">
+    <link rel="stylesheet" href="vistas/css/slide.css">
 
 
 
@@ -71,6 +73,10 @@
 
     <!-- bootstrap color picker https://farbelous.github.io/bootstrap-colorpicker/v2/-->
   <script src="vistas/bower_components/bootstrap-colorpicker/dist/js/bootstrap-colorpicker.min.js"></script>
+
+    <!-- Bootstrap slider http://seiyria.com/bootstrap-slider/-->
+    <script src="vistas/plugins/bootstrap-slider/bootstrap-slider.js"></script>
+
 
 
 
@@ -150,6 +156,7 @@ session_start();
 
 <script src="vistas/js/sitio.js"></script>
 <script src="vistas/js/gestorSitio.js"></script>
+<script src="vistas/js/gestorSlide.js"></script>
 
 </body>
 </html>

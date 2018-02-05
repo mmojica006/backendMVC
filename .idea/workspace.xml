@@ -2,18 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="573f7e01-d7d5-4fe5-b8de-fc5ec289e5fd" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vistas/modulos/sitio/codigos.php" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vistas/img/equipo/moto.png" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vistas/img/plantilla/icono.png" afterPath="$PROJECT_DIR$/vistas/img/plantilla/icono.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vistas/img/plantilla/logo.jpg" afterPath="$PROJECT_DIR$/vistas/img/plantilla/logo.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vistas/img/plantilla/logo.png" afterPath="$PROJECT_DIR$/vistas/img/plantilla/logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ajax/slide.ajax.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vistas/css/slide.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vistas/js/gestorSlide.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ajax/sitio.ajax.php" afterPath="$PROJECT_DIR$/ajax/sitio.ajax.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controladores/sitio.controlador.php" afterPath="$PROJECT_DIR$/controladores/sitio.controlador.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modelos/sitio.modelo.php" afterPath="$PROJECT_DIR$/modelos/sitio.modelo.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vistas/js/gestorSitio.js" afterPath="$PROJECT_DIR$/vistas/js/gestorSitio.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vistas/modulos/sitio.php" afterPath="$PROJECT_DIR$/vistas/modulos/sitio.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vistas/modulos/sitio/logotipo.php" afterPath="$PROJECT_DIR$/vistas/modulos/sitio/logotipo.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controladores/slide.controlador.php" afterPath="$PROJECT_DIR$/controladores/slide.controlador.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modelos/slide.modelo.php" afterPath="$PROJECT_DIR$/modelos/slide.modelo.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vistas/modulos/slide.php" afterPath="$PROJECT_DIR$/vistas/modulos/slide.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vistas/plantilla.php" afterPath="$PROJECT_DIR$/vistas/plantilla.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -28,21 +23,11 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="sitio.ajax.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ajax/sitio.ajax.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="244">
-              <caret line="91" column="29" lean-forward="true" selection-start-line="91" selection-start-column="29" selection-end-line="91" selection-end-column="29" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="sitio.controlador.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controladores/sitio.controlador.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="302">
+            <state relative-caret-position="561">
               <caret line="144" column="46" lean-forward="false" selection-start-line="144" selection-start-column="46" selection-end-line="144" selection-end-column="46" />
               <folding>
                 <element signature="n#ctrActualizarLogoIcono#0;n#ControladorSitio#0;n#!!top" expanded="false" />
@@ -51,49 +36,126 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sitio.modelo.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/modelos/sitio.modelo.php">
+      <file leaf-file-name="slide.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vistas/modulos/slide.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="83">
-              <caret line="70" column="27" lean-forward="false" selection-start-line="70" selection-start-column="27" selection-end-line="70" selection-end-column="27" />
+            <state relative-caret-position="170">
+              <caret line="10" column="16" lean-forward="true" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
               <folding>
-                <marker date="1517713200009" expanded="true" signature="157:171" ph="SELECT * FRO... ${$tabla}" />
-                <marker date="1517713200009" expanded="true" signature="394:441" ph="UPDATE ${$ta... " />
-                <marker date="1517713200009" expanded="true" signature="778:926" ph="UPDATE ${$ta... " />
-                <marker date="1517713200009" expanded="true" signature="1520:1588" ph="UPDATE ${$ta... " />
+                <marker date="1517799646706" expanded="true" signature="2545:4447" ph="..." />
+                <marker date="1517799646706" expanded="true" signature="2610:4148" ph="..." />
+                <marker date="1517799646706" expanded="true" signature="4213:4423" ph="..." />
+                <marker date="1517799646706" expanded="true" signature="4490:4614" ph="..." />
+                <marker date="1517799646706" expanded="true" signature="4719:10264" ph="..." />
+                <marker date="1517799646706" expanded="true" signature="4742:4863" ph="..." />
+                <marker date="1517799646706" expanded="true" signature="4920:10264" ph="..." />
+                <marker date="1517799646706" expanded="true" signature="4945:5071" ph="..." />
+                <marker date="1517799646706" expanded="true" signature="5140:8260" ph="..." />
+                <marker date="1517799646706" expanded="true" signature="5196:8234" ph="..." />
+                <marker date="1517799646706" expanded="true" signature="5225:5368" ph="..." />
+                <marker date="1517799646706" expanded="true" signature="5444:5677" ph="..." />
+                <marker date="1517799646706" expanded="true" signature="5708:5855" ph="..." />
+                <marker date="1517799646706" expanded="true" signature="5906:6682" ph="..." />
+                <marker date="1517799646706" expanded="true" signature="6128:6356" ph="..." />
+                <marker date="1517799646706" expanded="true" signature="6426:6652" ph="..." />
+                <marker date="1517799646706" expanded="true" signature="6712:6861" ph="..." />
+                <marker date="1517799646706" expanded="true" signature="6912:7412" ph="..." />
+                <marker date="1517799646706" expanded="true" signature="7072:7215" ph="..." />
+                <marker date="1517799646706" expanded="true" signature="7441:7590" ph="..." />
+                <marker date="1517799646706" expanded="true" signature="7641:7891" ph="..." />
+                <marker date="1517799646706" expanded="true" signature="7939:8206" ph="..." />
+                <marker date="1517799646706" expanded="true" signature="8285:8412" ph="..." />
+                <marker date="1517799646706" expanded="true" signature="8467:10264" ph="..." />
+                <marker date="1517799646706" expanded="true" signature="8511:10264" ph="..." />
+                <marker date="1517799646706" expanded="true" signature="8540:8693" ph="..." />
+                <marker date="1517799646706" expanded="true" signature="8758:9274" ph="..." />
+                <marker date="1517799646706" expanded="true" signature="8921:9072" ph="..." />
+                <marker date="1517799646706" expanded="true" signature="9303:9467" ph="..." />
+                <marker date="1517799646706" expanded="true" signature="9518:10264" ph="..." />
+                <marker date="1517799646706" expanded="true" signature="9756:10150" ph="..." />
+                <marker date="1517799646706" expanded="true" signature="11963:12361" ph="..." />
+                <marker date="1517799646706" expanded="true" signature="12470:12596" ph="..." />
+                <marker date="1517799646706" expanded="true" signature="12651:16112" ph="..." />
+                <marker date="1517799646706" expanded="true" signature="12711:16112" ph="..." />
+                <marker date="1517799646706" expanded="true" signature="12740:12876" ph="..." />
+                <marker date="1517799646706" expanded="true" signature="12927:13527" ph="..." />
+                <marker date="1517799646706" expanded="true" signature="13177:13497" ph="..." />
+                <marker date="1517799646706" expanded="true" signature="13394:13465" ph="..." />
+                <marker date="1517799646706" expanded="true" signature="13556:13692" ph="..." />
+                <marker date="1517799646706" expanded="true" signature="13743:14342" ph="..." />
+                <marker date="1517799646706" expanded="true" signature="13992:14312" ph="..." />
+                <marker date="1517799646706" expanded="true" signature="14209:14280" ph="..." />
+                <marker date="1517799646706" expanded="true" signature="14371:14507" ph="..." />
+                <marker date="1517799646706" expanded="true" signature="14558:15157" ph="..." />
+                <marker date="1517799646706" expanded="true" signature="14807:15127" ph="..." />
+                <marker date="1517799646706" expanded="true" signature="15024:15095" ph="..." />
+                <marker date="1517799646706" expanded="true" signature="15186:15338" ph="..." />
+                <marker date="1517799646706" expanded="true" signature="15389:16112" ph="..." />
+                <marker date="1517799646706" expanded="true" signature="15621:16014" ph="..." />
+                <marker date="1517799646706" expanded="true" signature="17811:18208" ph="..." />
+                <marker date="1517799646706" expanded="true" signature="18371:18491" ph="..." />
+                <marker date="1517799646706" expanded="true" signature="18536:19426" ph="..." />
+                <marker date="1517799646706" expanded="true" signature="18682:19426" ph="..." />
+                <marker date="1517799646706" expanded="true" signature="18769:18921" ph="..." />
+                <marker date="1517799646706" expanded="true" signature="18985:19133" ph="..." />
+                <marker date="1517799646706" expanded="true" signature="19134:19426" ph="..." />
+                <marker date="1517799646706" expanded="true" signature="19192:19198" ph="..." />
+                <marker date="1517799646706" expanded="true" signature="19282:19288" ph="..." />
+                <marker date="1517799646706" expanded="true" signature="19372:19378" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sitio.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vistas/modulos/sitio.php">
+      <file leaf-file-name="slide.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vistas/css/slide.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="65" column="23" lean-forward="false" selection-start-line="65" selection-start-column="23" selection-end-line="65" selection-end-column="34" />
+            <state relative-caret-position="931">
+              <caret line="299" column="0" lean-forward="true" selection-start-line="299" selection-start-column="0" selection-end-line="299" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="slide.controlador.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controladores/slide.controlador.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="34" column="38" lean-forward="true" selection-start-line="34" selection-start-column="38" selection-end-line="34" selection-end-column="38" />
               <folding>
-                <element signature="e#1290#1406#0#PHP" expanded="true" />
+                <marker date="1517799674777" expanded="true" signature="6333:6624" ph="..." />
+                <marker date="1517799674777" expanded="true" signature="6345:6505" ph="{&quot;type&quot;: &quot;success&quot;...}" />
+                <marker date="1517799674777" expanded="true" signature="6524:6544" ph="{...}" />
+                <marker date="1517799674777" expanded="true" signature="6552:6600" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="codigos.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vistas/modulos/sitio/codigos.php">
+      <file leaf-file-name="slide.modelo.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/modelos/slide.modelo.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="81">
-              <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="236">
+              <caret line="28" column="27" lean-forward="false" selection-start-line="28" selection-start-column="27" selection-end-line="28" selection-end-column="27" />
+              <folding>
+                <marker date="1517799700474" expanded="true" signature="280:319" ph="SELECT * FRO... ${$tabla}" />
+                <marker date="1517799700474" expanded="true" signature="682:887" ph="INSERT INTO ${$tabla}... " />
+                <marker date="1517799700474" expanded="true" signature="1964:2011" ph="UPDATE ${$ta... " />
+                <marker date="1517799700474" expanded="true" signature="2580:2869" ph="UPDATE ${$ta... " />
+                <marker date="1517799700474" expanded="true" signature="4161:4194" ph="DELETE FROM " />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="gestorSitio.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vistas/js/gestorSitio.js">
+      <file leaf-file-name="gestorSlide.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/vistas/js/gestorSlide.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="373" column="0" lean-forward="true" selection-start-line="373" selection-start-column="0" selection-end-line="373" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="85">
+              <caret line="26" column="12" lean-forward="true" selection-start-line="26" selection-start-column="12" selection-end-line="26" selection-end-column="12" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -113,13 +175,19 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/vistas/modulos/sitio/logotipo.php" />
-        <option value="$PROJECT_DIR$/vistas/plantilla.php" />
         <option value="$PROJECT_DIR$/vistas/modulos/sitio.php" />
         <option value="$PROJECT_DIR$/vistas/modulos/sitio/codigos.php" />
         <option value="$PROJECT_DIR$/vistas/js/gestorSitio.js" />
         <option value="$PROJECT_DIR$/ajax/sitio.ajax.php" />
         <option value="$PROJECT_DIR$/modelos/sitio.modelo.php" />
         <option value="$PROJECT_DIR$/controladores/sitio.controlador.php" />
+        <option value="$PROJECT_DIR$/vistas/modulos/slide.php" />
+        <option value="$PROJECT_DIR$/controladores/slide.controlador.php" />
+        <option value="$PROJECT_DIR$/modelos/slide.modelo.php" />
+        <option value="$PROJECT_DIR$/ajax/slide.ajax.php" />
+        <option value="$PROJECT_DIR$/vistas/css/slide.css" />
+        <option value="$PROJECT_DIR$/vistas/plantilla.php" />
+        <option value="$PROJECT_DIR$/vistas/js/gestorSlide.js" />
       </list>
     </option>
   </component>
@@ -151,7 +219,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -174,7 +241,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="modelos" />
+              <option name="myItemId" value="vistas" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -188,13 +255,36 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="ajax" />
+              <option name="myItemId" value="vistas" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backendMVC" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backendMVC" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vistas" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -240,6 +330,12 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
@@ -276,18 +372,19 @@
       <workItem from="1517080657090" duration="5106000" />
       <workItem from="1517362728609" duration="596000" />
       <workItem from="1517395630088" duration="3219000" />
-      <workItem from="1517699543275" duration="6285000" />
+      <workItem from="1517699543275" duration="6535000" />
+      <workItem from="1517799526124" duration="3634000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15206000" />
+    <option name="totallyTimeSpent" value="19090000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26096824" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2647504" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -317,19 +414,67 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/vistas/modulos/sitio/logotipo.php">
+    <entry file="file://$PROJECT_DIR$/ajax/sitio.ajax.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="36" column="34" lean-forward="true" selection-start-line="36" selection-start-column="34" selection-end-line="36" selection-end-column="34" />
+        <state relative-caret-position="1547">
+          <caret line="91" column="29" lean-forward="true" selection-start-line="91" selection-start-column="29" selection-end-line="91" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
+    <entry file="file://$PROJECT_DIR$/controladores/sitio.controlador.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="144" column="46" lean-forward="false" selection-start-line="144" selection-start-column="46" selection-end-line="144" selection-end-column="46" />
+          <folding>
+            <element signature="n#ctrActualizarLogoIcono#0;n#ControladorSitio#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modelos/sitio.modelo.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1517713200009" expanded="true" signature="157:171" ph="SELECT * FRO... ${$tabla}" />
+            <marker date="1517713200009" expanded="true" signature="394:441" ph="UPDATE ${$ta... " />
+            <marker date="1517713200009" expanded="true" signature="778:926" ph="UPDATE ${$ta... " />
+            <marker date="1517713200009" expanded="true" signature="1520:1588" ph="UPDATE ${$ta... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vistas/modulos/sitio.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1037">
+          <caret line="65" column="23" lean-forward="false" selection-start-line="65" selection-start-column="23" selection-end-line="65" selection-end-column="34" />
+          <folding>
+            <element signature="e#1290#1406#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vistas/modulos/sitio/codigos.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vistas/js/gestorSitio.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6341">
+          <caret line="373" column="0" lean-forward="true" selection-start-line="373" selection-start-column="0" selection-end-line="373" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vistas/modulos/sitio/logotipo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="36" column="34" lean-forward="true" selection-start-line="36" selection-start-column="34" selection-end-line="36" selection-end-column="34" />
         </state>
       </provider>
     </entry>
@@ -342,25 +487,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-663">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1517699265767" expanded="true" signature="976:1311" ph="..." />
-            <marker date="1517699265767" expanded="true" signature="1005:1282" ph="..." />
-            <marker date="1517699265767" expanded="true" signature="1042:1269" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vistas/plantilla.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="24" lean-forward="true" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vistas/modulos/sitio.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
+        <state relative-caret-position="1037">
           <caret line="65" column="23" lean-forward="false" selection-start-line="65" selection-start-column="23" selection-end-line="65" selection-end-column="34" />
           <folding>
             <element signature="e#1290#1406#0#PHP" expanded="true" />
@@ -370,31 +502,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/vistas/modulos/sitio/codigos.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vistas/js/gestorSitio.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="373" column="0" lean-forward="true" selection-start-line="373" selection-start-column="0" selection-end-line="373" selection-end-column="0" />
+        <state relative-caret-position="425">
+          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ajax/sitio.ajax.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="91" column="29" lean-forward="true" selection-start-line="91" selection-start-column="29" selection-end-line="91" selection-end-column="29" />
+        <state relative-caret-position="1547">
+          <caret line="91" column="29" lean-forward="false" selection-start-line="91" selection-start-column="29" selection-end-line="91" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controladores/sitio.controlador.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
+        <state relative-caret-position="561">
           <caret line="144" column="46" lean-forward="false" selection-start-line="144" selection-start-column="46" selection-end-line="144" selection-end-column="46" />
           <folding>
             <element signature="n#ctrActualizarLogoIcono#0;n#ControladorSitio#0;n#!!top" expanded="false" />
@@ -404,13 +528,159 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/modelos/sitio.modelo.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="83">
-          <caret line="70" column="27" lean-forward="false" selection-start-line="70" selection-start-column="27" selection-end-line="70" selection-end-column="27" />
+        <state relative-caret-position="219">
+          <caret line="78" column="24" lean-forward="false" selection-start-line="78" selection-start-column="24" selection-end-line="78" selection-end-column="24" />
           <folding>
             <marker date="1517713200009" expanded="true" signature="157:171" ph="SELECT * FRO... ${$tabla}" />
             <marker date="1517713200009" expanded="true" signature="394:441" ph="UPDATE ${$ta... " />
             <marker date="1517713200009" expanded="true" signature="778:926" ph="UPDATE ${$ta... " />
             <marker date="1517713200009" expanded="true" signature="1520:1588" ph="UPDATE ${$ta... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vistas/modulos/slide.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="16" lean-forward="true" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
+          <folding>
+            <marker date="1517799646706" expanded="true" signature="2545:4447" ph="..." />
+            <marker date="1517799646706" expanded="true" signature="2610:4148" ph="..." />
+            <marker date="1517799646706" expanded="true" signature="4213:4423" ph="..." />
+            <marker date="1517799646706" expanded="true" signature="4490:4614" ph="..." />
+            <marker date="1517799646706" expanded="true" signature="4719:10264" ph="..." />
+            <marker date="1517799646706" expanded="true" signature="4742:4863" ph="..." />
+            <marker date="1517799646706" expanded="true" signature="4920:10264" ph="..." />
+            <marker date="1517799646706" expanded="true" signature="4945:5071" ph="..." />
+            <marker date="1517799646706" expanded="true" signature="5140:8260" ph="..." />
+            <marker date="1517799646706" expanded="true" signature="5196:8234" ph="..." />
+            <marker date="1517799646706" expanded="true" signature="5225:5368" ph="..." />
+            <marker date="1517799646706" expanded="true" signature="5444:5677" ph="..." />
+            <marker date="1517799646706" expanded="true" signature="5708:5855" ph="..." />
+            <marker date="1517799646706" expanded="true" signature="5906:6682" ph="..." />
+            <marker date="1517799646706" expanded="true" signature="6128:6356" ph="..." />
+            <marker date="1517799646706" expanded="true" signature="6426:6652" ph="..." />
+            <marker date="1517799646706" expanded="true" signature="6712:6861" ph="..." />
+            <marker date="1517799646706" expanded="true" signature="6912:7412" ph="..." />
+            <marker date="1517799646706" expanded="true" signature="7072:7215" ph="..." />
+            <marker date="1517799646706" expanded="true" signature="7441:7590" ph="..." />
+            <marker date="1517799646706" expanded="true" signature="7641:7891" ph="..." />
+            <marker date="1517799646706" expanded="true" signature="7939:8206" ph="..." />
+            <marker date="1517799646706" expanded="true" signature="8285:8412" ph="..." />
+            <marker date="1517799646706" expanded="true" signature="8467:10264" ph="..." />
+            <marker date="1517799646706" expanded="true" signature="8511:10264" ph="..." />
+            <marker date="1517799646706" expanded="true" signature="8540:8693" ph="..." />
+            <marker date="1517799646706" expanded="true" signature="8758:9274" ph="..." />
+            <marker date="1517799646706" expanded="true" signature="8921:9072" ph="..." />
+            <marker date="1517799646706" expanded="true" signature="9303:9467" ph="..." />
+            <marker date="1517799646706" expanded="true" signature="9518:10264" ph="..." />
+            <marker date="1517799646706" expanded="true" signature="9756:10150" ph="..." />
+            <marker date="1517799646706" expanded="true" signature="11963:12361" ph="..." />
+            <marker date="1517799646706" expanded="true" signature="12470:12596" ph="..." />
+            <marker date="1517799646706" expanded="true" signature="12651:16112" ph="..." />
+            <marker date="1517799646706" expanded="true" signature="12711:16112" ph="..." />
+            <marker date="1517799646706" expanded="true" signature="12740:12876" ph="..." />
+            <marker date="1517799646706" expanded="true" signature="12927:13527" ph="..." />
+            <marker date="1517799646706" expanded="true" signature="13177:13497" ph="..." />
+            <marker date="1517799646706" expanded="true" signature="13394:13465" ph="..." />
+            <marker date="1517799646706" expanded="true" signature="13556:13692" ph="..." />
+            <marker date="1517799646706" expanded="true" signature="13743:14342" ph="..." />
+            <marker date="1517799646706" expanded="true" signature="13992:14312" ph="..." />
+            <marker date="1517799646706" expanded="true" signature="14209:14280" ph="..." />
+            <marker date="1517799646706" expanded="true" signature="14371:14507" ph="..." />
+            <marker date="1517799646706" expanded="true" signature="14558:15157" ph="..." />
+            <marker date="1517799646706" expanded="true" signature="14807:15127" ph="..." />
+            <marker date="1517799646706" expanded="true" signature="15024:15095" ph="..." />
+            <marker date="1517799646706" expanded="true" signature="15186:15338" ph="..." />
+            <marker date="1517799646706" expanded="true" signature="15389:16112" ph="..." />
+            <marker date="1517799646706" expanded="true" signature="15621:16014" ph="..." />
+            <marker date="1517799646706" expanded="true" signature="17811:18208" ph="..." />
+            <marker date="1517799646706" expanded="true" signature="18371:18491" ph="..." />
+            <marker date="1517799646706" expanded="true" signature="18536:19426" ph="..." />
+            <marker date="1517799646706" expanded="true" signature="18682:19426" ph="..." />
+            <marker date="1517799646706" expanded="true" signature="18769:18921" ph="..." />
+            <marker date="1517799646706" expanded="true" signature="18985:19133" ph="..." />
+            <marker date="1517799646706" expanded="true" signature="19134:19426" ph="..." />
+            <marker date="1517799646706" expanded="true" signature="19192:19198" ph="..." />
+            <marker date="1517799646706" expanded="true" signature="19282:19288" ph="..." />
+            <marker date="1517799646706" expanded="true" signature="19372:19378" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ajax/slide.ajax.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="370">
+          <caret line="81" column="41" lean-forward="true" selection-start-line="81" selection-start-column="41" selection-end-line="81" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vistas/plantilla.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-476">
+          <caret line="32" column="77" lean-forward="false" selection-start-line="32" selection-start-column="77" selection-end-line="32" selection-end-column="77" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vistas/css/slide.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="931">
+          <caret line="299" column="0" lean-forward="true" selection-start-line="299" selection-start-column="0" selection-end-line="299" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controladores/slide.controlador.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="34" column="38" lean-forward="true" selection-start-line="34" selection-start-column="38" selection-end-line="34" selection-end-column="38" />
+          <folding>
+            <marker date="1517799674777" expanded="true" signature="6333:6624" ph="..." />
+            <marker date="1517799674777" expanded="true" signature="6345:6505" ph="{&quot;type&quot;: &quot;success&quot;...}" />
+            <marker date="1517799674777" expanded="true" signature="6524:6544" ph="{...}" />
+            <marker date="1517799674777" expanded="true" signature="6552:6600" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vistas/js/gestorSitio.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="986">
+          <caret line="373" column="0" lean-forward="false" selection-start-line="373" selection-start-column="0" selection-end-line="373" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modelos/slide.modelo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="28" column="27" lean-forward="false" selection-start-line="28" selection-start-column="27" selection-end-line="28" selection-end-column="27" />
+          <folding>
+            <marker date="1517799700474" expanded="true" signature="280:319" ph="SELECT * FRO... ${$tabla}" />
+            <marker date="1517799700474" expanded="true" signature="682:887" ph="INSERT INTO ${$tabla}... " />
+            <marker date="1517799700474" expanded="true" signature="1964:2011" ph="UPDATE ${$ta... " />
+            <marker date="1517799700474" expanded="true" signature="2580:2869" ph="UPDATE ${$ta... " />
+            <marker date="1517799700474" expanded="true" signature="4161:4194" ph="DELETE FROM " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vistas/js/gestorSlide.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="26" column="12" lean-forward="true" selection-start-line="26" selection-start-column="12" selection-end-line="26" selection-end-column="12" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>
