@@ -1,6 +1,6 @@
 /*=============================================
- AGREGAR SLIDE
- =============================================*/
+AGREGAR SLIDE
+=============================================*/
 
 $(".agregarSlide").click(function(){
 
@@ -33,21 +33,21 @@ $(".agregarSlide").click(function(){
         contentType: false,
         processData: false,
         success: function(respuesta){
-
+            
             if(respuesta == "ok"){
 
                 swal({
-                    type: "success",
-                    title: "El slide ha sido agregado correctamente",
-                    showConfirmButton: true,
-                    confirmButtonText: "Cerrar"
-                }).then((result) => {
+                  type: "success",
+                  title: "El slide ha sido agregado correctamente",
+                  showConfirmButton: true,
+                  confirmButtonText: "Cerrar"
+                  }).then((result) => {
                     if (result.value) {
 
                     window.location = "slide";
 
-                }
-            })
+                    }
+                })
 
             }
 
@@ -58,8 +58,8 @@ $(".agregarSlide").click(function(){
 })
 
 /*=============================================
- CAMBIAR EL ORDEN DEL SLIDE
- =============================================*/
+CAMBIAR EL ORDEN DEL SLIDE
+=============================================*/
 var itemSlide = $(".itemSlide");
 
 $('.todo-list').sortable({
@@ -84,22 +84,22 @@ $('.todo-list').sortable({
                 contentType: false,
                 processData: false,
                 success: function(respuesta){
-
-
-
+                
+                    
+                            
                 }
 
             })
 
-        }
+        }   
 
     }
 
 });
 
 /*=============================================
- VARIABLES GLOBALES PARA CAMBIOS DEL SLIDE
- =============================================*/
+VARIABLES GLOBALES PARA CAMBIOS DEL SLIDE
+=============================================*/
 
 var guardarSlide = $(".guardarSlide");
 var tipoSlide = $(".tipoSlide");
@@ -112,8 +112,8 @@ var subirFondo = null;
 var subirImgProducto = null;
 
 /*=============================================
- ACTUALIZAR NOMBRE SLIDE
- =============================================*/
+ACTUALIZAR NOMBRE SLIDE
+=============================================*/
 
 $(".nombreSlide").change(function(){
 
@@ -121,13 +121,13 @@ $(".nombreSlide").change(function(){
     var indiceSlide = $(this).attr("indice");
 
     $(guardarSlide[indiceSlide]).attr("nombreSlide", nombre);
-
+    
 
 })
 
 /*=============================================
- CHECKED PARA EL TIPO DE SLIDE
- =============================================*/
+CHECKED PARA EL TIPO DE SLIDE
+=============================================*/
 for(var i = 0; i < tipoSlide.length; i++){
 
     if($(tipoSlide[i]).val()=="slideOpcion1"){
@@ -143,8 +143,8 @@ for(var i = 0; i < tipoSlide.length; i++){
 }
 
 /*=============================================
- CAMBIO DE TIPO DE SLIDE
- =============================================*/
+CAMBIO DE TIPO DE SLIDE
+=============================================*/
 
 for(var i = 0; i < tipoSlide.length; i++){
 
@@ -162,30 +162,30 @@ for(var i = 0; i < tipoSlide.length; i++){
         $(slideOpciones[indiceSlide]).addClass(tipoSlide);
 
         var anchoSlide = $(slide[indiceSlide]).css("width").replace(/px/, " ");
-
+        
         if(tipoSlide == "slideOpcion1"){
 
             // ORGANIZAR IMAGEN PRODUCTO
 
             var posHImagen = $(slideOpciones[indiceSlide]).children("img").css("left").replace(/px/, " ");
-
+            
             var nuevaPosHImagen = posHImagen*100/anchoSlide;
-
+            
             $(slideOpciones[indiceSlide]).children("img").css({"left": "", "right": nuevaPosHImagen+"%"})
 
             $(guardarSlide[indiceSlide]).attr("estiloImgProductoLeft", "");
             $(guardarSlide[indiceSlide]).attr("estiloImgProductoRight", nuevaPosHImagen);
 
-            // ORGANIZAR TEXTO SLIDE
+            // ORGANIZAR TEXTO SLIDE 
 
             var posHTexto = $(slideOpciones[indiceSlide]).children('.textosSlide').css("right").replace(/px/, " ");
-
+            
             var nuevaPosHTexto = posHTexto*100/anchoSlide;
 
             $(slideOpciones[indiceSlide]).children(".textosSlide").css({"left": nuevaPosHTexto + "%" , "right": "", "text-align": "left"})
 
             $(guardarSlide[indiceSlide]).attr("estiloTextoSlideRight", "");
-            $(guardarSlide[indiceSlide]).attr("estiloTextoSlideLeft", nuevaPosHTexto);
+            $(guardarSlide[indiceSlide]).attr("estiloTextoSlideLeft", nuevaPosHTexto);  
 
 
         }else{
@@ -193,7 +193,7 @@ for(var i = 0; i < tipoSlide.length; i++){
             // ORGANIZAR IMAGEN PRODUCTO
 
             var posHImagen = $(slideOpciones[indiceSlide]).children("img").css("right").replace(/px/, " ");
-
+            
             var nuevaPosHImagen = posHImagen*100/anchoSlide;
 
             $(slideOpciones[indiceSlide]).children("img").css({"left": nuevaPosHImagen+"%", "right": ""})
@@ -201,10 +201,10 @@ for(var i = 0; i < tipoSlide.length; i++){
             $(guardarSlide[indiceSlide]).attr("estiloImgProductoRight", "");
             $(guardarSlide[indiceSlide]).attr("estiloImgProductoLeft", nuevaPosHImagen);
 
-            // ORGANIZAR TEXTO SLIDE
+            // ORGANIZAR TEXTO SLIDE 
 
             var posHTexto = $(slideOpciones[indiceSlide]).children('.textosSlide').css("left").replace(/px/, " ");
-
+            
             var nuevaPosHTexto = posHTexto*100/anchoSlide;
 
             $(slideOpciones[indiceSlide]).children(".textosSlide").css({"left": "", "right": nuevaPosHTexto+"%", "text-align": "right"})
@@ -222,8 +222,8 @@ for(var i = 0; i < tipoSlide.length; i++){
 }
 
 /*=============================================
- CAMBIO DE FONDO
- =============================================*/
+CAMBIO DE FONDO
+=============================================*/
 $(".subirFondo").change(function(){
 
     var imagenFondo = this.files[0];
@@ -231,29 +231,29 @@ $(".subirFondo").change(function(){
     var indiceSlide = $(this).attr("indice");
 
     /*=============================================
-     VALIDAMOS EL FORMATO DE LA IMAGEN SEA JPG O PNG
-     =============================================*/
+    VALIDAMOS EL FORMATO DE LA IMAGEN SEA JPG O PNG
+    =============================================*/
 
     if(imagenFondo["type"] != "image/jpeg" && imagenFondo["type"] != "image/png"){
 
         $(".subirFondo").val("");
 
-        swal({
-            title: "Error al subir la imagen",
-            text: "¡La imagen debe estar en formato JPG o PNG!",
-            type: "error",
-            confirmButtonText: "¡Cerrar!"
+         swal({
+          title: "Error al subir la imagen",
+          text: "¡La imagen debe estar en formato JPG o PNG!",
+          type: "error",
+          confirmButtonText: "¡Cerrar!"
         });
 
     }else if(imagenFondo["size"] > 2000000){
 
         $(".subirFondo").val("");
 
-        swal({
-            title: "Error al subir la imagen",
-            text: "¡La imagen no debe pesar más de 2MB!",
-            type: "error",
-            confirmButtonText: "¡Cerrar!"
+         swal({
+          title: "Error al subir la imagen",
+          text: "¡La imagen no debe pesar más de 2MB!",
+          type: "error",
+          confirmButtonText: "¡Cerrar!"
         });
 
     }else{
@@ -277,8 +277,8 @@ $(".subirFondo").change(function(){
 })
 
 /*=============================================
- CAMBIO DE IMAGEN PRODUCTO
- =============================================*/
+CAMBIO DE IMAGEN PRODUCTO
+=============================================*/
 
 $(".subirImgProducto").change(function(){
 
@@ -286,29 +286,29 @@ $(".subirImgProducto").change(function(){
     var indiceSlide = $(this).attr("indice");
 
     /*=============================================
-     VALIDAMOS EL FORMATO DE LA IMAGEN SEA JPG O PNG
-     =============================================*/
+    VALIDAMOS EL FORMATO DE LA IMAGEN SEA JPG O PNG
+    =============================================*/
 
     if(imagenProducto["type"] != "image/jpeg" && imagenProducto["type"] != "image/png"){
 
         $("#subirLogo").val("");
 
-        swal({
-            title: "Error al subir la imagen",
-            text: "¡La imagen debe estar en formato JPG o PNG!",
-            type: "error",
-            confirmButtonText: "¡Cerrar!"
+         swal({
+          title: "Error al subir la imagen",
+          text: "¡La imagen debe estar en formato JPG o PNG!",
+          type: "error",
+          confirmButtonText: "¡Cerrar!"
         });
 
     }else if(imagenProducto["size"] > 2000000){
 
         $("#subirLogo").val("");
 
-        swal({
-            title: "Error al subir la imagen",
-            text: "¡La imagen no debe pesar más de 2MB!",
-            type: "error",
-            confirmButtonText: "¡Cerrar!"
+         swal({
+          title: "Error al subir la imagen",
+          text: "¡La imagen no debe pesar más de 2MB!",
+          type: "error",
+          confirmButtonText: "¡Cerrar!"
         });
 
     }else{
@@ -321,9 +321,9 @@ $(".subirImgProducto").change(function(){
             var rutaImagen = event.target.result;
 
             $(previsualizarProducto[indiceSlide]).attr("src", rutaImagen);
-
+            
             $(slideOpciones[indiceSlide]).children('.imgProducto').attr("src", rutaImagen);
-
+            
             $(slideOpciones[indiceSlide]).children('.imgProducto').css({"top":"15%","right":"10%","left":"","width":"30%"});
 
             $(guardarSlide[indiceSlide]).attr("estiloImgProductoRight", "10");
@@ -340,8 +340,8 @@ $(".subirImgProducto").change(function(){
 });
 
 /*=============================================
- CAMBIAR TEXTO Y COLOR SLIDE
- =============================================*/
+CAMBIAR TEXTO Y COLOR SLIDE
+=============================================*/
 
 // TEXTO Y COLOR 1
 
@@ -362,7 +362,7 @@ $(".cambioColorTexto1").change(function(){
     var color1 = $(this).val();
 
     $(slideOpciones[indiceSlide]).children('.textosSlide').children("h1").css({"color":color1});
-
+    
     $(guardarSlide[indiceSlide]).attr("titulo1Color", color1);
 
 })
@@ -386,7 +386,7 @@ $(".cambioColorTexto2").change(function(){
     var color2 = $(this).val();
 
     $(slideOpciones[indiceSlide]).children('.textosSlide').children("h2").css({"color":color2});
-
+    
     $(guardarSlide[indiceSlide]).attr("titulo2Color", color2);
 
 })
@@ -410,26 +410,26 @@ $(".cambioColorTexto3").change(function(){
     var color3 = $(this).val();
 
     $(slideOpciones[indiceSlide]).children('.textosSlide').children("h3").css({"color":color3});
-
+    
     $(guardarSlide[indiceSlide]).attr("titulo3Color", color3);
 
 })
 
 /*=============================================
- CAMBIAR POSICIÓN IMAGEN PRODUCTO SLIDE
- =============================================*/
+CAMBIAR POSICIÓN IMAGEN PRODUCTO SLIDE
+=============================================*/
 
 for(var i = 0; i < slideOpciones.length; i++){
 
     // VERTICAL
 
     var posVertical = new Slider('.posVertical'+i, {
-
+        
         formatter: function(value) {
 
             $(".posVertical").change(function(){
 
-                var indiceSlide = $(this).attr("indice");
+                var indiceSlide = $(this).attr("indice");   
 
                 $(slideOpciones[indiceSlide]).children('img').css({"top":value+"%"});
 
@@ -437,9 +437,9 @@ for(var i = 0; i < slideOpciones.length; i++){
 
             })
 
-            return value;
-
-
+            return value;   
+            
+                    
         }
 
     })
@@ -460,7 +460,7 @@ for(var i = 0; i < slideOpciones.length; i++){
                     $(slideOpciones[indiceSlide]).children('img').css({"right":value+"%"});
 
                     $(guardarSlide[indiceSlide]).attr("estiloImgProductoRight", value);
-                    $(guardarSlide[indiceSlide]).attr("estiloImgProductoLeft", "");
+                    $(guardarSlide[indiceSlide]).attr("estiloImgProductoLeft", "");         
 
                 }else{
 
@@ -473,8 +473,8 @@ for(var i = 0; i < slideOpciones.length; i++){
 
             })
 
-            return value;
-
+            return value;   
+            
         }
 
     })
@@ -488,41 +488,41 @@ for(var i = 0; i < slideOpciones.length; i++){
             $(".anchoImagen").change(function(){
 
                 var indiceSlide = $(this).attr("indice");
-
+                
                 $(slideOpciones[indiceSlide]).children('img').css({"width":value+"%"});
 
                 $(guardarSlide[indiceSlide]).attr("estiloImgProductoWidth", value);
 
             })
 
-            return value;
-
+            return value;   
+            
         }
 
     })
 
     /*=============================================
-     CAMBIAR POSICIÓN TEXTO
-     =============================================*/
+    CAMBIAR POSICIÓN TEXTO
+    =============================================*/
 
     // VERTICAL
 
     var posVerticalTexto = new Slider('.posVerticalTexto'+i, {
-
+        
         formatter: function(value) {
 
             $(".posVerticalTexto").change(function(){
 
-                var indiceSlide = $(this).attr("indice");
+                var indiceSlide = $(this).attr("indice");   
 
                 $(slideOpciones[indiceSlide]).children('.textosSlide').css({"top":value+"%"});
 
                 $(guardarSlide[indiceSlide]).attr("estiloTextoSlideTop", value);
 
             })
-
-            return value;
-
+            
+            return value;   
+                                
         }
 
     })
@@ -543,7 +543,7 @@ for(var i = 0; i < slideOpciones.length; i++){
                     $(slideOpciones[indiceSlide]).children('.textosSlide').css({"left":value+"%"});
 
                     $(guardarSlide[indiceSlide]).attr("estiloTextoSlideLeft", value);
-                    $(guardarSlide[indiceSlide]).attr("estiloTextoSlideRight", "");
+                    $(guardarSlide[indiceSlide]).attr("estiloTextoSlideRight", "");         
 
                 }else{
 
@@ -556,8 +556,8 @@ for(var i = 0; i < slideOpciones.length; i++){
 
             })
 
-            return value;
-
+            return value;   
+            
         }
 
     })
@@ -571,15 +571,15 @@ for(var i = 0; i < slideOpciones.length; i++){
             $(".anchoTexto").change(function(){
 
                 var indiceSlide = $(this).attr("indice");
-
+                
                 $(slideOpciones[indiceSlide]).children('.textosSlide').css({"width":value+"%"});
 
                 $(guardarSlide[indiceSlide]).attr("estiloTextoSlideWidth", value);
 
             })
 
-            return value;
-
+            return value;   
+            
         }
 
     })
@@ -587,8 +587,8 @@ for(var i = 0; i < slideOpciones.length; i++){
 }
 
 /*=============================================
- CAMBIO DE BOTÓN
- =============================================*/
+CAMBIO DE BOTÓN
+=============================================*/
 
 $(".botonSlide").change(function(){
 
@@ -599,21 +599,21 @@ $(".botonSlide").change(function(){
 
     $(slideOpciones[indiceSlide]).children('.textosSlide').append('<a href="">'+
 
-        '<button class="btn btn-default backColor text-uppercase">'+
+                                                                  '<button class="btn btn-default backColor text-uppercase">'+
 
-        textoBoton+'<span class="fa fa-chevron-right"></span>'+
+                                                                  textoBoton+'<span class="fa fa-chevron-right"></span>'+
 
-        '</button>'+
+                                                                  '</button>'+
 
-        '</a>');
+                                                                  '</a>');
 
-    $(guardarSlide[indiceSlide]).attr("boton", textoBoton);
+    $(guardarSlide[indiceSlide]).attr("boton", textoBoton); 
 
 })
 
 /*=============================================
- CAMBIO DE URL BOTÓN
- =============================================*/
+CAMBIO DE URL BOTÓN
+=============================================*/
 
 $(".urlSlide").change(function(){
 
@@ -625,25 +625,25 @@ $(".urlSlide").change(function(){
 
         $(".urlSlide").val("");
 
-        swal({
-            title: "Error al poner la URL",
-            text: "¡Debe escribir primero el texto del botón!",
-            type: "error",
-            confirmButtonText: "¡Cerrar!"
-        });
+         swal({
+          title: "Error al poner la URL",
+          text: "¡Debe escribir primero el texto del botón!",
+          type: "error",
+          confirmButtonText: "¡Cerrar!"
+        });     
 
-    }else{
+    }else{  
 
         $(slideOpciones[indiceSlide]).children('.textosSlide').children("a").attr("href", urlBoton);
-
-        $(guardarSlide[indiceSlide]).attr("url", urlBoton);
+    
+        $(guardarSlide[indiceSlide]).attr("url", urlBoton); 
     }
 
 })
 
 /*=============================================
- GUARDAR SLIDE
- =============================================*/
+GUARDAR SLIDE
+=============================================*/
 
 $(".guardarSlide").click(function(){
 
@@ -653,14 +653,14 @@ $(".guardarSlide").click(function(){
     var tipoSlide = $(this).attr("tipoSlide");
 
     var estiloImgProductoTop = $(this).attr("estiloImgProductoTop");
-    var estiloImgProductoRight = $(this).attr("estiloImgProductoRight");
+    var estiloImgProductoRight = $(this).attr("estiloImgProductoRight"); 
     var estiloImgProductoLeft = $(this).attr("estiloImgProductoLeft");
-    var estiloImgProductoWidth = $(this).attr("estiloImgProductoWidth");
+    var estiloImgProductoWidth = $(this).attr("estiloImgProductoWidth"); 
 
     var estiloImgProducto = {"top": estiloImgProductoTop,
-        "right": estiloImgProductoRight,
-        "left": estiloImgProductoLeft,
-        "width": estiloImgProductoWidth};
+                            "right": estiloImgProductoRight,
+                            "left": estiloImgProductoLeft,
+                            "width": estiloImgProductoWidth};
 
     var estiloTextoSlideTop = $(this).attr("estiloTextoSlideTop");
     var estiloTextoSlideRight = $(this).attr("estiloTextoSlideRight");
@@ -668,9 +668,9 @@ $(".guardarSlide").click(function(){
     var estiloTextoSlideWidth = $(this).attr("estiloTextoSlideWidth");
 
     var estiloTextoSlide = {"top": estiloTextoSlideTop,
-        "right": estiloTextoSlideRight,
-        "left": estiloTextoSlideLeft,
-        "width": estiloTextoSlideWidth};
+                           "right": estiloTextoSlideRight,
+                           "left": estiloTextoSlideLeft,
+                           "width": estiloTextoSlideWidth};
 
     // CAPTURAMOS EL CAMBIO DE FONDO
 
@@ -691,7 +691,7 @@ $(".guardarSlide").click(function(){
 
         subirImgProducto = $(".subirImgProducto");
         imgProducto = $(this).attr("rutaImgProducto");
-
+        
     }
 
     // CAPTURAMOS EL TÍTULO 1
@@ -700,15 +700,15 @@ $(".guardarSlide").click(function(){
     var titulo1Color = $(this).attr("titulo1Color");
 
     var titulo1 = {"texto": titulo1Texto,
-        "color": titulo1Color};
+                   "color": titulo1Color};
 
-    // CAPTURAMOS EL TÍTULO 2
+   // CAPTURAMOS EL TÍTULO 2
 
     var titulo2Texto = $(this).attr("titulo2Texto");
     var titulo2Color = $(this).attr("titulo2Color");
 
     var titulo2 = {"texto": titulo2Texto,
-        "color": titulo2Color};
+                   "color": titulo2Color};
 
     // CAPTURAMOS EL TÍTULO 3
 
@@ -716,14 +716,14 @@ $(".guardarSlide").click(function(){
     var titulo3Color = $(this).attr("titulo3Color");
 
     var titulo3 = {"texto": titulo3Texto,
-        "color": titulo3Color};
-
+                   "color": titulo3Color};
+    
     var boton = $(this).attr("boton");
     var url = $(this).attr("url");
 
     /*=============================================
-     AJAX
-     =============================================*/
+    AJAX
+    =============================================*/
 
     var datos = new FormData();
     datos.append("id", id);
@@ -750,8 +750,8 @@ $(".guardarSlide").click(function(){
     datos.append("imgProducto", imgProducto);
 
     if(subirImgProducto != null){
-
-
+        
+    
         datos.append("subirImgProducto", subirImgProducto[indiceSlide].files[0]);
 
     }else{
@@ -784,21 +784,21 @@ $(".guardarSlide").click(function(){
         contentType: false,
         processData: false,
         success: function(respuesta){
-
+                    
             if(respuesta == "ok"){
 
                 swal({
-                    type: "success",
-                    title: "El slide ha sido cambiado correctamente",
-                    showConfirmButton: true,
-                    confirmButtonText: "Cerrar"
-                }).then((result) => {
+                  type: "success",
+                  title: "El slide ha sido cambiado correctamente",
+                  showConfirmButton: true,
+                  confirmButtonText: "Cerrar"
+                  }).then((result) => {
                     if (result.value) {
 
                     window.location = "slide";
 
-                }
-            })
+                    }
+                })
             }
 
         }
@@ -808,8 +808,8 @@ $(".guardarSlide").click(function(){
 })
 
 /*=============================================
- ELIMINAR SLIDE
- =============================================*/
+ELIMINAR SLIDE
+=============================================*/
 
 $(".eliminarSlide").click(function(){
 
@@ -827,15 +827,15 @@ $(".eliminarSlide").click(function(){
         cancelButtonColor: '#d33',
         cancelButtonText: 'Cancelar',
         confirmButtonText: 'Si, borrar slide!'
-    }).then((result) => {
+        }).then((result) => {
         if (result.value) {
 
-        window.location = "index.php?ruta=slide&idSlide="+idSlide+"&imgFondo="+imgFondo+"&imgProducto="+imgProducto;
+            window.location = "index.php?ruta=slide&idSlide="+idSlide+"&imgFondo="+imgFondo+"&imgProducto="+imgProducto;
 
-    }
+        }
 
 
-})
+    })
 
 
 })

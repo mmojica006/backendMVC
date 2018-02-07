@@ -2,7 +2,7 @@
 
 require_once "conexion.php";
 
-class ModeloSlide{
+class ModeloSlide{  
 
     /*=============================================
     MOSTRAR SLIDE
@@ -31,8 +31,8 @@ class ModeloSlide{
         $stmt = Conexion::conectar()->prepare("INSERT INTO $tabla(imgFondo, tipoSlide, estiloTextoSlide, titulo1, titulo2, titulo3, boton, url, orden) VALUES (:imgFondo, :tipoSlide, :estiloTextoSlide, :titulo1, :titulo2, :titulo3, :boton, :url, :orden)");
 
         $stmt->bindParam(":imgFondo", $datos["imgFondo"], PDO::PARAM_STR);
-        $stmt->bindParam(":tipoSlide", $datos["tipoSlide"], PDO::PARAM_STR);
-        $stmt->bindParam(":estiloTextoSlide", $datos["estiloTextoSlide"], PDO::PARAM_STR);
+        $stmt->bindParam(":tipoSlide", $datos["tipoSlide"], PDO::PARAM_STR); 
+        $stmt->bindParam(":estiloTextoSlide", $datos["estiloTextoSlide"], PDO::PARAM_STR); 
         $stmt->bindParam(":titulo1", $datos["titulo1"], PDO::PARAM_STR);
         $stmt->bindParam(":titulo2", $datos["titulo2"], PDO::PARAM_STR);
         $stmt->bindParam(":titulo3", $datos["titulo3"], PDO::PARAM_STR);
@@ -47,7 +47,7 @@ class ModeloSlide{
         }else{
 
             return "error";
-
+        
         }
 
         $stmt->close();
@@ -64,7 +64,7 @@ class ModeloSlide{
         $stmt = Conexion::conectar()->prepare("UPDATE $tabla SET orden = :orden WHERE id = :id");
 
         $stmt->bindParam(":orden", $datos["orden"], PDO::PARAM_INT);
-        $stmt->bindParam(":id", $datos["id"], PDO::PARAM_INT);
+        $stmt->bindParam(":id", $datos["id"], PDO::PARAM_INT);  
 
         if($stmt->execute()){
 
@@ -73,7 +73,7 @@ class ModeloSlide{
         }else{
 
             return "error";
-
+        
         }
 
         $stmt->close();
@@ -91,16 +91,16 @@ class ModeloSlide{
 
         $stmt->bindParam(":nombre", $datos["nombre"], PDO::PARAM_STR);
         $stmt->bindParam(":tipoSlide", $datos["tipoSlide"], PDO::PARAM_STR);
-        $stmt->bindParam(":estiloImgProducto", $datos["estiloImgProducto"], PDO::PARAM_STR);
-        $stmt->bindParam(":estiloTextoSlide", $datos["estiloTextoSlide"], PDO::PARAM_STR);
+        $stmt->bindParam(":estiloImgProducto", $datos["estiloImgProducto"], PDO::PARAM_STR); 
+        $stmt->bindParam(":estiloTextoSlide", $datos["estiloTextoSlide"], PDO::PARAM_STR); 
         $stmt->bindParam(":imgFondo", $rutaFondo, PDO::PARAM_STR);
         $stmt->bindParam(":imgProducto", $rutaProducto, PDO::PARAM_STR);
         $stmt->bindParam(":titulo1", $datos["titulo1"], PDO::PARAM_STR);
-        $stmt->bindParam(":titulo2", $datos["titulo2"], PDO::PARAM_STR);
+        $stmt->bindParam(":titulo2", $datos["titulo2"], PDO::PARAM_STR); 
         $stmt->bindParam(":titulo3", $datos["titulo3"], PDO::PARAM_STR);
-        $stmt->bindParam(":boton", $datos["boton"], PDO::PARAM_STR);
-        $stmt->bindParam(":url", $datos["url"], PDO::PARAM_STR);
-        $stmt->bindParam(":id", $datos["id"], PDO::PARAM_INT);
+        $stmt->bindParam(":boton", $datos["boton"], PDO::PARAM_STR); 
+        $stmt->bindParam(":url", $datos["url"], PDO::PARAM_STR);   
+        $stmt->bindParam(":id", $datos["id"], PDO::PARAM_INT);  
 
         if($stmt->execute()){
 
@@ -109,7 +109,7 @@ class ModeloSlide{
         }else{
 
             return "error";
-
+        
         }
 
         $stmt->close();
@@ -131,10 +131,10 @@ class ModeloSlide{
         if($stmt -> execute()){
 
             return "ok";
-
+        
         }else{
 
-            return "error";
+            return "error"; 
 
         }
 
@@ -142,7 +142,7 @@ class ModeloSlide{
 
         $stmt = null;
 
-
+        
     }
 
 

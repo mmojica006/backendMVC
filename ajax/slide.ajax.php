@@ -29,13 +29,13 @@ class AjaxSlide{
     public function ajaxCrearSlide(){
 
         $datos = array( "imgFondo"=>$this->imgFondo,
-            "tipoSlide"=>$this->tipoSlide,
-            "estiloTextoSlide"=>$this->estiloTextoSlide,
-            "titulo1"=>$this->titulo1,
-            "titulo2"=>$this->titulo2,
-            "titulo3"=>$this->titulo3,
-            "boton"=>$this->boton,
-            "url"=>$this->url);
+                        "tipoSlide"=>$this->tipoSlide,
+                        "estiloTextoSlide"=>$this->estiloTextoSlide,
+                        "titulo1"=>$this->titulo1,
+                        "titulo2"=>$this->titulo2,
+                        "titulo3"=>$this->titulo3,
+                        "boton"=>$this->boton,
+                        "url"=>$this->url);
 
         $respuesta = ControladorSlide::ctrCrearSlide($datos);
 
@@ -50,7 +50,7 @@ class AjaxSlide{
     public function ajaxOrdenSlide(){
 
         $datos = array( "id"=> $this->id,
-            "orden"=> $this->orden);
+                        "orden"=> $this->orden);
 
         $respuesta = ControladorSlide::ctrActualizarOrdenSlide($datos);
 
@@ -65,19 +65,19 @@ class AjaxSlide{
     public function ajaxCambiarSlide(){
 
         $datos = array( "id"=>$this->id,
-            "nombre"=>$this->nombre,
-            "tipoSlide"=>$this->tipoSlide,
-            "estiloImgProducto"=>$this->estiloImgProducto,
-            "estiloTextoSlide"=>$this->estiloTextoSlide,
-            "imgFondo"=>$this->imgFondo,
-            "subirFondo"=>$this->subirFondo,
-            "imgProducto"=>$this->imgProducto,
-            "subirImgProducto"=>$this->subirImgProducto,
-            "titulo1"=>$this->titulo1,
-            "titulo2"=>$this->titulo2,
-            "titulo3"=>$this->titulo3,
-            "boton"=>$this->boton,
-            "url"=>$this->url);
+                        "nombre"=>$this->nombre,
+                        "tipoSlide"=>$this->tipoSlide,
+                        "estiloImgProducto"=>$this->estiloImgProducto,
+                        "estiloTextoSlide"=>$this->estiloTextoSlide,
+                        "imgFondo"=>$this->imgFondo,
+                        "subirFondo"=>$this->subirFondo,
+                        "imgProducto"=>$this->imgProducto,
+                        "subirImgProducto"=>$this->subirImgProducto,
+                        "titulo1"=>$this->titulo1,
+                        "titulo2"=>$this->titulo2,
+                        "titulo3"=>$this->titulo3,
+                        "boton"=>$this->boton,
+                        "url"=>$this->url);
 
         $respuesta = ControladorSlide::ctrActualizarSlide($datos);
 
@@ -88,7 +88,7 @@ class AjaxSlide{
 
 /*=============================================
 CREAR SLIDE
-=============================================*/
+=============================================*/ 
 
 if(isset($_POST["crearSlide"])){
 
@@ -107,7 +107,7 @@ if(isset($_POST["crearSlide"])){
 
 /*=============================================
 ACTUALIZAR ORDEN
-=============================================*/
+=============================================*/ 
 
 if(isset($_POST["idSlide"])){
 
@@ -120,7 +120,7 @@ if(isset($_POST["idSlide"])){
 
 /*=============================================
 CAMBIAR SLIDE
-=============================================*/
+=============================================*/ 
 
 if(isset($_POST["id"])){
 
@@ -130,8 +130,8 @@ if(isset($_POST["id"])){
     $slide -> tipoSlide = $_POST["tipoSlide"];
     $slide -> estiloImgProducto = $_POST["estiloImgProducto"];
     $slide -> estiloTextoSlide = $_POST["estiloTextoSlide"];
-
-    // CAMBIAR FONDO
+    
+    // CAMBIAR FONDO 
 
     $slide -> imgFondo = $_POST["imgFondo"];
 
@@ -163,7 +163,7 @@ if(isset($_POST["id"])){
     $slide -> titulo2 = $_POST["titulo2"];
     $slide -> titulo3 = $_POST["titulo3"];
     $slide -> boton = $_POST["boton"];
-    $slide -> url = $_POST["url"];
+    $slide -> url = $_POST["url"];      
 
     $slide -> ajaxCambiarSlide();
 

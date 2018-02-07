@@ -13,7 +13,7 @@ class ControladorSlide{
         $respuesta = ModeloSlide::mdlMostrarSlide($tabla);
 
         return $respuesta;
-
+        
     }
 
     /*=============================================
@@ -27,7 +27,7 @@ class ControladorSlide{
         $traerSlide = ModeloSlide::mdlMostrarSlide($tabla);
 
         foreach ($traerSlide as $key => $value) {
-
+            
         }
 
         $orden = $value["orden"] + 1;
@@ -64,15 +64,15 @@ class ControladorSlide{
 
         /*=============================================
         SI HAY CAMBIO DE FONDO
-        =============================================*/
+        =============================================*/ 
 
         if($datos["subirFondo"] != null){
 
             /*=============================================
             BORRAMOS EL ANTIGUO FONDO DEL SLIDE
-            =============================================*/
+            =============================================*/ 
 
-            if($datos["imgFondo"] != "vistas/img/slide/default/fondo.jpg"){
+            if($datos["imgFondo"] != "vistas/img/slide/default/fondo.jpg"){ 
 
                 unlink("../".$datos["imgFondo"]);
 
@@ -80,7 +80,7 @@ class ControladorSlide{
 
             /*=============================================
             CREAMOS EL DIRECTORIO SI NO EXISTE
-            =============================================*/
+            =============================================*/ 
 
             $directorio = "../vistas/img/slide/slide".$datos["id"];
 
@@ -94,7 +94,7 @@ class ControladorSlide{
             CAPTURAMOS EL ANCHO Y ALTO DEL FONDO DEL SLIDE
             =============================================*/
 
-            list($ancho, $alto) = getimagesize($datos["subirFondo"]["tmp_name"]);
+            list($ancho, $alto) = getimagesize($datos["subirFondo"]["tmp_name"]);   
 
             $nuevoAncho = 1600;
             $nuevoAlto = 520;
@@ -110,7 +110,7 @@ class ControladorSlide{
                 imagecopyresized($destino, $origen, 0, 0, 0, 0, $nuevoAncho, $nuevoAlto, $ancho, $alto);
 
                 imagejpeg($destino, $ruta1);
-
+        
             }
 
             if($datos["subirFondo"]["type"] == "image/png"){
@@ -120,13 +120,13 @@ class ControladorSlide{
                 $origen = imagecreatefrompng($datos["subirFondo"]["tmp_name"]);
 
                 imagealphablending($destino, FALSE);
-
+                
                 imagesavealpha($destino, TRUE);
 
                 imagecopyresized($destino, $origen, 0, 0, 0, 0, $nuevoAncho, $nuevoAlto, $ancho, $alto);
 
                 imagepng($destino, $ruta1);
-
+        
             }
 
 
@@ -140,13 +140,13 @@ class ControladorSlide{
 
         /*=============================================
         SI HAY CAMBIO DE PRODUCTO
-        =============================================*/
+        =============================================*/     
 
         if($datos["subirImgProducto"] != null){
 
             /*=============================================
             CREAMOS EL DIRECTORIO SI NO EXISTE
-            =============================================*/
+            =============================================*/     
 
             $directorio = "../vistas/img/slide/slide".$datos["id"];
 
@@ -158,7 +158,7 @@ class ControladorSlide{
 
             /*=============================================
             CAPTURAMOS EL ANCHO Y ALTO DE LA IMAGEN DEL PRODUCTO
-            =============================================*/
+            =============================================*/     
 
             list($ancho, $alto) = getimagesize($datos["subirImgProducto"]["tmp_name"]);
 
@@ -176,7 +176,7 @@ class ControladorSlide{
                 imagecopyresized($destino, $origen, 0, 0, 0, 0, $nuevoAncho, $nuevoAlto, $ancho, $alto);
 
                 imagejpeg($destino, $ruta2);
-
+        
             }
 
             if($datos["subirImgProducto"]["type"] == "image/png"){
@@ -186,13 +186,13 @@ class ControladorSlide{
                 $origen = imagecreatefrompng($datos["subirImgProducto"]["tmp_name"]);
 
                 imagealphablending($destino, FALSE);
-
+                
                 imagesavealpha($destino, TRUE);
 
                 imagecopyresized($destino, $origen, 0, 0, 0, 0, $nuevoAncho, $nuevoAlto, $ancho, $alto);
 
                 imagepng($destino, $ruta2);
-
+        
             }
 
             $rutaProducto = substr($ruta2, 3);
@@ -240,22 +240,22 @@ class ControladorSlide{
 
                 echo'<script>
 
-				swal({
-					  type: "success",
-					  title: "El slide ha sido borrado correctamente",
-					  showConfirmButton: true,
-					  confirmButtonText: "Cerrar",		
-					  }).then((result) => {
-								if (result.value) {
+                swal({
+                      type: "success",
+                      title: "El slide ha sido borrado correctamente",
+                      showConfirmButton: true,
+                      confirmButtonText: "Cerrar",      
+                      }).then((result) => {
+                                if (result.value) {
 
-								window.location = "slide";
+                                window.location = "slide";
 
-								}
-							})
+                                }
+                            })
 
-				</script>';
+                </script>';
 
-            }
+            }       
 
         }
 
