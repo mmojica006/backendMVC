@@ -79,6 +79,9 @@
     <!-- Bootstrap slider http://seiyria.com/bootstrap-slider/-->
     <script src="vistas/plugins/bootstrap-slider/bootstrap-slider.js"></script>
 
+    <!-- CK Editor -->
+<script src="vistas/bower_components/ckeditor/ckeditor.js"></script>
+
 
 
 
@@ -159,6 +162,7 @@ session_start();
 <script src="vistas/js/sitio.js"></script>
 <script src="vistas/js/gestorSitio.js"></script>
 <script src="vistas/js/gestorSlide.js"></script>
+<script src="vistas/js/gestorContacto.js"></script>
 
 </body>
 </html>

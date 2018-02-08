@@ -1,5 +1,7 @@
 
 <?php 
+$dataContacto = ControladorContacto::ctrSeleccionarContacto();
+
 
 ?>
 
@@ -17,8 +19,50 @@
 <div class="row">
     <div class="col-md-6">
    <!-- BLOQUE 1 -->
-   
 
+
+
+    <div class="box box-primary ">
+
+      <div class="box-header with-border">
+        <h3 class="box-title">IMAGEN FONDO</h3>
+        <div class="box-tools pull-right">
+            <button type="button" class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip" title="Collapse">
+
+            <i class="fa fa-minus"></i>
+
+          </button>
+
+          
+        </div>
+        
+      </div>
+
+      <div class="box-body">
+
+        <div class="form-group">
+      
+          <label>Cambiar Fondo</label>
+
+          <p class="pull-right">
+            
+            <img src="<?php  echo $dataContacto["imgFondo"]; ?>" class="img-thumbnail previsualizarImgContacto" width="200px">
+
+          </p>
+
+          <input type="file" id="subirImgContacto">
+
+          <p class="help-block">Tamaño recomendado 1200px * 625px</p>  
+
+    </div>  
+        
+      </div>
+      <div class="box-footer">
+            <button type="button" id="guardarImgContacto" class="btn btn-primary pull-right">Guardar Imagen</button>
+    </div>
+
+      
+    </div>
 
    
 
@@ -27,7 +71,58 @@
 
 
   <div class="col-md-6">
-  <h1>Bloque2</h1>
+  <!-- BLOQUE 2 -->
+  
+
+      <div class="box box-primary ">
+
+      <div class="box-header with-border">
+        <h3 class="box-title">DATOS DEL FORMULARIO</h3>
+        <div class="box-tools pull-right">
+            <button type="button" class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip" title="Collapse">
+
+            <i class="fa fa-minus"></i>
+
+          </button>
+
+          
+        </div>
+        
+      </div>
+
+      <div class="box-body">
+
+        <div class="form-group">
+      
+           <label for="usr">Título:</label>
+        
+        <div class="input-group">
+          
+          <span class="input-group-addon"><i class="fa fa-plus-square"></i></span>
+          <input type="text" min="1" class="form-control cambioInformacion" id="titulo" value="<?php echo $dataContacto["titulo"]; ?>">
+
+        </div>          
+
+    </div>  
+        <div class="form-group">
+      
+          <label for="comment">Descripción:</label>
+      
+          <textarea class="form-control cambioScript" rows="5" id="descripcion">
+
+         <?php echo $dataContacto["descripcion"]; ?>
+
+          </textarea>
+    
+    </div>
+        
+      </div>
+      <div class="box-footer">
+            <button type="button" id="guardarImgContacto" class="btn btn-primary pull-right">Guardar Imagen</button>
+    </div>
+
+      
+    </div>
     
   </div>
 
