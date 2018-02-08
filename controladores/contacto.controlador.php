@@ -26,7 +26,7 @@ static public function ctrActualizarImgContacto($item,$valor){
 		$nuevoAlto = 625;
 		$respuesta =[];
 
-		if ($ancho>=$nuevoAncho){			
+		if (($ancho==$nuevoAncho)&&($alto==$nuevoAlto )){			
 
 		unlink("../".$contacto["imgFondo"]);		
 
