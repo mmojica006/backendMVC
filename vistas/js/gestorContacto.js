@@ -100,7 +100,8 @@ if(imgContacto["type"] != "image/jpeg" && imgContacto["type"] != "image/png"){
 
 
 
-    function loadCKEbasic(id) {
+
+ function loadCKEbasic(id) {
   var instance = CKEDITOR.instances[id];
         if (instance) {
             CKEDITOR.remove(instance);
