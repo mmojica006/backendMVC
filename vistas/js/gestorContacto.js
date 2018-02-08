@@ -147,7 +147,7 @@ if(imgContacto["type"] != "image/jpeg" && imgContacto["type"] != "image/png"){
                 altField.label ='Link <span class="form-required" title="This field is required.">*</span>';
 
 
-                altFieldBrowser.label ='Upload image';
+                altFieldBrowser.label ='Subir imagen';
 
 
 
