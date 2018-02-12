@@ -61,6 +61,36 @@ $dataContacto = ControladorContacto::ctrSeleccionarContacto();
             <button type="button" id="guardarImgContacto" class="btn btn-primary pull-right">Guardar Imagen</button>
     </div>
 
+
+
+    <div class="box-header with-border">
+
+    <h3 class="box-title">BANNER</h3>
+  
+  </div>
+
+  <div class="box-body">
+         <div class="form-group">
+                  <label for="exampleInputEmail1">Titulo</label>
+                  <input type="text" class="form-control" id="bannerTitulo" name="bannerTitulo" placeholder="Escriba el título" value=" <?php echo $dataContacto["bannertitulo"]; ?>">
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Descripción</label>
+                  <input type="text" class="form-control" id="bannerDesc" placeholder="Escriba una Descripción" value=" <?php echo $dataContacto["bannerdescripcion"]; ?>">
+                </div>
+          
+           
+  
+
+
+  </div>
+
+  <div class="box-footer">
+    
+    <button type="button" id="guardarDataBanner" class="btn btn-primary pull-right">Guardar</button>
+
+  </div>
+
       
     </div>
 
@@ -99,7 +129,7 @@ $dataContacto = ControladorContacto::ctrSeleccionarContacto();
         <div class="input-group">
           
           <span class="input-group-addon"><i class="fa fa-plus-square"></i></span>
-          <input type="text" min="1" class="form-control cambioInformacion" id="titulo" value="<?php echo $dataContacto["titulo"]; ?>">
+          <input type="text" min="1" class="form-control cambioInformacion" name="titulo" id="titulo" value="<?php echo $dataContacto["titulo"]; ?>">
 
         </div>          
 
@@ -108,7 +138,7 @@ $dataContacto = ControladorContacto::ctrSeleccionarContacto();
       
           <label for="comment">Descripción:</label>
       
-          <textarea class="form-control cambioScript" rows="5" id="descripcion">
+          <textarea class="form-control cambioScript" rows="5" id="descripcion" name="descripcion">
 
          <?php echo $dataContacto["descripcion"]; ?>
 
@@ -118,8 +148,11 @@ $dataContacto = ControladorContacto::ctrSeleccionarContacto();
         
       </div>
       <div class="box-footer">
-            <button type="button" id="guardarImgContacto" class="btn btn-primary pull-right">Guardar Imagen</button>
+            <button type="button" id="guardarInfoContacto" class="btn btn-primary pull-right">Guardar</button>
     </div>
+
+
+
 
       
     </div>
@@ -133,3 +166,5 @@ $dataContacto = ControladorContacto::ctrSeleccionarContacto();
 </section>
   
 </div>
+
+

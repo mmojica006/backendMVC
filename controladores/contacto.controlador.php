@@ -86,11 +86,26 @@ static public function ctrActualizarImgContacto($item,$valor){
 
 	}
 
-
-
-
-
-
 }
+
+
+static public function ctrActualizarForm($datos){
+	$tabla = "contacto";
+	$id=1;
+	$respuesta = ModeloContacto::mdlActualizarForm($tabla,$id,$datos);
+
+
+	return $respuesta;
+}
+
+static public function ctrActualizarBannerForm($datos){
+	$tabla = "contacto";
+	$id=1;
+	$respuesta = ModeloContacto::mdlActualizarBannerForm($tabla,$id,$datos);
+	
+
+	return $respuesta;
+}
+
 
 }

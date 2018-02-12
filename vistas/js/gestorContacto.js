@@ -65,7 +65,7 @@ if(imgContacto["type"] != "image/jpeg" && imgContacto["type"] != "image/png"){
 			processData: false,
 			 dataType: "json",
 			success: function(respuesta){
-				console.log("respuesta",respuesta);
+				
 
 			
 				if(respuesta.num === 0){					
@@ -98,7 +98,107 @@ if(imgContacto["type"] != "image/jpeg" && imgContacto["type"] != "image/png"){
 
 
 
+
 });
+
+
+$("#guardarInfoContacto").click(function(){
+
+    for (var instanceName in CKEDITOR.instances) {
+                    CKEDITOR.instances[instanceName].updateElement();
+                }
+
+  var titulo =  $("#titulo").val();
+  var descripcion = $("#descripcion").val();
+
+
+
+  var datos = new FormData();
+  datos.append("titulo",titulo);
+  datos.append("descripcion",descripcion);
+
+  $.ajax({
+    url:"ajax/contacto.ajax.php",
+    method: "POST",
+    data: datos,
+    cache:false,
+    contentType:false,
+    processData: false,
+    dataType: "json",
+    success: function (respuesta){     
+          
+        if(respuesta.num === 0){          
+        
+          swal({
+              title: "Cambios guardados",
+              text: "Datos Actualizados",
+              type: "success",
+              confirmButtonText: "¡Cerrar!"
+            });
+      
+        }else{
+           swal({
+              title: "Error al guardar los datos",
+              text: respuesta.msg,
+              type: "error",
+              confirmButtonText: "¡Cerrar!"
+            });
+        }
+
+    }
+
+  });
+
+});
+
+
+$("#guardarDataBanner").click(function(){
+
+
+
+  var bannerTitulo =  $("#bannerTitulo").val();
+  var bannerDesc = $("#bannerDesc").val(); 
+
+  var datos = new FormData();
+  datos.append("bannerTitulo",bannerTitulo);
+  datos.append("bannerDesc",bannerDesc);
+
+  $.ajax({
+    url:"ajax/contacto.ajax.php",
+    method: "POST",
+    data: datos,
+    cache:false,
+    contentType:false,
+    processData: false,
+    dataType: "json",
+    success: function (respuesta){     
+          
+        if(respuesta.num === 0){          
+        
+          swal({
+              title: "Cambios guardados",
+              text: "Datos Actualizados",
+              type: "success",
+              confirmButtonText: "¡Cerrar!"
+            });
+      
+        }else{
+           swal({
+              title: "Error al guardar los datos",
+              text: respuesta.msg,
+              type: "error",
+              confirmButtonText: "¡Cerrar!"
+            });
+        }
+
+    }
+
+  });
+
+});
+
+
+
 
 
 
@@ -147,7 +247,7 @@ if(imgContacto["type"] != "image/jpeg" && imgContacto["type"] != "image/png"){
                 altField.label ='Link <span class="form-required" title="This field is required.">*</span>';
 
 
-                altFieldBrowser.label ='Subir imagen';
+                altFieldBrowser.label ='Upload image';
 
 
 
