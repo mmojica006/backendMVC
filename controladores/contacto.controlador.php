@@ -28,7 +28,10 @@ static public function ctrActualizarImgContacto($item,$valor){
 
 		if (($ancho==$nuevoAncho)&&($alto==$nuevoAlto )){			
 
-		unlink("../".$contacto["imgFondo"]);		
+		    if (file_exists(' ../'.$contacto["imgFondo"] )){
+                unlink("../".$contacto["imgFondo"]);
+            }
+
 
 		$destino = imagecreatetruecolor($nuevoAncho, $nuevoAlto);
 
