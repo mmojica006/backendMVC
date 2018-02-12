@@ -156,6 +156,8 @@ $("#guardarDataBanner").click(function(){
 
 
 
+
+
   var bannerTitulo =  $("#bannerTitulo").val();
   var bannerDesc = $("#bannerDesc").val(); 
 
@@ -196,6 +198,8 @@ $("#guardarDataBanner").click(function(){
   });
 
 });
+
+
 
 
 

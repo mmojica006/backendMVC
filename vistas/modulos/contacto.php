@@ -76,7 +76,7 @@ $dataContacto = ControladorContacto::ctrSeleccionarContacto();
                 </div>
                 <div class="form-group">
                   <label for="exampleInputPassword1">Descripción</label>
-                  <input type="text" class="form-control" id="bannerDesc" placeholder="Escriba una Descripción" value=" <?php echo $dataContacto["bannerdescripcion"]; ?>">
+                  <input type="text" class="form-control" id="bannerDesc" placeholder="Escriba una Descripción" value=" <?php echo $dataContacto["bannerdescripcion"]; ?>" >
                 </div>
           
            
