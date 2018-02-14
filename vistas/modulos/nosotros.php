@@ -99,7 +99,7 @@ $dataNosotros = ControladorNosotros::ctrSeleccionarNosotros();
                 <div class="box box-warning ">
 
                     <div class="box-header with-border">
-                        <h3 class="box-title">INFO</h3>
+                        <h3 class="box-title">INFORMACION DE LA EMPRESA</h3>
                         <div class="box-tools pull-right">
                             <button type="button" class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip"
                                     title="Collapse">
@@ -159,7 +159,7 @@ $dataNosotros = ControladorNosotros::ctrSeleccionarNosotros();
                 <div class="box box-danger ">
 
                     <div class="box-header with-border">
-
+                        <h3 class="box-title">INFORMACION INICIAL</h3>
                         <div class="box-tools pull-right">
                             <button type="button" class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip"
                                     title="Collapse">
@@ -202,7 +202,7 @@ $dataNosotros = ControladorNosotros::ctrSeleccionarNosotros();
 
                     </div>
                     <div class="box-footer">
-                        <button type="button" id="guardarInfoContacto" class="btn btn-primary pull-right">Guardar
+                        <button type="button" id="guardarInfoNosotros1" class="btn btn-primary pull-right">Guardar
                         </button>
                     </div>
 

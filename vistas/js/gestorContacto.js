@@ -154,10 +154,6 @@ $("#guardarInfoContacto").click(function(){
 
 $("#guardarDataBanner").click(function(){
 
-
-
-
-
   var bannerTitulo =  $("#bannerTitulo").val();
   var bannerDesc = $("#bannerDesc").val(); 
 

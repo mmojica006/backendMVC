@@ -84,6 +84,21 @@ class ControladorNosotros{
         }
     }
 
+    static public function ctrActualizarBannerForm($datos){
+        $tabla = "tbl_nosotros";
+        $id=1;
+        $respuesta = ModeloNosotros::mdlActualizarBannerForm($tabla,$id,$datos);
 
 
+        return $respuesta;
+    }
+
+    static public function ctrActualizarInfo1($datos){
+        $tabla = "tbl_nosotros";
+        $id=1;
+        $respuesta = ModeloNosotros::mdlActualizarInfo1($tabla,$id,$datos);
+
+
+        return $respuesta;
+    }
 }
