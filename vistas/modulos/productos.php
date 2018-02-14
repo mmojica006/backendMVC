@@ -46,11 +46,11 @@ $dataNosotros = ControladorNosotros::ctrSeleccionarNosotros();
                             <p class="pull-right">
 
                                 <img src="<?php echo $dataNosotros["imgFondo"]; ?>"
-                                     class="img-thumbnail previsualizarImgNosotros" width="200px">
+                                     class="img-thumbnail previsualizarImgProducto" width="200px">
 
                             </p>
 
-                            <input type="file" id="subirImgNosotros">
+                            <input type="file" id="subirImgProducto">
 
                             <p class="help-block">Tamaño recomendado 1200px * 625px</p>
 
@@ -58,7 +58,7 @@ $dataNosotros = ControladorNosotros::ctrSeleccionarNosotros();
 
                     </div>
                     <div class="box-footer">
-                        <button type="button" id="guardarImgNosotros" class="btn btn-primary pull-right">Guardar
+                        <button type="button" id="guardarImgProducto" class="btn btn-primary pull-right">Guardar
                             Imagen
                         </button>
                     </div>
