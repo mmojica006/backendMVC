@@ -9,7 +9,7 @@ $dataNosotros = ControladorNosotros::ctrSeleccionarNosotros();
         <h1>Gestor Productos</h1>
         <ol class="breadcrumb">
             <li><a href="inicio"><i class="fa fa-dashboard"></i> Inicio</a></li>
-            <li class="active">Gestor Nosotros</li>
+            <li class="active">Gestor Producto</li>
         </ol>
     </section>
 
@@ -111,8 +111,7 @@ $dataNosotros = ControladorNosotros::ctrSeleccionarNosotros();
                     <div class="box-body">
                         <div class="form-group">
 
-                            <textarea type="text" class="form-control" id="turbo" name="turbo"
-                                      placeholder="Escriba la misión">
+                            <textarea type="text" class="form-control" id="turbo" name="turbo">
                                  <?php echo $dataNosotros["mision"]; ?>
                             </textarea>
                         </div>
@@ -122,7 +121,7 @@ $dataNosotros = ControladorNosotros::ctrSeleccionarNosotros();
 
                     <div class="box-footer">
 
-                        <button type="button" id="guardarInfoNosotros2" class="btn btn-primary pull-right">Guardar
+                        <button type="button" id="guardarTurbo" class="btn btn-primary pull-right">Guardar
                         </button>
 
                     </div>
@@ -151,8 +150,7 @@ $dataNosotros = ControladorNosotros::ctrSeleccionarNosotros();
                     <div class="box-body">
                         <div class="form-group">
 
-                            <textarea type="text" class="form-control" id="empresarial" name="empresarial"
-                                      placeholder="Escriba la misión">
+                            <textarea type="text" class="form-control" id="empresarial" name="empresarial">
                                  <?php echo $dataNosotros["mision"]; ?>
                             </textarea>
                         </div>
@@ -162,7 +160,7 @@ $dataNosotros = ControladorNosotros::ctrSeleccionarNosotros();
 
                     <div class="box-footer">
 
-                        <button type="button" id="guardarInfoNosotros2" class="btn btn-primary pull-right">Guardar
+                        <button type="button" id="guardarEmpresa" class="btn btn-primary pull-right">Guardar
                         </button>
 
                     </div>
@@ -208,7 +206,7 @@ $dataNosotros = ControladorNosotros::ctrSeleccionarNosotros();
 
                     </div>
                     <div class="box-footer">
-                        <button type="button" id="guardarInfoNosotros1" class="btn btn-primary pull-right">Guardar
+                        <button type="button" id="guardarMicroCredito" class="btn btn-primary pull-right">Guardar
                         </button>
                     </div>
 
@@ -249,7 +247,7 @@ $dataNosotros = ControladorNosotros::ctrSeleccionarNosotros();
 
                     </div>
                     <div class="box-footer">
-                        <button type="button" id="guardarInfoNosotros1" class="btn btn-primary pull-right">Guardar
+                        <button type="button" id="guardarMicroTurbo" class="btn btn-primary pull-right">Guardar
                         </button>
                     </div>
 
@@ -280,7 +278,8 @@ $dataNosotros = ControladorNosotros::ctrSeleccionarNosotros();
 
 
 
-                            <textarea class="form-control cambioScript" rows="5" id="activoProductivo" name="activoProductivo">
+                            <textarea class="form-control cambioScript" rows="5" id="activoProductivo"
+                                      name="activoProductivo">
 
          <?php echo $dataNosotros["descripcion"]; ?>
 
@@ -290,7 +289,7 @@ $dataNosotros = ControladorNosotros::ctrSeleccionarNosotros();
 
                     </div>
                     <div class="box-footer">
-                        <button type="button" id="guardarInfoNosotros1" class="btn btn-primary pull-right">Guardar
+                        <button type="button" id="guardarInfoActivo" class="btn btn-primary pull-right">Guardar
                         </button>
                     </div>
 
