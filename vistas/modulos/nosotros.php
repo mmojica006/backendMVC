@@ -1,5 +1,5 @@
 <?php
-$dataContacto = ControladorContacto::ctrSeleccionarContacto();
+$dataNosotros = ControladorNosotros::ctrSeleccionarNosotros();
 
 
 ?>
@@ -45,7 +45,7 @@ $dataContacto = ControladorContacto::ctrSeleccionarContacto();
 
                             <p class="pull-right">
 
-                                <img src="<?php echo $dataContacto["imgFondo"]; ?>"
+                                <img src="<?php echo $dataNosotros["imgFondo"]; ?>"
                                      class="img-thumbnail previsualizarImgNosotros" width="200px">
 
                             </p>
@@ -75,13 +75,13 @@ $dataContacto = ControladorContacto::ctrSeleccionarContacto();
                             <label for="exampleInputEmail1">Titulo</label>
                             <input type="text" class="form-control" id="bannerTitulo" name="bannerTitulo"
                                    placeholder="Escriba el título"
-                                   value=" <?php echo $dataContacto["bannertitulo"]; ?>">
+                                   value=" <?php echo $dataNosotros["bannertitulo"]; ?>">
                         </div>
                         <div class="form-group">
                             <label for="exampleInputPassword1">Descripción</label>
                             <input type="text" class="form-control" id="bannerDesc"
                                    placeholder="Escriba una Descripción"
-                                   value=" <?php echo $dataContacto["bannerdescripcion"]; ?>">
+                                   value=" <?php echo $dataNosotros["bannerdescripcion"]; ?>">
                         </div>
 
 
@@ -119,14 +119,14 @@ $dataContacto = ControladorContacto::ctrSeleccionarContacto();
                             <label for="exampleInputEmail1">Misión</label>
                             <textarea type="text" class="form-control" id="mision" name="mision"
                                       placeholder="Escriba la misión">
-                                 <?php echo $dataContacto["bannertitulo"]; ?>
+                                 <?php echo $dataNosotros["mision"]; ?>
                             </textarea>
                         </div>
                         <div class="form-group">
                             <label for="exampleInputPassword1">Visión</label>
                             <textarea type="text" class="form-control" id="vision" name="vision"
                                       placeholder="Escriba la visión"  >
-                            <?php echo $dataContacto["bannerdescripcion"]; ?>
+                            <?php echo $dataNosotros["vision"]; ?>
                             </textarea>
                         </div>
 
@@ -134,7 +134,7 @@ $dataContacto = ControladorContacto::ctrSeleccionarContacto();
                             <label for="exampleInputPassword1">Valores</label>
                             <textarea type="text" class="form-control" id="valores" name="valores"
                                       placeholder="Escriba los valores">
-                                <?php echo $dataContacto["bannerdescripcion"]; ?>
+                                <?php echo $dataNosotros["valores"]; ?>
                             </textarea>
                         </div>
 
@@ -183,7 +183,7 @@ $dataContacto = ControladorContacto::ctrSeleccionarContacto();
 
                                 <span class="input-group-addon"><i class="fa fa-plus-square"></i></span>
                                 <input type="text" min="1" class="form-control cambioInformacion" name="titulo"
-                                       id="titulo" value="<?php echo $dataContacto["titulo"]; ?>">
+                                       id="titulo" value="<?php echo $dataNosotros["titulo"]; ?>">
 
                             </div>
 
@@ -194,7 +194,7 @@ $dataContacto = ControladorContacto::ctrSeleccionarContacto();
 
                             <textarea class="form-control cambioScript" rows="5" id="descripcion" name="descripcion">
 
-         <?php echo $dataContacto["descripcion"]; ?>
+         <?php echo $dataNosotros["descripcion"]; ?>
 
           </textarea>
 
