@@ -126,7 +126,7 @@ session_start();
            $_GET["ruta"]== "categorias" ||
            $_GET["ruta"]== "subcategorias" ||
            $_GET["ruta"]== "productos" ||
-           $_GET["ruta"]== "banner" ||
+           $_GET["ruta"]== "nosotros" ||
            $_GET["ruta"]== "ventas" ||
            $_GET["ruta"]== "visitas" ||
            $_GET["ruta"]== "usuarios" ||
@@ -166,6 +166,7 @@ session_start();
 <script src="vistas/js/gestorSitio.js"></script>
 <script src="vistas/js/gestorSlide.js"></script>
 <script src="vistas/js/gestorContacto.js"></script>
+<script src="vistas/js/gestorNosotros.js"></script>
 
 </body>
 </html>
