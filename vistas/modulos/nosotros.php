@@ -143,7 +143,7 @@ $dataNosotros = ControladorNosotros::ctrSeleccionarNosotros();
 
                     <div class="box-footer">
 
-                        <button type="button" id="guardarDataBanner" class="btn btn-primary pull-right">Guardar</button>
+                        <button type="button" id="guardarInfoNosotros2" class="btn btn-primary pull-right">Guardar</button>
 
                     </div>
 

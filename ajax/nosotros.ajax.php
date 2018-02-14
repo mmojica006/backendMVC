@@ -44,6 +44,19 @@ class AjaxNosotros
 
     }
 
+    public $mision;
+    public $vision;
+    public $valores;
+    public function ajaxCambiarInfoInfo2(){
+
+        $datos = array("mision"=>$this->mision,"vision"=>$this->vision,"valores"=>$this->valores);
+
+        $respuesta = ControladorNosotros::ctrActualizarInfo2($datos);
+        echo json_encode($respuesta);
+
+
+    }
+
 
 }
 
@@ -69,6 +82,16 @@ if (isset($_POST["titulo"])){
     $objInfo1->titulo = $_POST["titulo"];
     $objInfo1->descripcion = $_POST["descripcion"];
     $objInfo1->ajaxCambiarInfoInfo1();
+
+}
+
+
+if (isset($_POST["mision"])){
+    $objInfo2 = new AjaxNosotros();
+    $objInfo2->mision = $_POST["mision"];
+    $objInfo2->vision = $_POST["vision"];
+    $objInfo2->valores = $_POST["valores"];
+    $objInfo2->ajaxCambiarInfoInfo2();
 
 }
 

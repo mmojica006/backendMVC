@@ -198,3 +198,55 @@ $("#guardarInfoNosotros1").click(function(){
     });
 
 });
+
+$("#guardarInfoNosotros2").click(function(){
+
+    for (var instanceName in CKEDITOR.instances) {
+        CKEDITOR.instances[instanceName].updateElement();
+    }
+
+    var mision =  $("#mision").val();
+    var vision = $("#vision").val();
+    var valores = $("#valores").val();
+
+
+
+    var datos = new FormData();
+    datos.append("mision",mision);
+    datos.append("vision",vision);
+    datos.append("valores",valores);
+    console.log(datos.mision);
+
+    $.ajax({
+        url:"ajax/nosotros.ajax.php",
+        method: "POST",
+        data: datos,
+        cache:false,
+        contentType:false,
+        processData: false,
+        dataType: "json",
+        success: function (respuesta){
+
+            if(respuesta.num === 0){
+
+                swal({
+                    title: "Cambios guardados",
+                    text: "Datos Actualizados",
+                    type: "success",
+                    confirmButtonText: "¡Cerrar!"
+                });
+
+            }else{
+                swal({
+                    title: "Error al guardar los datos",
+                    text: respuesta.msg,
+                    type: "error",
+                    confirmButtonText: "¡Cerrar!"
+                });
+            }
+
+        }
+
+    });
+
+});

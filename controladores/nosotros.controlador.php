@@ -1,38 +1,42 @@
 <?php
 
-class ControladorNosotros{
+class ControladorNosotros
+{
 
-    public function ctrSeleccionarNosotros(){
-        $tabla= "tbl_nosotros";
+    public function ctrSeleccionarNosotros()
+    {
+        $tabla = "tbl_nosotros";
         $respuesta = ModeloNosotros::mdlSeleccionarNosotros($tabla);
         return $respuesta;
 
     }
-    static public function ctrActualizarImgNosotros($item,$valor){
+
+    static public function ctrActualizarImgNosotros($item, $valor)
+    {
         $tabla = "tbl_nosotros";
-        $id=1;
+        $id = 1;
 
         $dataNosotros = ModeloNosotros::mdlSeleccionarNosotros($tabla);
 
 
-        if (isset($valor["tmp_name"])){
+        if (isset($valor["tmp_name"])) {
 
             list($ancho, $alto) = getimagesize($valor["tmp_name"]);
 
             $nuevoAncho = 1200;
             $nuevoAlto = 625;
-            $respuesta =[];
+            $respuesta = [];
 
-            if (($ancho==$nuevoAncho)&&($alto==$nuevoAlto )){
+            if (($ancho == $nuevoAncho) && ($alto == $nuevoAlto)) {
 
-                if (file_exists(' ../'.$dataNosotros["imgFondo"] )){
-                    unlink("../".$dataNosotros["imgFondo"]);
+                if (file_exists(' ../' . $dataNosotros["imgFondo"])) {
+                    unlink("../" . $dataNosotros["imgFondo"]);
                 }
 
 
                 $destino = imagecreatetruecolor($nuevoAncho, $nuevoAlto);
 
-                if($valor["type"] == "image/jpeg"){
+                if ($valor["type"] == "image/jpeg") {
 
                     $ruta = "../vistas/img/plantilla/imgNosotros.jpg";
 
@@ -44,7 +48,7 @@ class ControladorNosotros{
 
                 }
 
-                if($valor["type"] == "image/png"){
+                if ($valor["type"] == "image/png") {
 
                     $ruta = "../vistas/img/plantilla/imgNosotros.png";
 
@@ -65,12 +69,9 @@ class ControladorNosotros{
                 $respuesta = ModeloNosotros::mdlActualizarImgNosotros($tabla, $id, $item, $valorNuevo);
 
 
-
-
-            }else{
-                $respuesta["num"]=1;
-                $respuesta["msg"]="Dimensiones Incorrectas";
-
+            } else {
+                $respuesta["num"] = 1;
+                $respuesta["msg"] = "Dimensiones Incorrectas";
 
 
             }
@@ -78,25 +79,34 @@ class ControladorNosotros{
             return $respuesta;
 
 
-
-
-
         }
     }
 
-    static public function ctrActualizarBannerForm($datos){
+    static public function ctrActualizarBannerForm($datos)
+    {
         $tabla = "tbl_nosotros";
-        $id=1;
-        $respuesta = ModeloNosotros::mdlActualizarBannerForm($tabla,$id,$datos);
+        $id = 1;
+        $respuesta = ModeloNosotros::mdlActualizarBannerForm($tabla, $id, $datos);
 
 
         return $respuesta;
     }
 
-    static public function ctrActualizarInfo1($datos){
+    static public function ctrActualizarInfo1($datos)
+    {
         $tabla = "tbl_nosotros";
-        $id=1;
-        $respuesta = ModeloNosotros::mdlActualizarInfo1($tabla,$id,$datos);
+        $id = 1;
+        $respuesta = ModeloNosotros::mdlActualizarInfo1($tabla, $id, $datos);
+
+
+        return $respuesta;
+    }
+
+    static public function ctrActualizarInfo2($datos)
+    {
+        $tabla = "tbl_nosotros";
+        $id = 1;
+        $respuesta = ModeloNosotros::mdlActualizarInfo2($tabla, $id, $datos);
 
 
         return $respuesta;
