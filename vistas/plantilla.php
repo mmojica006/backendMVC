@@ -167,6 +167,7 @@ session_start();
 <script src="vistas/js/gestorSlide.js"></script>
 <script src="vistas/js/gestorContacto.js"></script>
 <script src="vistas/js/gestorNosotros.js"></script>
+<script src="vistas/js/gestorProductos.js"></script>
 
 </body>
 </html>
