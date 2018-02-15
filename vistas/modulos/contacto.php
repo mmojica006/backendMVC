@@ -138,7 +138,7 @@ $dataContacto = ControladorContacto::ctrSeleccionarContacto();
       
           <label for="comment">Descripción:</label>
       
-          <textarea class="form-control cambioScript" rows="5" id="descripcion" name="descripcion">
+          <textarea class="form-control cambioScript" rows="5" id="contactDescripcion" name="contactDescripcion">
 
          <?php echo $dataContacto["descripcion"]; ?>
 
@@ -168,5 +168,8 @@ $dataContacto = ControladorContacto::ctrSeleccionarContacto();
 </section>
   
 </div>
+
+<script src="vistas/js/gestorContacto.js"></script>
+
 
 

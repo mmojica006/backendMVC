@@ -1,5 +1,6 @@
 <?php
-$dataNosotros = ControladorNosotros::ctrSeleccionarNosotros();
+$dataProductos = ControladorProductos::ctrSeleccionarProductos();
+
 
 
 ?>
@@ -45,7 +46,7 @@ $dataNosotros = ControladorNosotros::ctrSeleccionarNosotros();
 
                             <p class="pull-right">
 
-                                <img src="<?php echo $dataNosotros["imgFondo"]; ?>"
+                                <img src="<?php echo $dataProductos["imgFondo"]; ?>"
                                      class="img-thumbnail previsualizarImgProducto" width="200px">
 
                             </p>
@@ -72,10 +73,15 @@ $dataNosotros = ControladorNosotros::ctrSeleccionarNosotros();
 
                     <div class="box-body">
                         <div class="form-group">
-                            <label for="exampleInputPassword1">Descripción</label>
+                            <label for="exampleInputEmail1">Titulo</label>
+                            <input type="text" class="form-control" id="bannerTitulo" name="bannerTitulo" placeholder="Escriba el título" value=" <?php echo $dataProductos["bannertitulo"]; ?>">
+                        </div>
+
+                        <div class="form-group">
+                            <label >Descripción</label>
                             <input type="text" class="form-control" id="bannerDesc"
                                    placeholder="Escriba una Descripción"
-                                   value=" <?php echo $dataNosotros["bannerdescripcion"]; ?>">
+                                   value=" <?php echo $dataProductos["bannerdescripcion"]; ?>">
                         </div>
 
 
@@ -93,7 +99,7 @@ $dataNosotros = ControladorNosotros::ctrSeleccionarNosotros();
                 <div class="box box-default ">
 
                     <div class="box-header with-border">
-                        <h3 class="box-title">TURBO</h3>
+                        <h3 class="box-title">CREDIPYME</h3>
                         <div class="box-tools pull-right">
                             <button type="button" class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip"
                                     title="Collapse">
@@ -111,8 +117,8 @@ $dataNosotros = ControladorNosotros::ctrSeleccionarNosotros();
                     <div class="box-body">
                         <div class="form-group">
 
-                            <textarea type="text" class="form-control" id="turbo" name="turbo">
-                                 <?php echo $dataNosotros["mision"]; ?>
+                            <textarea type="text" class="form-control" id="credipyme" name="credipyme">
+                                 <?php echo $dataProductos["crediPyme"]; ?>
                             </textarea>
                         </div>
 
@@ -121,7 +127,7 @@ $dataNosotros = ControladorNosotros::ctrSeleccionarNosotros();
 
                     <div class="box-footer">
 
-                        <button type="button" id="guardarTurbo" class="btn btn-primary pull-right">Guardar
+                        <button type="button" id="guardarCrediPyme" class="btn btn-primary pull-right">Guardar
                         </button>
 
                     </div>
@@ -132,7 +138,7 @@ $dataNosotros = ControladorNosotros::ctrSeleccionarNosotros();
                 <div class="box box-warning ">
 
                     <div class="box-header with-border">
-                        <h3 class="box-title">DESARROLLO EMPRESARIAL</h3>
+                        <h3 class="box-title">CREDINEGOCIOS</h3>
                         <div class="box-tools pull-right">
                             <button type="button" class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip"
                                     title="Collapse">
@@ -150,8 +156,8 @@ $dataNosotros = ControladorNosotros::ctrSeleccionarNosotros();
                     <div class="box-body">
                         <div class="form-group">
 
-                            <textarea type="text" class="form-control" id="empresarial" name="empresarial">
-                                 <?php echo $dataNosotros["mision"]; ?>
+                            <textarea type="text" class="form-control" id="crediNegocio" name="crediNegocio">
+                                 <?php echo $dataProductos["crediNegocios"]; ?>
                             </textarea>
                         </div>
 
@@ -160,13 +166,55 @@ $dataNosotros = ControladorNosotros::ctrSeleccionarNosotros();
 
                     <div class="box-footer">
 
-                        <button type="button" id="guardarEmpresa" class="btn btn-primary pull-right">Guardar
+                        <button type="button" id="guardarCrediNegocio" class="btn btn-primary pull-right">Guardar
                         </button>
 
                     </div>
 
 
                 </div>
+
+                <div class="box box-warning ">
+
+                    <div class="box-header with-border">
+                        <h3 class="box-title">ACTIVO PRODUCTIVO</h3>
+                        <div class="box-tools pull-right">
+                            <button type="button" class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip"
+                                    title="Collapse">
+
+                                <i class="fa fa-minus"></i>
+
+                            </button>
+
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="box-body">
+                        <div class="form-group">
+
+                            <textarea type="text" class="form-control" id="activoProductivo" name="activoProductivo">
+                                 <?php echo $dataProductos["productivo"]; ?>
+                            </textarea>
+                        </div>
+
+
+                    </div>
+
+                    <div class="box-footer">
+
+                        <button type="button" id="guardarActivo" class="btn btn-primary pull-right">Guardar
+                        </button>
+
+                    </div>
+
+
+                </div>
+
+
+
 
 
             </div>
@@ -177,43 +225,6 @@ $dataNosotros = ControladorNosotros::ctrSeleccionarNosotros();
 
 
                 <div class="box box-danger ">
-
-                    <div class="box-header with-border">
-                        <h3 class="box-title">MICROCREDITO</h3>
-                        <div class="box-tools pull-right">
-                            <button type="button" class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip"
-                                    title="Collapse">
-
-                                <i class="fa fa-minus"></i>
-
-                            </button>
-
-
-                        </div>
-
-                    </div>
-
-                    <div class="box-body">
-
-
-                        <div class="form-group">
-
-                            <textarea class="form-control cambioScript" rows="5" id="microcredito" name="microcredito">
-                                  <?php echo $dataNosotros["descripcion"]; ?>
-                          </textarea>
-
-                        </div>
-
-                    </div>
-                    <div class="box-footer">
-                        <button type="button" id="guardarMicroCredito" class="btn btn-primary pull-right">Guardar
-                        </button>
-                    </div>
-
-
-                </div>
-
-                <div class="box box-success ">
 
                     <div class="box-header with-border">
                         <h3 class="box-title">MICROTURBO</h3>
@@ -235,13 +246,9 @@ $dataNosotros = ControladorNosotros::ctrSeleccionarNosotros();
 
                         <div class="form-group">
 
-
-
-                            <textarea class="form-control cambioScript" rows="5" id="microturbo" name="microturbo">
-
-         <?php echo $dataNosotros["descripcion"]; ?>
-
-          </textarea>
+                            <textarea class="form-control cambioScript" rows="5" id="microTurbo" name="microTurbo">
+                                  <?php echo $dataProductos["microturbo"]; ?>
+                          </textarea>
 
                         </div>
 
@@ -254,10 +261,10 @@ $dataNosotros = ControladorNosotros::ctrSeleccionarNosotros();
 
                 </div>
 
-                <div class="box box-info ">
+                <div class="box box-success ">
 
                     <div class="box-header with-border">
-                        <h3 class="box-title">ACTIVO PRODUCTIVO</h3>
+                        <h3 class="box-title">TURBO</h3>
                         <div class="box-tools pull-right">
                             <button type="button" class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip"
                                     title="Collapse">
@@ -278,10 +285,9 @@ $dataNosotros = ControladorNosotros::ctrSeleccionarNosotros();
 
 
 
-                            <textarea class="form-control cambioScript" rows="5" id="activoProductivo"
-                                      name="activoProductivo">
+                            <textarea class="form-control cambioScript" rows="5" id="turbo" name="turbo">
 
-         <?php echo $dataNosotros["descripcion"]; ?>
+         <?php echo $dataProductos["turbo"]; ?>
 
           </textarea>
 
@@ -289,7 +295,49 @@ $dataNosotros = ControladorNosotros::ctrSeleccionarNosotros();
 
                     </div>
                     <div class="box-footer">
-                        <button type="button" id="guardarInfoActivo" class="btn btn-primary pull-right">Guardar
+                        <button type="button" id="guardarTurbo" class="btn btn-primary pull-right">Guardar
+                        </button>
+                    </div>
+
+
+                </div>
+
+                <div class="box box-info ">
+
+                    <div class="box-header with-border">
+                        <h3 class="box-title">MEGA TURBO</h3>
+                        <div class="box-tools pull-right">
+                            <button type="button" class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip"
+                                    title="Collapse">
+
+                                <i class="fa fa-minus"></i>
+
+                            </button>
+
+
+                        </div>
+
+                    </div>
+
+                    <div class="box-body">
+
+
+                        <div class="form-group">
+
+
+
+                            <textarea class="form-control cambioScript" rows="5" id="activoMegaTurbo"
+                                      name="activoMegaTurbo">
+
+         <?php echo $dataProductos["megaturbo"]; ?>
+
+          </textarea>
+
+                        </div>
+
+                    </div>
+                    <div class="box-footer">
+                        <button type="button" id="guardarMegaTurbo" class="btn btn-primary pull-right">Guardar
                         </button>
                     </div>
 
@@ -305,5 +353,7 @@ $dataNosotros = ControladorNosotros::ctrSeleccionarNosotros();
     </section>
 
 </div>
+
+<script src="vistas/js/gestorProductos.js"></script>
 
 

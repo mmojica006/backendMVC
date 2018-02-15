@@ -192,11 +192,11 @@ $dataNosotros = ControladorNosotros::ctrSeleccionarNosotros();
 
                             <label for="comment">Descripción:</label>
 
-                            <textarea class="form-control cambioScript" rows="5" id="descripcion" name="descripcion">
+                            <textarea class="form-control cambioScript" rows="5" id="nosotrosDescripcion" name="nosotrosDescripcion">
 
-         <?php echo $dataNosotros["descripcion"]; ?>
+                         <?php echo $dataNosotros["descripcion"]; ?>
 
-          </textarea>
+                          </textarea>
 
                         </div>
 
@@ -220,3 +220,4 @@ $dataNosotros = ControladorNosotros::ctrSeleccionarNosotros();
 </div>
 
 
+<script src="vistas/js/gestorNosotros.js"></script>
