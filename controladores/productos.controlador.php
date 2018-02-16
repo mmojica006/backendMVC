@@ -5,8 +5,6 @@ class ControladorProductos{
         $tabla = "tbl_productos";
         $respuesta = ModeloProductos::mdlSeleccionarProductos($tabla);
         return 	$respuesta;
-
-
     }
 
     static public function ctrActualizarImgProducto($item,$valor){
@@ -66,22 +64,12 @@ class ControladorProductos{
 
                 $respuesta = ModeloProductos::mdlActualizarImgFondo($tabla, $id, $item, $valorNuevo);
 
-
-
-
             }else{
                 $respuesta["num"]=1;
                 $respuesta["msg"]="Dimensiones Incorrectas";
-
-
-
             }
 
             return $respuesta;
-
-
-
-
 
         }
 
@@ -91,8 +79,48 @@ class ControladorProductos{
         $tabla = "tbl_productos";
         $id=1;
         $respuesta = ModeloProductos::mdlActualizarBannerForm($tabla,$id,$datos);
+        return $respuesta;
+    }
 
+    static public function ctrActualizarCrediPyme($texto){
+        $tabla = "tbl_productos";
+        $id=1;
+        $respuesta = ModeloProductos::mdlActualizarCrediPyme($tabla,$id,$texto);
+        return $respuesta;
+    }
 
+    static public function ctrActualizarCrediNegocio($texto){
+        $tabla = "tbl_productos";
+        $id=1;
+        $respuesta = ModeloProductos::mdlActualizarCrediNegocio($tabla,$id,$texto);
+        return $respuesta;
+    }
+
+    static public function ctrActualizarProductivo($texto){
+        $tabla = "tbl_productos";
+        $id=1;
+        $respuesta = ModeloProductos::mdlActualizarProductivo($tabla,$id,$texto);
+        return $respuesta;
+    }
+
+    static public function ctrActualizarMicroTurbo($texto){
+        $tabla = "tbl_productos";
+        $id=1;
+        $respuesta = ModeloProductos::mdlActualizarMicroturbo($tabla,$id,$texto);
+        return $respuesta;
+    }
+
+    static public function ctrActualizarTurbo($texto){
+        $tabla = "tbl_productos";
+        $id=1;
+        $respuesta = ModeloProductos::mdlActualizarTurbo($tabla,$id,$texto);
+        return $respuesta;
+    }
+
+    static public function ctrActualizarMegaTurbo($texto){
+        $tabla = "tbl_productos";
+        $id=1;
+        $respuesta = ModeloProductos::mdlActualizarMegaTurbo($tabla,$id,$texto);
         return $respuesta;
     }
 

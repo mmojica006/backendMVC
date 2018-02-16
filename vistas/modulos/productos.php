@@ -2,7 +2,6 @@
 $dataProductos = ControladorProductos::ctrSeleccionarProductos();
 
 
-
 ?>
 
 <div class="content-wrapper">
@@ -71,20 +70,24 @@ $dataProductos = ControladorProductos::ctrSeleccionarProductos();
 
                     </div>
 
+
                     <div class="box-body">
-                        <div class="form-group">
-                            <label for="exampleInputEmail1">Titulo</label>
-                            <input type="text" class="form-control" id="bannerTitulo" name="bannerTitulo" placeholder="Escriba el título" value=" <?php echo $dataProductos["bannertitulo"]; ?>">
-                        </div>
+                        <form id="formBannerInfo">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Titulo</label>
+                                <input required type="text" class="form-control" id="bannerTitulo" name="bannerTitulo"
+                                       placeholder="Escriba el título"
+                                       value=" <?php echo $dataProductos["bannertitulo"]; ?> ">
+                            </div>
 
-                        <div class="form-group">
-                            <label >Descripción</label>
-                            <input type="text" class="form-control" id="bannerDesc"
-                                   placeholder="Escriba una Descripción"
-                                   value=" <?php echo $dataProductos["bannerdescripcion"]; ?>">
-                        </div>
+                            <div class="form-group">
+                                <label>Descripción</label>
+                                <input required type="text" class="form-control" id="bannerDesc" name="bannerDesc"
+                                       placeholder="Escriba una Descripción"
+                                       value=" <?php echo $dataProductos["bannerdescripcion"]; ?>">
+                            </div>
 
-
+                        </form>
                     </div>
 
                     <div class="box-footer">
@@ -115,14 +118,16 @@ $dataProductos = ControladorProductos::ctrSeleccionarProductos();
 
 
                     <div class="box-body">
-                        <div class="form-group">
 
-                            <textarea type="text" class="form-control" id="credipyme" name="credipyme">
+                        <form id="formCrediPyme">
+                            <div class="form-group">
+
+                            <textarea  class="required"  type="text" class="form-control" id="credipyme" name="credipyme">
                                  <?php echo $dataProductos["crediPyme"]; ?>
                             </textarea>
-                        </div>
+                            </div>
 
-
+                        </form>
                     </div>
 
                     <div class="box-footer">
@@ -212,9 +217,6 @@ $dataProductos = ControladorProductos::ctrSeleccionarProductos();
 
 
                 </div>
-
-
-
 
 
             </div>
