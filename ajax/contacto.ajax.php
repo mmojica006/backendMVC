@@ -24,6 +24,7 @@ class AjaxContacto{
 		$datos = array("titulo"=>$this->titulo,"descripcion"=>$this->descripcion);
 
 
+
 		$respuesta = ControladorContacto::ctrActualizarForm($datos);
 		echo json_encode($respuesta);
 

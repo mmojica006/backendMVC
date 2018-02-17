@@ -109,7 +109,7 @@ $("#guardarInfoContacto").click(function(){
                 }
 
   var titulo =  $("#titulo").val();
-  var descripcion = $("#Contactdescripcion").val();
+  var descripcion = $("#contactDescripcion").val();
 
 
 

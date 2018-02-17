@@ -122,8 +122,7 @@ if (isset($_SESSION["validarSesionBackend"]) && $_SESSION["validarSesionBackend"
             $_GET["ruta"] == "subcategorias" ||
             $_GET["ruta"] == "productos" ||
             $_GET["ruta"] == "nosotros" ||
-            $_GET["ruta"] == "ventas" ||
-            $_GET["ruta"] == "visitas" ||
+            $_GET["ruta"] == "canales" ||
             $_GET["ruta"] == "usuarios" ||
             $_GET["ruta"] == "mensajes" ||
             $_GET["ruta"] == "perfiles" ||

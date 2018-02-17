@@ -17,9 +17,7 @@ MENU
 
   <li><a href="nosotros"><i class="fa fa-map-o"></i> <span>Gestor Nosotros</span></a></li>
 
-  <li><a href="ventas"><i class="fa fa-shopping-cart"></i> <span>Gestor Ventas</span></a></li>
-
-   <li><a href="visitas"><i class="fa fa-map-marker"></i> <span>Gestor Visitas</span></a></li>
+   <li><a href="canales"><i class="fa fa-map-marker"></i> <span>Gestor Canales de atención</span></a></li>
 
   <li><a href="usuarios"><i class="fa fa-users"></i> <span>Gestor Usuarios</span></a></li>
 
