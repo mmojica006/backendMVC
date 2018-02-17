@@ -14,6 +14,80 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
+<<<<<<< HEAD
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="slide.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vistas/modulos/slide.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="5831">
+              <caret line="343" column="0" lean-forward="false" selection-start-line="343" selection-start-column="0" selection-end-line="343" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="contacto.controlador.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controladores/contacto.controlador.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1139">
+              <caret line="67" column="78" lean-forward="false" selection-start-line="67" selection-start-column="75" selection-end-line="67" selection-end-column="78" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="contacto.modelo.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/modelos/contacto.modelo.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="177">
+              <caret line="26" column="40" lean-forward="false" selection-start-line="26" selection-start-column="40" selection-end-line="26" selection-end-column="40" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="gestorSlide.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vistas/js/gestorSlide.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2873">
+              <caret line="171" column="31" lean-forward="false" selection-start-line="171" selection-start-column="31" selection-end-line="171" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="slide.ajax.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ajax/slide.ajax.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1377">
+              <caret line="81" column="42" lean-forward="false" selection-start-line="81" selection-start-column="42" selection-end-line="81" selection-end-column="42" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="slide.controlador.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controladores/slide.controlador.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3485">
+              <caret line="205" column="38" lean-forward="false" selection-start-line="205" selection-start-column="38" selection-end-line="205" selection-end-column="38" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="slide.modelo.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/modelos/slide.modelo.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1394">
+              <caret line="82" column="0" lean-forward="false" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+=======
     <splitter split-orientation="horizontal" split-proportion="0.663137">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
@@ -156,6 +230,7 @@
         <option value="JavaScript File" />
       </list>
     </option>
+>>>>>>> 8f0be7acdece08672203d3689c3a847e6c252035
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -210,8 +285,18 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
+<<<<<<< HEAD
     <option name="x" value="-8" />
     <option name="y" value="-8" />
+=======
+<<<<<<< HEAD
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+=======
+    <option name="x" value="1358" />
+    <option name="y" value="-112" />
+>>>>>>> 8f0be7acdece08672203d3689c3a847e6c252035
+>>>>>>> b6c87099a8e2395b1e3e95fd5644aabdee1f9b5f
     <option name="width" value="1936" />
     <option name="height" value="1056" />
   </component>
@@ -243,6 +328,8 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
+<<<<<<< HEAD
+=======
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="backendMVC" />
@@ -271,6 +358,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
+>>>>>>> 8f0be7acdece08672203d3689c3a847e6c252035
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -365,19 +453,44 @@
       <workItem from="1517799526124" duration="3677000" />
       <workItem from="1517910904807" duration="4477000" />
       <workItem from="1518361881382" duration="1430000" />
+<<<<<<< HEAD
+      <workItem from="1518615359118" duration="11000" />
+=======
       <workItem from="1518577899965" duration="3430000" />
+<<<<<<< HEAD
       <workItem from="1518738007694" duration="7000" />
+=======
+>>>>>>> 8f0be7acdece08672203d3689c3a847e6c252035
+>>>>>>> b6c87099a8e2395b1e3e95fd5644aabdee1f9b5f
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="28477000" />
+=======
+<<<<<<< HEAD
+    <option name="totallyTimeSpent" value="25051000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2750533" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+=======
+    <option name="totallyTimeSpent" value="28470000" />
+>>>>>>> b6c87099a8e2395b1e3e95fd5644aabdee1f9b5f
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="false" />
     <layout>
+<<<<<<< HEAD
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19669509" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+=======
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1945629" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+>>>>>>> 8f0be7acdece08672203d3689c3a847e6c252035
+>>>>>>> b6c87099a8e2395b1e3e95fd5644aabdee1f9b5f
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -462,15 +575,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/vistas/modulos/slide.php">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5831">
+          <caret line="343" column="0" lean-forward="false" selection-start-line="343" selection-start-column="0" selection-end-line="343" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controladores/contacto.controlador.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1139">
+          <caret line="67" column="78" lean-forward="false" selection-start-line="67" selection-start-column="75" selection-end-line="67" selection-end-column="78" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modelos/contacto.modelo.php">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+<<<<<<< HEAD
+=======
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vistas/js/gestorSlide.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2873">
-          <caret line="171" column="31" lean-forward="false" selection-start-line="171" selection-start-column="16" selection-end-line="171" selection-end-column="31" />
+        <state relative-caret-position="2907">
+          <caret line="171" column="31" lean-forward="false" selection-start-line="171" selection-start-column="31" selection-end-line="171" selection-end-column="31" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -478,6 +611,54 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1377">
           <caret line="81" column="42" lean-forward="false" selection-start-line="81" selection-start-column="42" selection-end-line="81" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controladores/slide.controlador.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3485">
+          <caret line="205" column="38" lean-forward="false" selection-start-line="205" selection-start-column="38" selection-end-line="205" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modelos/slide.modelo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1394">
+          <caret line="82" column="0" lean-forward="false" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vistas/modulos/slide.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+>>>>>>> b6c87099a8e2395b1e3e95fd5644aabdee1f9b5f
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vistas/js/gestorSlide.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2873">
+          <caret line="171" column="31" lean-forward="false" selection-start-line="171" selection-start-column="16" selection-end-line="171" selection-end-column="31" />
+<<<<<<< HEAD
+=======
+          <folding />
+>>>>>>> b6c87099a8e2395b1e3e95fd5644aabdee1f9b5f
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ajax/slide.ajax.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1377">
+          <caret line="81" column="42" lean-forward="false" selection-start-line="81" selection-start-column="42" selection-end-line="81" selection-end-column="42" />
+<<<<<<< HEAD
+=======
+          <folding />
+>>>>>>> b6c87099a8e2395b1e3e95fd5644aabdee1f9b5f
         </state>
       </provider>
     </entry>
@@ -493,6 +674,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1394">
           <caret line="82" column="0" lean-forward="true" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
+<<<<<<< HEAD
+=======
+          <folding />
+>>>>>>> b6c87099a8e2395b1e3e95fd5644aabdee1f9b5f
         </state>
       </provider>
     </entry>
@@ -510,6 +695,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="16" lean-forward="true" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
+<<<<<<< HEAD
+=======
+          <folding />
+>>>>>>> b6c87099a8e2395b1e3e95fd5644aabdee1f9b5f
         </state>
       </provider>
     </entry>
@@ -532,6 +721,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
           <caret line="28" column="27" lean-forward="false" selection-start-line="28" selection-start-column="27" selection-end-line="28" selection-end-column="27" />
+<<<<<<< HEAD
+=======
+          <folding />
+>>>>>>> b6c87099a8e2395b1e3e95fd5644aabdee1f9b5f
         </state>
       </provider>
     </entry>
@@ -539,6 +732,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+<<<<<<< HEAD
+=======
+          <folding />
+>>>>>>> b6c87099a8e2395b1e3e95fd5644aabdee1f9b5f
         </state>
       </provider>
     </entry>
@@ -634,6 +831,16 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+=======
+>>>>>>> 8f0be7acdece08672203d3689c3a847e6c252035
     <entry file="file://$PROJECT_DIR$/vistas/css/slide.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="5083">
@@ -648,6 +855,16 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/vistas/plantilla.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="54" column="78" lean-forward="false" selection-start-line="54" selection-start-column="78" selection-end-line="54" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+=======
+>>>>>>> 8f0be7acdece08672203d3689c3a847e6c252035
     <entry file="file://$PROJECT_DIR$/controladores/sitio.controlador.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="421">
@@ -662,6 +879,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1377">
           <caret line="81" column="42" lean-forward="false" selection-start-line="81" selection-start-column="42" selection-end-line="81" selection-end-column="42" />
+<<<<<<< HEAD
+=======
+          <folding />
+>>>>>>> b6c87099a8e2395b1e3e95fd5644aabdee1f9b5f
         </state>
       </provider>
     </entry>
@@ -677,6 +898,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1394">
           <caret line="82" column="0" lean-forward="false" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
+<<<<<<< HEAD
+=======
+          <folding />
+>>>>>>> b6c87099a8e2395b1e3e95fd5644aabdee1f9b5f
         </state>
       </provider>
     </entry>
@@ -684,6 +909,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2873">
           <caret line="171" column="31" lean-forward="false" selection-start-line="171" selection-start-column="31" selection-end-line="171" selection-end-column="31" />
+<<<<<<< HEAD
+=======
+          <folding />
+>>>>>>> b6c87099a8e2395b1e3e95fd5644aabdee1f9b5f
         </state>
       </provider>
     </entry>
@@ -691,6 +920,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="5831">
           <caret line="343" column="0" lean-forward="false" selection-start-line="343" selection-start-column="0" selection-end-line="343" selection-end-column="0" />
+<<<<<<< HEAD
+=======
+          <folding />
+>>>>>>> b6c87099a8e2395b1e3e95fd5644aabdee1f9b5f
         </state>
       </provider>
     </entry>
@@ -707,7 +940,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/modelos/contacto.modelo.php">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="476">
+=======
+<<<<<<< HEAD
+        <state relative-caret-position="177">
+          <caret line="26" column="40" lean-forward="false" selection-start-line="26" selection-start-column="40" selection-end-line="26" selection-end-column="40" />
+          <folding />
+=======
+        <state relative-caret-position="211">
+>>>>>>> b6c87099a8e2395b1e3e95fd5644aabdee1f9b5f
           <caret line="28" column="24" lean-forward="false" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="24" />
           <folding>
             <marker date="1518577964996" expanded="true" signature="157:172" ph="select * fro... ${$tabla}" />
@@ -793,7 +1035,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="884">
           <caret line="52" column="67" lean-forward="false" selection-start-line="52" selection-start-column="51" selection-end-line="52" selection-end-column="67" />
+<<<<<<< HEAD
           <folding />
+=======
+          <folding>
+            <element signature="n#div#1;n#div#0;n#div#0;n#section#1;n#div#0;n#!!top" expanded="false" />
+          </folding>
+>>>>>>> 8f0be7acdece08672203d3689c3a847e6c252035
+>>>>>>> b6c87099a8e2395b1e3e95fd5644aabdee1f9b5f
         </state>
       </provider>
     </entry>

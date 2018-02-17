@@ -43,7 +43,6 @@ class AjaxContacto{
 
 }
 
-
 if (isset($_FILES["imgContacto"])){
 	$objContacto = new AjaxContacto();
 	$objContacto->imgContacto = $_FILES["imgContacto"];
@@ -52,8 +51,6 @@ if (isset($_FILES["imgContacto"])){
 
 
 }
-
-
 
 if (isset($_POST["titulo"])){
 	$formulario = new AjaxContacto();
