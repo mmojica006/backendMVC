@@ -88,4 +88,9 @@ class ControladorCanales{
 
     }
 
+    public function ctrSeleccionarDireccion(){
+        $tabla ="markers";
+        $respuesta
+    }
+
 }
