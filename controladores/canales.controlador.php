@@ -90,7 +90,11 @@ class ControladorCanales{
 
     public function ctrSeleccionarDireccion(){
         $tabla ="markers";
-        $respuesta
-    }
+        $respuesta = ModeloCanales::mdlSeleccionarDireccion($tabla);
+
+            return $respuesta;
+
+        }
+
 
 }

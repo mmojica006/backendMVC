@@ -5,6 +5,7 @@
 loadCKEbasic("contactDescripcion");
 
 
+
 $("#subirImgCanales").change(function(){
 
     var imgCanales = this.files[0];
