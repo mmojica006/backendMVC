@@ -10,27 +10,9 @@ $zoom = 8;
 
 
 ?>
-<style type="text/css">
-    html { height: 100% }
-    body { height: 100%; margin: 0; padding: 0 }
-    #map-canvas { height: 100% }
-</style>
 
-<script type="text/javascript"
-        src="https://maps.googleapis.com/maps/api/js?key=
-          <?php echo $apikey; ?>&sensor=false">
-</script>
-<script type="text/javascript">
-    function initialize() {
-        var mapOptions = {
-            center: new google.maps.LatLng(<?php echo $lat.', '.$long; ?>),
-            zoom: <?php echo $zoom; ?>
-        };
-        var map = new google.maps.Map(document.getElementById("map-canvas"),
-            mapOptions);
-    }
-    google.maps.event.addDomListener(window, 'load', initialize);
-</script>
+
+
 
 
 <div class="content-wrapper">
@@ -194,7 +176,93 @@ $zoom = 8;
 
         <div class="row">
             <div class="col-md-12">
-                <div id="map-canvas">Here</div>
+                <div class="box box-primary">
+
+                    <div class="box-header with-border">
+                        <h3 class="box-title">Mapa</h3>
+
+                    </div>
+
+                </div>
+
+                <div id="map"></div>
+
+                <script>
+                    var customLabel = {
+                        restaurant: {
+                            label: 'R'
+                        },
+                        bar: {
+                            label: 'B'
+                        }
+                    };
+
+                    function initMap() {
+                        var map = new google.maps.Map(document.getElementById('map'), {
+                            center: new google.maps.LatLng(-33.863276, 151.207977),
+                            zoom: 12
+                        });
+                        var infoWindow = new google.maps.InfoWindow;
+
+                        // Change this depending on the name of your PHP or XML file
+                        downloadUrl('https://storage.googleapis.com/mapsdevsite/json/mapmarkers2.xml', function(data) {
+                            var xml = data.responseXML;
+                            var markers = xml.documentElement.getElementsByTagName('marker');
+                            Array.prototype.forEach.call(markers, function(markerElem) {
+                                var name = markerElem.getAttribute('name');
+                                var address = markerElem.getAttribute('address');
+                                var type = markerElem.getAttribute('type');
+                                var point = new google.maps.LatLng(
+                                    parseFloat(markerElem.getAttribute('lat')),
+                                    parseFloat(markerElem.getAttribute('lng')));
+
+                                var infowincontent = document.createElement('div');
+                                var strong = document.createElement('strong');
+                                strong.textContent = name
+                                infowincontent.appendChild(strong);
+                                infowincontent.appendChild(document.createElement('br'));
+
+                                var text = document.createElement('text');
+                                text.textContent = address
+                                infowincontent.appendChild(text);
+                                var icon = customLabel[type] || {};
+                                var marker = new google.maps.Marker({
+                                    map: map,
+                                    position: point,
+                                    label: icon.label
+                                });
+                                marker.addListener('click', function() {
+                                    infoWindow.setContent(infowincontent);
+                                    infoWindow.open(map, marker);
+                                });
+                            });
+                        });
+                    }
+
+
+
+                    function downloadUrl(url, callback) {
+                        var request = window.ActiveXObject ?
+                            new ActiveXObject('Microsoft.XMLHTTP') :
+                            new XMLHttpRequest;
+
+                        request.onreadystatechange = function() {
+                            if (request.readyState == 4) {
+                                request.onreadystatechange = doNothing;
+                                callback(request, request.status);
+                            }
+                        };
+
+                        request.open('GET', url, true);
+                        request.send(null);
+                    }
+
+                    function doNothing() {}
+                </script>
+                <script async defer
+                        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB8xnUNTHZQB3g1rhpIuDvHbsswXvSQl0M&callback=initMap">
+                </script>
+
             </div>
         </div>
 
