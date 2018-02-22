@@ -1,41 +1,44 @@
 <?php
 
-class ControladorCanales{
+class ControladorCanales
+{
 
-    public function ctrSeleccionarCanales(){
+    public function ctrSeleccionarCanales()
+    {
         $tabla = "tbl_canales";
         $respuesta = ModeloCanales::mdlSeleccionarCanales($tabla);
-        return 	$respuesta;
+        return $respuesta;
 
 
     }
 
-    static public function ctrActualizarImgCanales($item,$valor){
+    static public function ctrActualizarImgCanales($item, $valor)
+    {
 
         $tabla = "tbl_canales";
-        $id=1;
+        $id = 1;
 
         $canales = ModeloCanales::mdlSeleccionarCanales($tabla);
 
 
-        if (isset($valor["tmp_name"])){
+        if (isset($valor["tmp_name"])) {
 
             list($ancho, $alto) = getimagesize($valor["tmp_name"]);
 
             $nuevoAncho = 1200;
             $nuevoAlto = 625;
-            $respuesta =[];
+            $respuesta = [];
 
-            if (($ancho==$nuevoAncho)&&($alto==$nuevoAlto )){
+            if (($ancho == $nuevoAncho) && ($alto == $nuevoAlto)) {
 
-                if (file_exists(' ../'.$canales["imgFondo"] )){
-                    unlink("../".$canales["imgFondo"]);
+                if (file_exists(' ../' . $canales["imgFondo"])) {
+                    unlink("../" . $canales["imgFondo"]);
                 }
 
 
                 $destino = imagecreatetruecolor($nuevoAncho, $nuevoAlto);
 
-                if($valor["type"] == "image/jpeg"){
+                if ($valor["type"] == "image/jpeg") {
 
                     $ruta = "../vistas/img/plantilla/imgContacto.jpg";
 
@@ -47,7 +50,7 @@ class ControladorCanales{
 
                 }
 
-                if($valor["type"] == "image/png"){
+                if ($valor["type"] == "image/png") {
 
                     $ruta = "../vistas/img/plantilla/imgContacto.png";
 
@@ -68,12 +71,9 @@ class ControladorCanales{
                 $respuesta = ModeloCanales::mdlActualizarImgFondo($tabla, $id, $item, $valorNuevo);
 
 
-
-
-            }else{
-                $respuesta["num"]=1;
-                $respuesta["msg"]="Dimensiones Incorrectas";
-
+            } else {
+                $respuesta["num"] = 1;
+                $respuesta["msg"] = "Dimensiones Incorrectas";
 
 
             }
@@ -81,26 +81,103 @@ class ControladorCanales{
             return $respuesta;
 
 
-
-
-
         }
 
     }
 
-    public function ctrActualizarDireccion(){
+    public function ctrActualizarDireccion()
+    {
         $obj1 = new ControladorCanales();
 
-        $tabla ="markers";
+        $tabla = "markers";
         $respuesta = ModeloCanales::mdlSeleccionarDireccion($tabla);
 
         if (count($respuesta)) {
-             $obj1->createXMLfile($respuesta);
+            $obj1->createXMLfile($respuesta);
         }
 
-            return array("num"=>0,"msg"=>"Ok");
+        return array("num" => 0, "msg" => "Ok");
 
+    }
+
+    public function ctrGetDataMarket($id)
+    {
+
+        $output = array();
+        $tabla = "markers";
+
+        $result = ModeloCanales::mdlGetSingleMarket($id,$tabla);
+
+            $output["name"] = $result["name"];
+            $output["lat"] = $result["lat"];
+            $output["lng"] = $result["lng"];
+
+
+        echo json_encode($output);
+    }
+
+
+    public function queryDataTableController($dataPost)
+    {
+        $objModel = new ModeloCanales();
+        $data = array();
+        $result = $objModel->queryDTModel($dataPost);
+
+        $filtered_rows = sizeof($result);
+        foreach ($result as $row) {
+            $imageLarge = '';
+            $imageSmall = '';
+//            if (($row["image_name"] != '') || ($row["image"] != '')) {
+//                $imageLarge = '<img src="/upload-nct/feed-images-nct/ads/' . $row["image_name"] . '" class="img-thumbnail" width="90%" height="35" />';
+//                $imageSmall = '<img src="/upload-nct/feed-images-nct/ads/' . $row["image"] . '" class="img-thumbnail" width="90%" height="35" />';
+//            } else {
+//                $imageLarge = '';
+//                $imageSmall = '';
+//            }
+            $sub_array = array();
+            //  $sub_array[] = $imageSmall;
+            // $sub_array[] = $imageLarge;
+            $sub_array[] = $row["id"];
+            $sub_array[] = $row["name"];
+            $sub_array[] = $row["address"];
+            $sub_array[] = $row["lat"];
+            $sub_array[] = $row["lng"];
+            $sub_array[] = '<button type="button" name="update" id="' . $row["id"] . '" class="btn btn-warning btn-xs update">Editar</button>';
+            $sub_array[] = '<button type="button" name="delete" id="' . $row["id"] . '" class="btn btn-danger btn-xs delete">Borrar</button>';
+            $data[] = $sub_array;
         }
+
+        $output = array(
+            "draw" => intval($dataPost["draw"]),//intval($_POST["draw"]),
+            "recordsTotal" => $filtered_rows,
+            "recordsFiltered" => $objModel->get_total_all_records(),
+            "data" => $data
+        );
+
+        echo json_encode($output);
+
+
+    }
+
+    public function ctrAgregarDireccion($data)
+    {
+
+        $tabla = "markers";
+        $respuesta = ModeloCanales::mdlGuardarDireccion($data, $tabla);
+        return $respuesta;
+
+
+    }
+
+    public function ctrActualizarSingleData($data)
+    {
+
+        $tabla = "markers";
+        $respuesta = ModeloCanales::mdlActualizarSingleData($data, $tabla);
+        return $respuesta;
+
+
+    }
 
 
     public function createXMLfile($markersArray)
@@ -134,7 +211,7 @@ class ControladorCanales{
         $respuesta = $dom->appendChild($root);
 
 
-         $dom->save($filePath);
+        $dom->save($filePath);
 
     }
 

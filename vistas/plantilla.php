@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="vistas/bower_components/font-awesome/css/font-awesome.min.css">
     <!-- Ionicons -->
     <link rel="stylesheet" href="vistas/bower_components/Ionicons/css/ionicons.min.css">
+    <!-- DataTables -->
+    <link rel="stylesheet" href="vistas/bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css">
     <!-- Theme style -->
     <link rel="stylesheet" href="vistas/dist/css/AdminLTE.min.css">
 
@@ -75,6 +77,9 @@
 
     <!-- Bootstrap slider http://seiyria.com/bootstrap-slider/-->
     <script src="vistas/plugins/bootstrap-slider/bootstrap-slider.js"></script>
+    <!-- DataTables -->
+    <script src="vistas/bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
+    <script src="vistas/bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
 
     <!-- CK Editor -->
     <script src="vistas/bower_components/ckeditor/ckeditor.js"></script>
@@ -89,9 +94,7 @@
 <body class="hold-transition skin-blue  sidebar-mini login-page">
 
 <?php
-
 session_start();
-
 if (isset($_SESSION["validarSesionBackend"]) && $_SESSION["validarSesionBackend"] === "ok") {
 
     echo '<div class="wrapper">';

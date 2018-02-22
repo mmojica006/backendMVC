@@ -6,6 +6,107 @@ loadCKEbasic("contactDescripcion");
 
 
 
+
+
+var dataTable = $('#user_data').DataTable({
+    "processing":true,
+    "serverSide":true,
+    "order":[],
+    "ajax":{
+        url:"ajax/Canales.ajax.php",
+        type:"POST"
+    },
+    "columnDefs":[
+        {
+            "targets":[0, 3, 4],
+            "orderable":false,
+        },
+    ],
+
+});
+
+$('#add_button').click(function(){
+    $('#user_form')[0].reset();
+    $('.modal-title').text("Agregar");
+    $('#action').val("Add");
+    $('#operation').val("Add");
+    $('#user_uploaded_image').html('');
+});
+
+
+
+$(document).on('submit', '#user_form', function(event){
+    event.preventDefault();
+    var sucursal = $('#sucursal').val();
+    var latitud = $('#latitud').val();
+    var longitud = $('#longitud').val();
+
+    if(sucursal != '' && latitud != '' && longitud != '')
+    {
+        $.ajax({
+            url:"ajax/Canales.ajax.php",
+            method:'POST',
+            data:new FormData(this),
+            contentType:false,
+            processData:false,
+            success:function(data)
+            {
+                console.log(data);
+
+                $('#user_form')[0].reset();
+                $('#userModal').modal('hide');
+                dataTable.ajax.reload();
+
+                swal({
+                    title: "Direcciones de Sucursales",
+                    text: "¡Registro Actualizado!",
+                    type: "success",
+                    confirmButtonText: "¡Cerrar!"
+                });
+
+
+            }
+        });
+    }
+    else
+    {
+        swal({
+            title: "Error al guardar el registro",
+            text: 'Hacen falta datos' ,
+            type: "error",
+            confirmButtonText: "¡Cerrar!"
+        });
+    }
+});
+
+
+$(document).on('click', '.update', function(){
+
+    var market_id = $(this).attr("id");
+
+    $.ajax({
+        url:"ajax/Canales.ajax.php",
+        method:"POST",
+        data:{market_id:market_id},
+        dataType:"json",
+        success:function(data)
+        {
+            $('#userModal').modal('show');
+            $('#sucursal').val(data.name);
+            $('#latitud').val(data.lat);
+            $('#longitud').val(data.lng);
+
+            $('.modal-title').text("Actualizar");
+            $('#market_id').val(market_id);
+            $('#action').val("Actualizar");
+            $('#operation').val("Edit");
+
+        }
+    })
+});
+
+
+
 $("#subirImgCanales").change(function(){
 
     var imgCanales = this.files[0];
