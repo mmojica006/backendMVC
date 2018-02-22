@@ -88,13 +88,55 @@ class ControladorCanales{
 
     }
 
-    public function ctrSeleccionarDireccion(){
+    public function ctrActualizarDireccion(){
+        $obj1 = new ControladorCanales();
+
         $tabla ="markers";
         $respuesta = ModeloCanales::mdlSeleccionarDireccion($tabla);
 
-            return $respuesta;
+        if (count($respuesta)) {
+             $obj1->createXMLfile($respuesta);
+        }
+
+            return array("num"=>0,"msg"=>"Ok");
 
         }
+
+
+    public function createXMLfile($markersArray)
+    {
+
+        $filePath = '../modelos/markers.xml';
+        $dom = new DOMDocument('1.0', 'utf-8');
+        $root = $dom->createElement('markers');
+        for ($i = 0; $i < count($markersArray); $i++) {
+
+            $markerId = $markersArray[$i]['id'];
+            $markerName = $markersArray[$i]['name'];
+            $markerAddress = $markersArray[$i]['address'];
+            $markerLat = $markersArray[$i]['lat'];
+            $markerIng = $markersArray[$i]['lng'];
+            $markerType = $markersArray[$i]['type'];
+
+            $marker = $dom->createElement('marker');
+
+            $marker->setAttribute('id', $markerId);
+            $marker->setAttribute('name', $markerName);
+            $marker->setAttribute('address', $markerAddress);
+            $marker->setAttribute('lat', $markerLat);
+            $marker->setAttribute('lng', $markerIng);
+            $marker->setAttribute('type', $markerType);
+
+            $root->appendChild($marker);
+
+        }
+
+        $respuesta = $dom->appendChild($root);
+
+
+         $dom->save($filePath);
+
+    }
 
 
 }
