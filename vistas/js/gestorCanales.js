@@ -25,6 +25,8 @@ var dataTable = $('#user_data').DataTable({
 
 });
 
+
+
 $('#add_button').click(function(){
     $('#user_form')[0].reset();
     $('.modal-title').text("Agregar");
@@ -105,7 +107,25 @@ $(document).on('click', '.update', function(){
     })
 });
 
-
+$(document).on('click', '.delete', function(){
+    var market_id = $(this).attr("id");
+    if(confirm("Esta seguro de borrar el registro?"))
+    {
+        $.ajax({
+            url:"ajax/Canales.ajax.php",
+            method:"POST",
+            data:{"operation":"Del","market_id":market_id},
+            success:function(respuesta)
+            {
+                    dataTable.ajax.reload();
+            }
+        });
+    }
+    else
+    {
+        return false;
+    }
+});
 
 $("#subirImgCanales").change(function(){
 

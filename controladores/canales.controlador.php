@@ -179,6 +179,13 @@ class ControladorCanales
 
     }
 
+    public function ctrBorrarDireccion($id)
+    {
+        $tabla = "markers";
+        $respuesta = ModeloCanales::mdlBorrarDireccion($id, $tabla);
+        return $respuesta;
+    }
+
 
     public function createXMLfile($markersArray)
     {

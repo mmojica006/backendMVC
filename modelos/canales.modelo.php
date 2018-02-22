@@ -175,4 +175,27 @@ class ModeloCanales
         $stmt = null;
     }
 
+    public function mdlBorrarDireccion($id, $tabla)
+    {
+        $response = [];
+        $stmt = Conexion::conectar()->prepare("DELETE FROM $tabla where id=:id");
+        $stmt->bindParam(":id", $id, PDO::PARAM_INT);
+        $stmt->execute();
+
+        if ($stmt->errorCode() == 0) {
+            $response["num"] = 0;
+            $response["msg"] = "OK";
+        } else {
+            $response["num"] = $stmt->errorCode();
+            $response["msg"] = $stmt->errorInfo();
+        }
+
+
+        return $response;
+
+        $stmt->close();
+        $stmt = null;
+
+    }
+
 }

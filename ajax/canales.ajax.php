@@ -109,8 +109,20 @@ class AjaxCanales
 
     }
 
+    public function ajaxBorrarDireccion(){
+        $respuesta  = ControladorCanales::ctrBorrarDireccion($this->marketId);
+
+        echo $respuesta;
+
+
+
+
+    }
+
 
 }
+
+
 
 if (isset($_FILES["imgCanales"])) {
     $objCanales = new AjaxCanales();
@@ -171,5 +183,15 @@ if (isset($_POST["operation"]) && ($_POST["operation"] == "Edit")) {
     $objEdit->latitud = $_POST["latitud"];
     $objEdit->longitud = $_POST["longitud"];
     $objEdit->ajaxActualizarSingleData();
+
+}
+
+if (isset($_POST["operation"]) && ($_POST["operation"] === "Del")) {
+
+
+
+    $objDel= new AjaxCanales();
+    $objDel->marketId = $_POST["market_id"];
+    $objDel->ajaxBorrarDireccion();
 
 }

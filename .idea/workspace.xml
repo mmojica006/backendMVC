@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="573f7e01-d7d5-4fe5-b8de-fc5ec289e5fd" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ajax/canales.ajax.php" afterPath="$PROJECT_DIR$/ajax/canales.ajax.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controladores/canales.controlador.php" afterPath="$PROJECT_DIR$/controladores/canales.controlador.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modelos/canales.modelo.php" afterPath="$PROJECT_DIR$/modelos/canales.modelo.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vistas/js/gestorCanales.js" afterPath="$PROJECT_DIR$/vistas/js/gestorCanales.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vistas/modulos/canales.php" afterPath="$PROJECT_DIR$/vistas/modulos/canales.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vistas/plantilla.php" afterPath="$PROJECT_DIR$/vistas/plantilla.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -26,7 +23,7 @@
       <file leaf-file-name="canales.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vistas/modulos/canales.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
+            <state relative-caret-position="483">
               <caret line="234" column="56" lean-forward="false" selection-start-line="234" selection-start-column="47" selection-end-line="234" selection-end-column="56" />
               <folding>
                 <element signature="n#div#0;n#div#0;n#div#0;n#section#1;n#div#0;n#!!top" expanded="false" />
@@ -40,8 +37,8 @@
       <file leaf-file-name="gestorCanales.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/vistas/js/gestorCanales.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="269">
-              <caret line="58" column="0" lean-forward="true" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
+            <state relative-caret-position="424">
+              <caret line="119" column="44" lean-forward="false" selection-start-line="119" selection-start-column="44" selection-end-line="119" selection-end-column="44" />
               <folding />
             </state>
           </provider>
@@ -50,8 +47,8 @@
       <file leaf-file-name="canales.ajax.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ajax/canales.ajax.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="179">
-              <caret line="145" column="7" lean-forward="false" selection-start-line="145" selection-start-column="2" selection-end-line="145" selection-end-column="7" />
+            <state relative-caret-position="331">
+              <caret line="114" column="23" lean-forward="false" selection-start-line="114" selection-start-column="23" selection-end-line="114" selection-end-column="23" />
               <folding>
                 <element signature="n#getDataTable#0;n#AjaxCanales#0;n#!!top" expanded="false" />
                 <element signature="n#ajaxGetSingleData#0;n#AjaxCanales#0;n#!!top" expanded="false" />
@@ -63,8 +60,8 @@
       <file leaf-file-name="canales.controlador.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controladores/canales.controlador.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="175" column="55" lean-forward="false" selection-start-line="175" selection-start-column="55" selection-end-line="175" selection-end-column="55" />
+            <state relative-caret-position="602">
+              <caret line="184" column="44" lean-forward="false" selection-start-line="184" selection-start-column="44" selection-end-line="184" selection-end-column="44" />
               <folding>
                 <element signature="n#ctrActualizarImgCanales#0;n#ControladorCanales#0;n#!!top" expanded="false" />
                 <element signature="n#ctrActualizarDireccion#0;n#ControladorCanales#0;n#!!top" expanded="false" />
@@ -79,21 +76,22 @@
       <file leaf-file-name="canales.modelo.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/modelos/canales.modelo.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="179">
-              <caret line="155" column="0" lean-forward="false" selection-start-line="155" selection-start-column="0" selection-end-line="155" selection-end-column="0" />
+            <state relative-caret-position="347">
+              <caret line="177" column="20" lean-forward="false" selection-start-line="177" selection-start-column="20" selection-end-line="177" selection-end-column="20" />
               <folding>
                 <element signature="n#queryDTModel#0;n#ModeloCanales#0;n#!!top" expanded="false" />
-                <marker date="1519340044990" expanded="true" signature="171:186" ph="select * fro... ${$tabla}" />
-                <marker date="1519340044990" expanded="true" signature="423:438" ph="select * fro... ${$tabla}" />
-                <marker date="1519340044990" expanded="true" signature="423:457" ph="select * fro... ${$tabla}" />
-                <marker date="1519340044990" expanded="true" signature="798:845" ph="UPDATE ${$ta... " />
-                <marker date="1519340044990" expanded="true" signature="1541:1562" ph="select * fro... markers" />
-                <marker date="1519340044990" expanded="true" signature="1772:1793" ph="SELECT * FRO... markers" />
-                <marker date="1519340044990" expanded="true" signature="2469:2475" ph="select * fro... markers" />
-                <marker date="1519340044990" expanded="true" signature="2688:2709" ph="select * fro... markers" />
-                <marker date="1519340044990" expanded="true" signature="2962:2974" ph="INSERT INTO ${$tabla}... " />
-                <marker date="1519340044990" expanded="true" signature="2962:3019" ph="INSERT INTO ${$tabla}... " />
-                <marker date="1519340044990" expanded="true" signature="3723:3784" ph="UPDATE ${$ta... " />
+                <marker date="1519342596486" expanded="true" signature="171:186" ph="select * fro... ${$tabla}" />
+                <marker date="1519342596486" expanded="true" signature="423:438" ph="select * fro... ${$tabla}" />
+                <marker date="1519342596486" expanded="true" signature="423:457" ph="select * fro... ${$tabla}" />
+                <marker date="1519342596486" expanded="true" signature="798:845" ph="UPDATE ${$ta... " />
+                <marker date="1519342596486" expanded="true" signature="1541:1562" ph="select * fro... markers" />
+                <marker date="1519342596486" expanded="true" signature="1772:1793" ph="SELECT * FRO... markers" />
+                <marker date="1519342596486" expanded="true" signature="2469:2475" ph="select * fro... markers" />
+                <marker date="1519342596486" expanded="true" signature="2688:2709" ph="select * fro... markers" />
+                <marker date="1519342596486" expanded="true" signature="2962:2974" ph="INSERT INTO ${$tabla}... " />
+                <marker date="1519342596486" expanded="true" signature="2962:3019" ph="INSERT INTO ${$tabla}... " />
+                <marker date="1519342596486" expanded="true" signature="3723:3784" ph="UPDATE ${$ta... " />
+                <marker date="1519342596486" expanded="true" signature="4532:4563" ph="DELETE FROM " />
               </folding>
             </state>
           </provider>
@@ -163,7 +161,9 @@
       <find>user_data</find>
       <find>user_id</find>
       <find>print</find>
+      <find>market_id</find>
       <find>update</find>
+      <find>borrar</find>
     </findStrings>
     <replaceStrings>
       <replace>Canales</replace>
@@ -203,10 +203,10 @@
         <option value="$PROJECT_DIR$/vistas/plugins/kcfinder-3.12/core/class/uploader.php" />
         <option value="$PROJECT_DIR$/vistas/plantilla.php" />
         <option value="$PROJECT_DIR$/vistas/modulos/salir.php" />
-        <option value="$PROJECT_DIR$/controladores/canales.controlador.php" />
         <option value="$PROJECT_DIR$/vistas/modulos/canales.php" />
-        <option value="$PROJECT_DIR$/ajax/canales.ajax.php" />
+        <option value="$PROJECT_DIR$/controladores/canales.controlador.php" />
         <option value="$PROJECT_DIR$/modelos/canales.modelo.php" />
+        <option value="$PROJECT_DIR$/ajax/canales.ajax.php" />
         <option value="$PROJECT_DIR$/vistas/js/gestorCanales.js" />
       </list>
     </option>
@@ -279,35 +279,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="modulos" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="backendMVC" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="backendMVC" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modelos" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="backendMVC" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="backendMVC" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ajax" />
+              <option name="myItemId" value="js" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -412,12 +384,12 @@
       <workItem from="1519124508781" duration="2654000" />
       <workItem from="1519168100935" duration="1393000" />
       <workItem from="1519243793180" duration="12000" />
-      <workItem from="1519312083393" duration="17974000" />
+      <workItem from="1519312083393" duration="20688000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="56018000" />
+    <option name="totallyTimeSpent" value="58732000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -427,7 +399,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32827735" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32827735" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -441,6 +413,25 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18496802" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32827735" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="processedProjectFiles" value="true" />
@@ -663,14 +654,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vistas/js/gestorNosotros.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4700">
-          <caret line="345" column="1" lean-forward="true" selection-start-line="345" selection-start-column="1" selection-end-line="345" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vistas/modulos/cabezote.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -710,13 +693,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2091">
           <caret line="123" column="0" lean-forward="false" selection-start-line="123" selection-start-column="0" selection-end-line="123" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vistas/js/gestorContacto.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1479">
-          <caret line="87" column="17" lean-forward="false" selection-start-line="87" selection-start-column="17" selection-end-line="87" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -797,21 +773,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ajax/canales.ajax.php">
+    <entry file="file://$PROJECT_DIR$/vistas/js/gestorContacto.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="145" column="7" lean-forward="false" selection-start-line="145" selection-start-column="2" selection-end-line="145" selection-end-column="7" />
-          <folding>
-            <element signature="n#getDataTable#0;n#AjaxCanales#0;n#!!top" expanded="false" />
-            <element signature="n#ajaxGetSingleData#0;n#AjaxCanales#0;n#!!top" expanded="false" />
-          </folding>
+        <state relative-caret-position="966">
+          <caret line="87" column="17" lean-forward="false" selection-start-line="87" selection-start-column="17" selection-end-line="87" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vistas/js/gestorNosotros.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2241">
+          <caret line="345" column="1" lean-forward="true" selection-start-line="345" selection-start-column="1" selection-end-line="345" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controladores/canales.controlador.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="175" column="55" lean-forward="false" selection-start-line="175" selection-start-column="55" selection-end-line="175" selection-end-column="55" />
+        <state relative-caret-position="602">
+          <caret line="184" column="44" lean-forward="false" selection-start-line="184" selection-start-column="44" selection-end-line="184" selection-end-column="44" />
           <folding>
             <element signature="n#ctrActualizarImgCanales#0;n#ControladorCanales#0;n#!!top" expanded="false" />
             <element signature="n#ctrActualizarDireccion#0;n#ControladorCanales#0;n#!!top" expanded="false" />
@@ -824,28 +805,40 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/modelos/canales.modelo.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="155" column="0" lean-forward="false" selection-start-line="155" selection-start-column="0" selection-end-line="155" selection-end-column="0" />
+        <state relative-caret-position="347">
+          <caret line="177" column="20" lean-forward="false" selection-start-line="177" selection-start-column="20" selection-end-line="177" selection-end-column="20" />
           <folding>
             <element signature="n#queryDTModel#0;n#ModeloCanales#0;n#!!top" expanded="false" />
-            <marker date="1519340044990" expanded="true" signature="171:186" ph="select * fro... ${$tabla}" />
-            <marker date="1519340044990" expanded="true" signature="423:438" ph="select * fro... ${$tabla}" />
-            <marker date="1519340044990" expanded="true" signature="423:457" ph="select * fro... ${$tabla}" />
-            <marker date="1519340044990" expanded="true" signature="798:845" ph="UPDATE ${$ta... " />
-            <marker date="1519340044990" expanded="true" signature="1541:1562" ph="select * fro... markers" />
-            <marker date="1519340044990" expanded="true" signature="1772:1793" ph="SELECT * FRO... markers" />
-            <marker date="1519340044990" expanded="true" signature="2469:2475" ph="select * fro... markers" />
-            <marker date="1519340044990" expanded="true" signature="2688:2709" ph="select * fro... markers" />
-            <marker date="1519340044990" expanded="true" signature="2962:2974" ph="INSERT INTO ${$tabla}... " />
-            <marker date="1519340044990" expanded="true" signature="2962:3019" ph="INSERT INTO ${$tabla}... " />
-            <marker date="1519340044990" expanded="true" signature="3723:3784" ph="UPDATE ${$ta... " />
+            <marker date="1519342596486" expanded="true" signature="171:186" ph="select * fro... ${$tabla}" />
+            <marker date="1519342596486" expanded="true" signature="423:438" ph="select * fro... ${$tabla}" />
+            <marker date="1519342596486" expanded="true" signature="423:457" ph="select * fro... ${$tabla}" />
+            <marker date="1519342596486" expanded="true" signature="798:845" ph="UPDATE ${$ta... " />
+            <marker date="1519342596486" expanded="true" signature="1541:1562" ph="select * fro... markers" />
+            <marker date="1519342596486" expanded="true" signature="1772:1793" ph="SELECT * FRO... markers" />
+            <marker date="1519342596486" expanded="true" signature="2469:2475" ph="select * fro... markers" />
+            <marker date="1519342596486" expanded="true" signature="2688:2709" ph="select * fro... markers" />
+            <marker date="1519342596486" expanded="true" signature="2962:2974" ph="INSERT INTO ${$tabla}... " />
+            <marker date="1519342596486" expanded="true" signature="2962:3019" ph="INSERT INTO ${$tabla}... " />
+            <marker date="1519342596486" expanded="true" signature="3723:3784" ph="UPDATE ${$ta... " />
+            <marker date="1519342596486" expanded="true" signature="4532:4563" ph="DELETE FROM " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ajax/canales.ajax.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="331">
+          <caret line="114" column="23" lean-forward="false" selection-start-line="114" selection-start-column="23" selection-end-line="114" selection-end-column="23" />
+          <folding>
+            <element signature="n#getDataTable#0;n#AjaxCanales#0;n#!!top" expanded="false" />
+            <element signature="n#ajaxGetSingleData#0;n#AjaxCanales#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vistas/modulos/canales.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
+        <state relative-caret-position="483">
           <caret line="234" column="56" lean-forward="false" selection-start-line="234" selection-start-column="47" selection-end-line="234" selection-end-column="56" />
           <folding>
             <element signature="n#div#0;n#div#0;n#div#0;n#section#1;n#div#0;n#!!top" expanded="false" />
@@ -857,8 +850,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/vistas/js/gestorCanales.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
-          <caret line="58" column="0" lean-forward="true" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
+        <state relative-caret-position="424">
+          <caret line="119" column="44" lean-forward="false" selection-start-line="119" selection-start-column="44" selection-end-line="119" selection-end-column="44" />
           <folding />
         </state>
       </provider>
