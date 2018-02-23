@@ -139,7 +139,6 @@ class ControladorCanales
             // $sub_array[] = $imageLarge;
             $sub_array[] = $row["id"];
             $sub_array[] = $row["name"];
-            $sub_array[] = $row["address"];
             $sub_array[] = $row["lat"];
             $sub_array[] = $row["lng"];
             $sub_array[] = '<button type="button" name="update" id="' . $row["id"] . '" class="btn btn-warning btn-xs update">Editar</button>';

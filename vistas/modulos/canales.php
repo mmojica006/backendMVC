@@ -184,13 +184,12 @@ $apikey = "AIzaSyB8xnUNTHZQB3g1rhpIuDvHbsswXvSQl0M";
                             <table id="user_data" class="table table-bordered table-striped">
                                 <thead>
                                 <tr>
-                                    <th width="5%">Id</th>
-                                    <th width="35%">Nombre</th>
-                                    <th width="40%">Dirección</th>
-                                    <th width="10%">Latitud</th>
-                                    <th width="10%">Longitud</th>
-                                    <th width="10%"></th>
-                                    <th width="10%"></th>
+                                    <th >Id</th>
+                                    <th >Nombre</th>
+                                    <th >Latitud</th>
+                                    <th >Longitud</th>
+                                    <th ></th>
+                                    <th></th>
                                 </tr>
                                 </thead>
                             </table>

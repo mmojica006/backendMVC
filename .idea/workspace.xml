@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="573f7e01-d7d5-4fe5-b8de-fc5ec289e5fd" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modelos/markers.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controladores/canales.controlador.php" afterPath="$PROJECT_DIR$/controladores/canales.controlador.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vistas/files/markers.xml" afterPath="$PROJECT_DIR$/vistas/files/markers.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vistas/modulos/canales.php" afterPath="$PROJECT_DIR$/vistas/modulos/canales.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -19,11 +19,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="canales.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="canales.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/vistas/modulos/canales.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="7" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="7" />
+            <state relative-caret-position="340">
+              <caret line="191" column="45" lean-forward="true" selection-start-line="191" selection-start-column="45" selection-end-line="191" selection-end-column="45" />
               <folding />
             </state>
           </provider>
@@ -52,15 +52,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="canales.controlador.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="canales.controlador.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controladores/canales.controlador.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="207" column="0" lean-forward="true" selection-start-line="207" selection-start-column="0" selection-end-line="207" selection-end-column="0" />
+            <state relative-caret-position="392">
+              <caret line="140" column="40" lean-forward="false" selection-start-line="140" selection-start-column="40" selection-end-line="140" selection-end-column="40" />
               <folding>
-                <element signature="n#ctrActualizarImgCanales#0;n#ControladorCanales#0;n#!!top" expanded="false" />
-                <element signature="n#ctrGetDataMarket#0;n#ControladorCanales#0;n#!!top" expanded="false" />
-                <element signature="n#queryDataTableController#0;n#ControladorCanales#0;n#!!top" expanded="false" />
                 <element signature="n#ctrAgregarDireccion#0;n#ControladorCanales#0;n#!!top" expanded="false" />
               </folding>
             </state>
@@ -210,13 +207,13 @@
         <option value="$PROJECT_DIR$/vistas/plugins/kcfinder-3.12/core/class/uploader.php" />
         <option value="$PROJECT_DIR$/vistas/plantilla.php" />
         <option value="$PROJECT_DIR$/vistas/modulos/salir.php" />
-        <option value="$PROJECT_DIR$/vistas/modulos/canales.php" />
         <option value="$PROJECT_DIR$/ajax/canales.ajax.php" />
         <option value="$PROJECT_DIR$/modelos/canales.modelo.php" />
         <option value="$PROJECT_DIR$/vistas/js/gestorCanales.js" />
         <option value="$PROJECT_DIR$/modelos/markers.xml" />
-        <option value="$PROJECT_DIR$/controladores/canales.controlador.php" />
         <option value="$PROJECT_DIR$/vistas/files/markers.xml" />
+        <option value="$PROJECT_DIR$/controladores/canales.controlador.php" />
+        <option value="$PROJECT_DIR$/vistas/modulos/canales.php" />
       </list>
     </option>
   </component>
@@ -394,12 +391,12 @@
       <workItem from="1519168100935" duration="1393000" />
       <workItem from="1519243793180" duration="12000" />
       <workItem from="1519312083393" duration="22178000" />
-      <workItem from="1519397115847" duration="2952000" />
+      <workItem from="1519397115847" duration="3251000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="63174000" />
+    <option name="totallyTimeSpent" value="63473000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -791,25 +788,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vistas/modulos/canales.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="7" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ajax/canales.ajax.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1343">
-          <caret line="106" column="5" lean-forward="false" selection-start-line="106" selection-start-column="5" selection-end-line="106" selection-end-column="5" />
-          <folding>
-            <element signature="n#getDataTable#0;n#AjaxCanales#0;n#!!top" expanded="false" />
-            <element signature="n#ajaxGetSingleData#0;n#AjaxCanales#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/modelos/canales.modelo.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="376">
@@ -840,16 +818,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/ajax/canales.ajax.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1343">
+          <caret line="106" column="5" lean-forward="false" selection-start-line="106" selection-start-column="5" selection-end-line="106" selection-end-column="5" />
+          <folding>
+            <element signature="n#getDataTable#0;n#AjaxCanales#0;n#!!top" expanded="false" />
+            <element signature="n#ajaxGetSingleData#0;n#AjaxCanales#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/controladores/canales.controlador.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="207" column="0" lean-forward="true" selection-start-line="207" selection-start-column="0" selection-end-line="207" selection-end-column="0" />
+        <state relative-caret-position="392">
+          <caret line="140" column="40" lean-forward="false" selection-start-line="140" selection-start-column="40" selection-end-line="140" selection-end-column="40" />
           <folding>
-            <element signature="n#ctrActualizarImgCanales#0;n#ControladorCanales#0;n#!!top" expanded="false" />
-            <element signature="n#ctrGetDataMarket#0;n#ControladorCanales#0;n#!!top" expanded="false" />
-            <element signature="n#queryDataTableController#0;n#ControladorCanales#0;n#!!top" expanded="false" />
             <element signature="n#ctrAgregarDireccion#0;n#ControladorCanales#0;n#!!top" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vistas/modulos/canales.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="191" column="45" lean-forward="true" selection-start-line="191" selection-start-column="45" selection-end-line="191" selection-end-column="45" />
+          <folding />
         </state>
       </provider>
     </entry>
