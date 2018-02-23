@@ -82,6 +82,7 @@ class AjaxCanales
     }
 
     public $marketId;
+
     public function ajaxGetSingleData()
     {
         $classObj = new ControladorCanales();
@@ -92,36 +93,27 @@ class AjaxCanales
     }
 
 
+    public function ajaxActualizarSingleData()
+    {
 
-    public function ajaxActualizarSingleData(){
+        $data = array("id" => $this->marketId,
+            "nombre" => $this->sucursal,
+            "latitud" => $this->latitud,
+            "longitud" => $this->longitud
+        );
 
-            $data = array("id" => $this->marketId,
-                "nombre" => $this->sucursal,
-                "latitud" => $this->latitud,
-                "longitud" => $this->longitud
-            );
-
-            $respuesta  = ControladorCanales::ctrActualizarSingleData($data);
-            echo json_encode($respuesta);
-
-
-
-
+        $respuesta = ControladorCanales::ctrActualizarSingleData($data);
+        echo json_encode($respuesta);
     }
 
-    public function ajaxBorrarDireccion(){
-        $respuesta  = ControladorCanales::ctrBorrarDireccion($this->marketId);
-
-        echo $respuesta;
-
-
-
-
+    public function ajaxBorrarDireccion()
+    {
+        $respuesta = ControladorCanales::ctrBorrarDireccion($this->marketId);
+        echo json_encode($respuesta);
     }
 
 
 }
-
 
 
 if (isset($_FILES["imgCanales"])) {
@@ -189,8 +181,7 @@ if (isset($_POST["operation"]) && ($_POST["operation"] == "Edit")) {
 if (isset($_POST["operation"]) && ($_POST["operation"] === "Del")) {
 
 
-
-    $objDel= new AjaxCanales();
+    $objDel = new AjaxCanales();
     $objDel->marketId = $_POST["market_id"];
     $objDel->ajaxBorrarDireccion();
 

@@ -170,11 +170,12 @@ $apikey = "AIzaSyB8xnUNTHZQB3g1rhpIuDvHbsswXvSQl0M";
             <div class="col-md-12">
                 <div class="box box-primary">
                     <div class="container box">
-                        <h1 align="center">Sucursales</h1>
-                        <br/>
+
+
                         <div class="table-responsive">
                             <br/>
                             <div align="right">
+                                <h3 class="box-title" align="center">Sucursales</h3>
                                 <button type="button" id="add_button" data-toggle="modal" data-target="#userModal"
                                         class="btn btn-info btn-lg">Nuevo
                                 </button>

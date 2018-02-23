@@ -53,7 +53,7 @@ $(document).on('submit', '#user_form', function(event){
             processData:false,
             success:function(data)
             {
-                console.log(data);
+
 
                 $('#user_form')[0].reset();
                 $('#userModal').modal('hide');

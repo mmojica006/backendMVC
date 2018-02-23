@@ -67,7 +67,7 @@ class ModeloCanales
     {
         $stmt = Conexion::conectar()->prepare("select * from markers");
         $stmt->execute();
-        return $stmt->fetchAll();
+        return $stmt->fetchAll(PDO::FETCH_ASSOC);
         $stmt->close();
         $stmt = null;
 

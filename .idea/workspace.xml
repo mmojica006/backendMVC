@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="573f7e01-d7d5-4fe5-b8de-fc5ec289e5fd" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ajax/canales.ajax.php" afterPath="$PROJECT_DIR$/ajax/canales.ajax.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controladores/canales.controlador.php" afterPath="$PROJECT_DIR$/controladores/canales.controlador.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modelos/canales.modelo.php" afterPath="$PROJECT_DIR$/modelos/canales.modelo.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vistas/js/gestorCanales.js" afterPath="$PROJECT_DIR$/vistas/js/gestorCanales.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vistas/modulos/canales.php" afterPath="$PROJECT_DIR$/vistas/modulos/canales.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -23,22 +25,22 @@
       <file leaf-file-name="canales.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vistas/modulos/canales.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="483">
-              <caret line="234" column="56" lean-forward="false" selection-start-line="234" selection-start-column="47" selection-end-line="234" selection-end-column="56" />
+            <state relative-caret-position="449">
+              <caret line="187" column="58" lean-forward="false" selection-start-line="187" selection-start-column="52" selection-end-line="187" selection-end-column="58" />
               <folding>
                 <element signature="n#div#0;n#div#0;n#div#0;n#section#1;n#div#0;n#!!top" expanded="false" />
                 <element signature="n#div#1;n#div#0;n#section#1;n#div#0;n#!!top" expanded="false" />
-                <element signature="e#7132#7139#0#HTML" expanded="true" />
+                <element signature="e#7130#7137#0#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="gestorCanales.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="gestorCanales.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vistas/js/gestorCanales.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="424">
-              <caret line="119" column="44" lean-forward="false" selection-start-line="119" selection-start-column="44" selection-end-line="119" selection-end-column="44" />
+            <state relative-caret-position="288">
+              <caret line="55" column="0" lean-forward="false" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -47,8 +49,8 @@
       <file leaf-file-name="canales.ajax.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ajax/canales.ajax.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="331">
-              <caret line="114" column="23" lean-forward="false" selection-start-line="114" selection-start-column="23" selection-end-line="114" selection-end-column="23" />
+            <state relative-caret-position="161">
+              <caret line="106" column="5" lean-forward="true" selection-start-line="106" selection-start-column="5" selection-end-line="106" selection-end-column="5" />
               <folding>
                 <element signature="n#getDataTable#0;n#AjaxCanales#0;n#!!top" expanded="false" />
                 <element signature="n#ajaxGetSingleData#0;n#AjaxCanales#0;n#!!top" expanded="false" />
@@ -60,12 +62,11 @@
       <file leaf-file-name="canales.controlador.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controladores/canales.controlador.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="602">
-              <caret line="184" column="44" lean-forward="false" selection-start-line="184" selection-start-column="44" selection-end-line="184" selection-end-column="44" />
+            <state relative-caret-position="323">
+              <caret line="115" column="34" lean-forward="true" selection-start-line="115" selection-start-column="34" selection-end-line="115" selection-end-column="34" />
               <folding>
                 <element signature="n#ctrActualizarImgCanales#0;n#ControladorCanales#0;n#!!top" expanded="false" />
                 <element signature="n#ctrActualizarDireccion#0;n#ControladorCanales#0;n#!!top" expanded="false" />
-                <element signature="n#ctrGetDataMarket#0;n#ControladorCanales#0;n#!!top" expanded="false" />
                 <element signature="n#queryDataTableController#0;n#ControladorCanales#0;n#!!top" expanded="false" />
                 <element signature="n#createXMLfile#0;n#ControladorCanales#0;n#!!top" expanded="false" />
               </folding>
@@ -73,25 +74,35 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="markers.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/modelos/markers.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="canales.modelo.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/modelos/canales.modelo.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="347">
-              <caret line="177" column="20" lean-forward="false" selection-start-line="177" selection-start-column="20" selection-end-line="177" selection-end-column="20" />
+            <state relative-caret-position="461">
+              <caret line="69" column="47" lean-forward="false" selection-start-line="69" selection-start-column="47" selection-end-line="69" selection-end-column="47" />
               <folding>
                 <element signature="n#queryDTModel#0;n#ModeloCanales#0;n#!!top" expanded="false" />
-                <marker date="1519342596486" expanded="true" signature="171:186" ph="select * fro... ${$tabla}" />
-                <marker date="1519342596486" expanded="true" signature="423:438" ph="select * fro... ${$tabla}" />
-                <marker date="1519342596486" expanded="true" signature="423:457" ph="select * fro... ${$tabla}" />
-                <marker date="1519342596486" expanded="true" signature="798:845" ph="UPDATE ${$ta... " />
-                <marker date="1519342596486" expanded="true" signature="1541:1562" ph="select * fro... markers" />
-                <marker date="1519342596486" expanded="true" signature="1772:1793" ph="SELECT * FRO... markers" />
-                <marker date="1519342596486" expanded="true" signature="2469:2475" ph="select * fro... markers" />
-                <marker date="1519342596486" expanded="true" signature="2688:2709" ph="select * fro... markers" />
-                <marker date="1519342596486" expanded="true" signature="2962:2974" ph="INSERT INTO ${$tabla}... " />
-                <marker date="1519342596486" expanded="true" signature="2962:3019" ph="INSERT INTO ${$tabla}... " />
-                <marker date="1519342596486" expanded="true" signature="3723:3784" ph="UPDATE ${$ta... " />
-                <marker date="1519342596486" expanded="true" signature="4532:4563" ph="DELETE FROM " />
+                <marker date="1519343733764" expanded="true" signature="171:186" ph="select * fro... ${$tabla}" />
+                <marker date="1519343733764" expanded="true" signature="423:438" ph="select * fro... ${$tabla}" />
+                <marker date="1519343733764" expanded="true" signature="423:457" ph="select * fro... ${$tabla}" />
+                <marker date="1519343733764" expanded="true" signature="798:845" ph="UPDATE ${$ta... " />
+                <marker date="1519343733764" expanded="true" signature="1541:1562" ph="select * fro... markers" />
+                <marker date="1519343733764" expanded="true" signature="1788:1809" ph="SELECT * FRO... markers" />
+                <marker date="1519343733764" expanded="true" signature="2485:2491" ph="select * fro... markers" />
+                <marker date="1519343733764" expanded="true" signature="2704:2725" ph="select * fro... markers" />
+                <marker date="1519343733764" expanded="true" signature="2978:2990" ph="INSERT INTO ${$tabla}... " />
+                <marker date="1519343733764" expanded="true" signature="2978:3035" ph="INSERT INTO ${$tabla}... " />
+                <marker date="1519343733764" expanded="true" signature="3739:3800" ph="UPDATE ${$ta... " />
+                <marker date="1519343733764" expanded="true" signature="4548:4579" ph="DELETE FROM " />
               </folding>
             </state>
           </provider>
@@ -160,10 +171,11 @@
       <find>ingreso</find>
       <find>user_data</find>
       <find>user_id</find>
-      <find>print</find>
-      <find>market_id</find>
-      <find>update</find>
       <find>borrar</find>
+      <find>market_id</find>
+      <find>console.log(data);</find>
+      <find>update</find>
+      <find>print</find>
     </findStrings>
     <replaceStrings>
       <replace>Canales</replace>
@@ -204,10 +216,11 @@
         <option value="$PROJECT_DIR$/vistas/plantilla.php" />
         <option value="$PROJECT_DIR$/vistas/modulos/salir.php" />
         <option value="$PROJECT_DIR$/vistas/modulos/canales.php" />
-        <option value="$PROJECT_DIR$/controladores/canales.controlador.php" />
-        <option value="$PROJECT_DIR$/modelos/canales.modelo.php" />
         <option value="$PROJECT_DIR$/ajax/canales.ajax.php" />
+        <option value="$PROJECT_DIR$/modelos/canales.modelo.php" />
         <option value="$PROJECT_DIR$/vistas/js/gestorCanales.js" />
+        <option value="$PROJECT_DIR$/controladores/canales.controlador.php" />
+        <option value="$PROJECT_DIR$/modelos/markers.xml" />
       </list>
     </option>
   </component>
@@ -275,11 +288,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="vistas" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
+              <option name="myItemId" value="modelos" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -384,12 +393,12 @@
       <workItem from="1519124508781" duration="2654000" />
       <workItem from="1519168100935" duration="1393000" />
       <workItem from="1519243793180" duration="12000" />
-      <workItem from="1519312083393" duration="20688000" />
+      <workItem from="1519312083393" duration="22131000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58732000" />
+    <option name="totallyTimeSpent" value="60175000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -446,13 +455,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/vistas/modulos/slide.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="16" lean-forward="true" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vistas/css/slide.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="5083">
@@ -789,46 +791,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controladores/canales.controlador.php">
+    <entry file="file://$PROJECT_DIR$/vistas/modulos/canales.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="602">
-          <caret line="184" column="44" lean-forward="false" selection-start-line="184" selection-start-column="44" selection-end-line="184" selection-end-column="44" />
+        <state relative-caret-position="449">
+          <caret line="187" column="58" lean-forward="false" selection-start-line="187" selection-start-column="52" selection-end-line="187" selection-end-column="58" />
           <folding>
-            <element signature="n#ctrActualizarImgCanales#0;n#ControladorCanales#0;n#!!top" expanded="false" />
-            <element signature="n#ctrActualizarDireccion#0;n#ControladorCanales#0;n#!!top" expanded="false" />
-            <element signature="n#ctrGetDataMarket#0;n#ControladorCanales#0;n#!!top" expanded="false" />
-            <element signature="n#queryDataTableController#0;n#ControladorCanales#0;n#!!top" expanded="false" />
-            <element signature="n#createXMLfile#0;n#ControladorCanales#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modelos/canales.modelo.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="347">
-          <caret line="177" column="20" lean-forward="false" selection-start-line="177" selection-start-column="20" selection-end-line="177" selection-end-column="20" />
-          <folding>
-            <element signature="n#queryDTModel#0;n#ModeloCanales#0;n#!!top" expanded="false" />
-            <marker date="1519342596486" expanded="true" signature="171:186" ph="select * fro... ${$tabla}" />
-            <marker date="1519342596486" expanded="true" signature="423:438" ph="select * fro... ${$tabla}" />
-            <marker date="1519342596486" expanded="true" signature="423:457" ph="select * fro... ${$tabla}" />
-            <marker date="1519342596486" expanded="true" signature="798:845" ph="UPDATE ${$ta... " />
-            <marker date="1519342596486" expanded="true" signature="1541:1562" ph="select * fro... markers" />
-            <marker date="1519342596486" expanded="true" signature="1772:1793" ph="SELECT * FRO... markers" />
-            <marker date="1519342596486" expanded="true" signature="2469:2475" ph="select * fro... markers" />
-            <marker date="1519342596486" expanded="true" signature="2688:2709" ph="select * fro... markers" />
-            <marker date="1519342596486" expanded="true" signature="2962:2974" ph="INSERT INTO ${$tabla}... " />
-            <marker date="1519342596486" expanded="true" signature="2962:3019" ph="INSERT INTO ${$tabla}... " />
-            <marker date="1519342596486" expanded="true" signature="3723:3784" ph="UPDATE ${$ta... " />
-            <marker date="1519342596486" expanded="true" signature="4532:4563" ph="DELETE FROM " />
+            <element signature="n#div#0;n#div#0;n#div#0;n#section#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#0;n#section#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="e#7130#7137#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ajax/canales.ajax.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
-          <caret line="114" column="23" lean-forward="false" selection-start-line="114" selection-start-column="23" selection-end-line="114" selection-end-column="23" />
+        <state relative-caret-position="161">
+          <caret line="106" column="5" lean-forward="true" selection-start-line="106" selection-start-column="5" selection-end-line="106" selection-end-column="5" />
           <folding>
             <element signature="n#getDataTable#0;n#AjaxCanales#0;n#!!top" expanded="false" />
             <element signature="n#ajaxGetSingleData#0;n#AjaxCanales#0;n#!!top" expanded="false" />
@@ -836,22 +814,53 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vistas/modulos/canales.php">
+    <entry file="file://$PROJECT_DIR$/modelos/canales.modelo.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="234" column="56" lean-forward="false" selection-start-line="234" selection-start-column="47" selection-end-line="234" selection-end-column="56" />
+        <state relative-caret-position="461">
+          <caret line="69" column="47" lean-forward="false" selection-start-line="69" selection-start-column="47" selection-end-line="69" selection-end-column="47" />
           <folding>
-            <element signature="n#div#0;n#div#0;n#div#0;n#section#1;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#0;n#section#1;n#div#0;n#!!top" expanded="false" />
-            <element signature="e#7132#7139#0#HTML" expanded="true" />
+            <element signature="n#queryDTModel#0;n#ModeloCanales#0;n#!!top" expanded="false" />
+            <marker date="1519343733764" expanded="true" signature="171:186" ph="select * fro... ${$tabla}" />
+            <marker date="1519343733764" expanded="true" signature="423:438" ph="select * fro... ${$tabla}" />
+            <marker date="1519343733764" expanded="true" signature="423:457" ph="select * fro... ${$tabla}" />
+            <marker date="1519343733764" expanded="true" signature="798:845" ph="UPDATE ${$ta... " />
+            <marker date="1519343733764" expanded="true" signature="1541:1562" ph="select * fro... markers" />
+            <marker date="1519343733764" expanded="true" signature="1788:1809" ph="SELECT * FRO... markers" />
+            <marker date="1519343733764" expanded="true" signature="2485:2491" ph="select * fro... markers" />
+            <marker date="1519343733764" expanded="true" signature="2704:2725" ph="select * fro... markers" />
+            <marker date="1519343733764" expanded="true" signature="2978:2990" ph="INSERT INTO ${$tabla}... " />
+            <marker date="1519343733764" expanded="true" signature="2978:3035" ph="INSERT INTO ${$tabla}... " />
+            <marker date="1519343733764" expanded="true" signature="3739:3800" ph="UPDATE ${$ta... " />
+            <marker date="1519343733764" expanded="true" signature="4548:4579" ph="DELETE FROM " />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vistas/js/gestorCanales.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="424">
-          <caret line="119" column="44" lean-forward="false" selection-start-line="119" selection-start-column="44" selection-end-line="119" selection-end-column="44" />
+        <state relative-caret-position="288">
+          <caret line="55" column="0" lean-forward="false" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controladores/canales.controlador.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="115" column="34" lean-forward="true" selection-start-line="115" selection-start-column="34" selection-end-line="115" selection-end-column="34" />
+          <folding>
+            <element signature="n#ctrActualizarImgCanales#0;n#ControladorCanales#0;n#!!top" expanded="false" />
+            <element signature="n#ctrActualizarDireccion#0;n#ControladorCanales#0;n#!!top" expanded="false" />
+            <element signature="n#queryDataTableController#0;n#ControladorCanales#0;n#!!top" expanded="false" />
+            <element signature="n#createXMLfile#0;n#ControladorCanales#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modelos/markers.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
           <folding />
         </state>
       </provider>

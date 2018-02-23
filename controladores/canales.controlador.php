@@ -161,9 +161,19 @@ class ControladorCanales
 
     public function ctrAgregarDireccion($data)
     {
+        $objClass = new ControladorCanales();
 
         $tabla = "markers";
         $respuesta = ModeloCanales::mdlGuardarDireccion($data, $tabla);
+
+        if ($respuesta["num"]==0){
+            $tabla ="markers";
+            $result = ModeloCanales::mdlSeleccionarDireccion($tabla);
+
+            $objClass->createXMLfile($result);
+
+        }
+
         return $respuesta;
 
 
@@ -174,6 +184,8 @@ class ControladorCanales
 
         $tabla = "markers";
         $respuesta = ModeloCanales::mdlActualizarSingleData($data, $tabla);
+
+
         return $respuesta;
 
 
