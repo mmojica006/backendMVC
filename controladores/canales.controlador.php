@@ -181,9 +181,18 @@ class ControladorCanales
 
     public function ctrActualizarSingleData($data)
     {
+        $objClass = new ControladorCanales();
 
         $tabla = "markers";
         $respuesta = ModeloCanales::mdlActualizarSingleData($data, $tabla);
+
+        if ($respuesta["num"]==0){
+            $tabla ="markers";
+            $result = ModeloCanales::mdlSeleccionarDireccion($tabla);
+
+            $objClass->createXMLfile($result);
+
+        }
 
 
         return $respuesta;
@@ -193,8 +202,18 @@ class ControladorCanales
 
     public function ctrBorrarDireccion($id)
     {
+        $objClass = new ControladorCanales();
         $tabla = "markers";
         $respuesta = ModeloCanales::mdlBorrarDireccion($id, $tabla);
+
+        if ($respuesta["num"]==0){
+            $tabla ="markers";
+            $result = ModeloCanales::mdlSeleccionarDireccion($tabla);
+
+            $objClass->createXMLfile($result);
+
+        }
+
         return $respuesta;
     }
 
@@ -202,7 +221,7 @@ class ControladorCanales
     public function createXMLfile($markersArray)
     {
 
-        $filePath = '../modelos/markers.xml';
+        $filePath = '../vistas/files/markers.xml';
         $dom = new DOMDocument('1.0', 'utf-8');
         $root = $dom->createElement('markers');
         for ($i = 0; $i < count($markersArray); $i++) {
