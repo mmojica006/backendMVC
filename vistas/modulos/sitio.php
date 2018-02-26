@@ -66,10 +66,10 @@
         include "sitio/codigos.php";
 
         /*=====================================
-        ADMINISTRAR COMERCIO
+        ADMINISTRAR EMAIL DESTINO DE MENSAJES DE LOS USUARIOS
         ======================================*/
   
-      //  include "sitio/informacion.php";
+        include "sitio/emailDestino.php";
 
         ?>
    

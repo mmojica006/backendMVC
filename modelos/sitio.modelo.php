@@ -89,5 +89,26 @@ class ModeloSitio{
 
     }
 
+    static public function mdlActualizarEmail($tabla, $id, $email){
+
+        $stmt = Conexion::conectar()->prepare("UPDATE $tabla SET  email = :email WHERE id = :id");
+        $stmt->bindParam(":email", $email, PDO::PARAM_STR);
+        $stmt->bindParam(":id", $id, PDO::PARAM_INT);
+
+        if($stmt->execute()){
+
+            return "ok";
+
+        }else{
+
+            return "error";
+
+        }
+
+        $stmt->close();
+        $stmt = null;
+
+    }
+
 
 }

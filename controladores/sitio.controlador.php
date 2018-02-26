@@ -149,6 +149,16 @@
 
      }
 
+     static public function ctrActualizarEmail($email){
+
+         $tabla = "contacto";
+         $id = 1;
+         $respuesta = ModeloSitio::mdlActualizarEmail($tabla, $id, $email);
+         return $respuesta;
+
+
+     }
+
 
 
 }
