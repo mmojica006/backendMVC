@@ -1,4 +1,9 @@
-<!-- =============================================== -->
+<?php
+$dataTarCont = ControladorTarifarioContrato::ctrSeleccionarTarCont();
+
+?>
+
+
 
 <!-- Content Wrapper. Contains page content -->
 <div class="content-wrapper">
@@ -18,13 +23,13 @@
 
         <div class="row">
             <div class="col-md-6">
-                <div class="box box-warning ">
+
+                <div class="box box-primary ">
 
                     <div class="box-header with-border">
-                        <h3 class="box-title">Estados</h3>
+                        <h3 class="box-title">TARIFARIO</h3>
                         <div class="box-tools pull-right">
-                            <button type="button" class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip"
-                                    title="Collapse">
+                            <button type="button" class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip" title="Collapse">
 
                                 <i class="fa fa-minus"></i>
 
@@ -35,36 +40,38 @@
 
                     </div>
 
-
                     <div class="box-body">
-                        <div class="form-group col-md-4">
-                            <label for="inputState">Tarifario</label>
-                            <select id="inputState" class="form-control">
-                                <option selected>Elegir</option>
-                                <option>Activo</option>
-                                <option>Desactivado</option>
-                            </select>
-                        </div>
-                        <div class="form-group col-md-4">
-                            <label for="inputState">Contrato</label>
-                            <select id="inputState" class="form-control">
-                                <option selected>Elegir</option>
-                                <option>Activo</option>
-                                <option>Desactivado</option>
-                            </select>
+
+                        <div class="form-group">
+
+                            <label for="Active">Activo</label>
+                            <input id="Active" type="radio" name="Active" value="1"<?php if ($dataTarCont['tarifarioEstado'] == 1): ?> checked = "checked"<?php endif; ?> />
+
+                            <label for="Active">Inactivo</label>
+                            <input id="Active" type="radio" name="Active" value="0"<?php if ($dataTarCont['tarifarioEstado'] != 1): ?> checked = "checked"<?php endif; ?> />
                         </div>
 
 
 
+                        <div class="form-group">
+
+                            <label for="comment">Descripción:</label>
+
+                            <textarea class="form-control cambioScript" rows="5" id="tarifarioDesc" name="tarifarioDesc">
+
+                                     <?php echo $dataTarCont["tarifario"]; ?>
+
+          </textarea>
+
+                        </div>
 
                     </div>
-
                     <div class="box-footer">
-
-                        <button type="button" id="guardarActivo" class="btn btn-primary pull-right">Guardar
-                        </button>
-
+                        <button type="button" id="guardarTarCont" class="btn btn-primary pull-right">Guardar</button>
                     </div>
+
+
+
 
 
                 </div>
@@ -118,3 +125,5 @@
     <!-- /.content -->
 </div>
 <!-- /.content-wrapper -->
+
+<script src="vistas/js/gestorTarifario.js"></script>
