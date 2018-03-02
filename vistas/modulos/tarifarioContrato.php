@@ -1,6 +1,7 @@
 <?php
 $dataTarCont = ControladorTarifarioContrato::ctrSeleccionarTarCont();
 
+
 ?>
 
 
@@ -79,10 +80,10 @@ $dataTarCont = ControladorTarifarioContrato::ctrSeleccionarTarCont();
 
             <div class="col-md-6">
 
-                <div class="box box-warning ">
+                <div class="box box-success ">
 
                     <div class="box-header with-border">
-                        <h3 class="box-title">Descripción del tarifario</h3>
+                        <h3 class="box-title">CONTRATO</h3>
                         <div class="box-tools pull-right">
                             <button type="button" class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip"
                                     title="Collapse">
@@ -96,13 +97,45 @@ $dataTarCont = ControladorTarifarioContrato::ctrSeleccionarTarCont();
 
                     </div>
 
+                    <div class="box-body">
+
+                        <div class="form-group">
+
+                            <label>Subir Archivo</label>
+
+                            <p class="pull-right">
+
+                                <img src="vistas/img/plantilla/pdf-icon.png"
+                                     class=" previsualizarImgPdf" width="200px" <?php  if ($dataTarCont['contratoDesc']!=''): ?>style="display: block" <?php endif;?>>
+
+                            </p>
+
+                            <input type="file" id="subirPdf">
+
+
+
+                        </div>
+
+                    </div>
+                    <div class="box-footer">
+                        <button type="button" id="guardarPdf" class="btn btn-primary pull-right">Guardar Archivo
+                        </button>
+                    </div>
+
+                    <div class="box-header with-border">
+
+                        <h3 class="box-title">Actualizar Estado</h3>
+
+                    </div>
 
                     <div class="box-body">
                         <div class="form-group">
 
-                            <textarea type="text" class="form-control" id="activoProductivo" name="activoProductivo" rows="5">
-                                 <?php echo $dataProductos["productivo"]; ?>
-                            </textarea>
+                            <label for="ActiveContrato">Activo</label>
+                            <input id="ActiveContrato" type="radio" name="ActiveContrato" value="1"<?php if ($dataTarCont['contratoEstado'] == 1): ?> checked = "checked"<?php endif; ?> />
+
+                            <label for="ActiveContrato">Inactivo</label>
+                            <input id="ActiveContrato" type="radio" name="ActiveContrato" value="0"<?php if ($dataTarCont['contratoEstado'] != 1): ?> checked = "checked"<?php endif; ?> />
                         </div>
 
 
@@ -110,8 +143,7 @@ $dataTarCont = ControladorTarifarioContrato::ctrSeleccionarTarCont();
 
                     <div class="box-footer">
 
-                        <button type="button" id="guardarActivo" class="btn btn-primary pull-right">Guardar
-                        </button>
+                        <button type="button" id="guardarEstado" class="btn btn-primary pull-right">Guardar</button>
 
                     </div>
 

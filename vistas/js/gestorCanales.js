@@ -191,8 +191,6 @@ $("#subirImgCanales").change(function(){
             dataType: "json",
             success: function(respuesta){
 
-
-
                 if(respuesta.num === 0){
 
                     swal({
