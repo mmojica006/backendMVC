@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="573f7e01-d7d5-4fe5-b8de-fc5ec289e5fd" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ajax/tarCont.ajax.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controladores/tarifarioContrato.controlador.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modelos/tarifarioContrato.modelo.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vistas/js/gestorTarifario.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vistas/modulos/tarifarioContrato.php" afterPath="$PROJECT_DIR$/vistas/modulos/tarifarioContrato.php" />
-    </list>
+    <list default="true" id="573f7e01-d7d5-4fe5-b8de-fc5ec289e5fd" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -68,8 +60,8 @@
           <file leaf-file-name="tarifarioContrato.modelo.php" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/modelos/tarifarioContrato.modelo.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="153">
-                  <caret line="9" column="30" lean-forward="true" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
+                <state relative-caret-position="119">
+                  <caret line="7" column="25" lean-forward="true" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
                   <folding>
                     <marker date="1520023979148" expanded="true" signature="173:188" ph="select * fro... ${$tabla}" />
                     <marker date="1520023979148" expanded="true" signature="481:563" ph="INSERT INTO ${$tabla}... " />
@@ -481,12 +473,12 @@
       <workItem from="1519687942184" duration="2002000" />
       <workItem from="1520003741627" duration="8505000" />
       <workItem from="1520018622200" duration="1133000" />
-      <workItem from="1520020747272" duration="4052000" />
+      <workItem from="1520020747272" duration="4139000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="89084000" />
+    <option name="totallyTimeSpent" value="89171000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -940,8 +932,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/modelos/tarifarioContrato.modelo.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="30" lean-forward="true" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
+        <state relative-caret-position="119">
+          <caret line="7" column="25" lean-forward="true" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
           <folding>
             <marker date="1520023979148" expanded="true" signature="173:188" ph="select * fro... ${$tabla}" />
             <marker date="1520023979148" expanded="true" signature="481:563" ph="INSERT INTO ${$tabla}... " />
