@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="573f7e01-d7d5-4fe5-b8de-fc5ec289e5fd" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vistas/img/plantilla/pdf-icon.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vistas/css/plantilla.css" afterPath="$PROJECT_DIR$/vistas/css/plantilla.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vistas/js/gestorCanales.js" afterPath="$PROJECT_DIR$/vistas/js/gestorCanales.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vistas/js/gestorTarifario.js" afterPath="$PROJECT_DIR$/vistas/js/gestorTarifario.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vistas/modulos/tarifarioContrato.php" afterPath="$PROJECT_DIR$/vistas/modulos/tarifarioContrato.php" />
-    </list>
+    <list default="true" id="573f7e01-d7d5-4fe5-b8de-fc5ec289e5fd" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,8 +20,8 @@
           <file leaf-file-name="tarifarioContrato.php" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/vistas/modulos/tarifarioContrato.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="835">
-                  <caret line="145" column="63" lean-forward="false" selection-start-line="145" selection-start-column="63" selection-end-line="145" selection-end-column="63" />
+                <state relative-caret-position="291">
+                  <caret line="113" column="0" lean-forward="true" selection-start-line="113" selection-start-column="0" selection-end-line="113" selection-end-column="0" />
                   <folding>
                     <element signature="n#style#0;n#img#0;n#p#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#section#1;n#div#0;n#!!top" expanded="true" />
                   </folding>
@@ -429,12 +422,12 @@
       <workItem from="1520003741627" duration="8505000" />
       <workItem from="1520018622200" duration="1133000" />
       <workItem from="1520020747272" duration="4139000" />
-      <workItem from="1520030339848" duration="4596000" />
+      <workItem from="1520030339848" duration="4841000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="93767000" />
+    <option name="totallyTimeSpent" value="94012000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -898,8 +891,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/vistas/modulos/tarifarioContrato.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="835">
-          <caret line="145" column="63" lean-forward="false" selection-start-line="145" selection-start-column="63" selection-end-line="145" selection-end-column="63" />
+        <state relative-caret-position="291">
+          <caret line="113" column="0" lean-forward="true" selection-start-line="113" selection-start-column="0" selection-end-line="113" selection-end-column="0" />
           <folding>
             <element signature="n#style#0;n#img#0;n#p#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#section#1;n#div#0;n#!!top" expanded="true" />
           </folding>
