@@ -98,9 +98,11 @@ if (isset($_SESSION["validarSesionBackend"]) && $_SESSION["validarSesionBackend"
     CONTENIDO
     =============================================*/
 
+    //print_r($_GET);
     if (isset($_GET["ruta"])) {
 
-        if ($_GET["ruta"] == "inicio" ||
+        if (
+            $_GET["ruta"] == "inicio" ||
             $_GET["ruta"] == "sitio" ||
             $_GET["ruta"] == "contacto" ||
             $_GET["ruta"] == "slide" ||

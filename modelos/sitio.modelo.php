@@ -5,7 +5,7 @@ class ModeloSitio{
 
 
 
-	static public function mdlSeleccionarPlantilla($tabla){
+	 public static function mdlSeleccionarPlantilla($tabla){
 
 		$stmt = Conexion::conectar()->prepare("SELECT * FROM $tabla");
 
@@ -20,7 +20,7 @@ class ModeloSitio{
 	}
 
 
-	static public function mdlActualizarLogoIcono($tabla, $id, $item, $valor){
+public static  function mdlActualizarLogoIcono($tabla, $id, $item, $valor){
 
 		$stmt = Conexion::conectar()->prepare("UPDATE $tabla SET $item = :$item WHERE id = :id");
 
@@ -42,7 +42,7 @@ class ModeloSitio{
 
 	}
 
-		static public function mdlActualizarColores($tabla, $id, $datos){
+public static  function mdlActualizarColores($tabla, $id, $datos){
 
 		$stmt = Conexion::conectar()->prepare("UPDATE $tabla SET barraSuperior = :barraSuperior, textoSuperior = :textoSuperior, colorFondo = :colorFondo, colorTexto = :colorTexto  WHERE id = :id");
 
@@ -68,7 +68,7 @@ class ModeloSitio{
 	}
 
 
-    static public function mdlActualizarScript($tabla, $id, $datos){
+public static  function mdlActualizarScript($tabla, $id, $datos){
 
         $stmt = Conexion::conectar()->prepare("UPDATE $tabla SET  googleAnalytics = :googleAnalytics WHERE id = :id");
         $stmt->bindParam(":googleAnalytics", $datos["googleAnalytics"], PDO::PARAM_STR);
@@ -89,7 +89,7 @@ class ModeloSitio{
 
     }
 
-    static public function mdlActualizarEmail($tabla, $id, $email){
+    public  static  function mdlActualizarEmail($tabla, $id, $email){
 
         $stmt = Conexion::conectar()->prepare("UPDATE $tabla SET  email = :email WHERE id = :id");
         $stmt->bindParam(":email", $email, PDO::PARAM_STR);

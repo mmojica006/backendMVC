@@ -2,7 +2,7 @@
 
  class ControladorSitio{
 
- 	static public function  ctrSeleccionarPlantilla(){
+ public static  function  ctrSeleccionarPlantilla(){
  		$tabla ="plantilla";
 		$respuesta = ModeloSitio::mdlSeleccionarPlantilla($tabla);
 
@@ -11,7 +11,7 @@
 
  	}
 
-	static public function ctrActualizarLogoIcono($item, $valor){
+ public static  function ctrActualizarLogoIcono($item, $valor){
 
 		$tabla = "plantilla";
 		$id = 1;
@@ -125,7 +125,7 @@
 	}
 
 
-	static public function ctrActualizarColores($datos){
+ public static  function ctrActualizarColores($datos){
 
 		$tabla = "plantilla";
 		$id = 1;
@@ -137,7 +137,7 @@
 
 	}
 
-     static public function ctrActualizarScript($datos){
+     public  static  function ctrActualizarScript($datos){
 
          $tabla = "plantilla";
          $id = 1;
@@ -149,7 +149,7 @@
 
      }
 
-     static public function ctrActualizarEmail($email){
+     public static  function ctrActualizarEmail($email){
 
          $tabla = "contacto";
          $id = 1;

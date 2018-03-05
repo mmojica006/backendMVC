@@ -33,3 +33,4 @@ require_once "modelos/tarifarioContrato.modelo.php";
 
 $plantilla = new ControladorPlantilla();
 $plantilla->plantilla();
+

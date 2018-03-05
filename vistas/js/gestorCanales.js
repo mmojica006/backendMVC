@@ -13,7 +13,7 @@ var dataTable = $('#user_data').DataTable({
     "serverSide":true,
     "order":[],
     "ajax":{
-        url:"ajax/Canales.ajax.php",
+        url:"ajax/canales.ajax.php",
         type:"POST"
     },
     "columnDefs":[
@@ -46,7 +46,7 @@ $(document).on('submit', '#user_form', function(event){
     if(sucursal != '' && latitud != '' && longitud != '')
     {
         $.ajax({
-            url:"ajax/Canales.ajax.php",
+            url:"ajax/canales.ajax.php",
             method:'POST',
             data:new FormData(this),
             contentType:false,
@@ -87,7 +87,7 @@ $(document).on('click', '.update', function(){
     var market_id = $(this).attr("id");
 
     $.ajax({
-        url:"ajax/Canales.ajax.php",
+        url:"ajax/canales.ajax.php",
         method:"POST",
         data:{market_id:market_id},
         dataType:"json",
@@ -112,7 +112,7 @@ $(document).on('click', '.delete', function(){
     if(confirm("Esta seguro de borrar el registro?"))
     {
         $.ajax({
-            url:"ajax/Canales.ajax.php",
+            url:"ajax/canales.ajax.php",
             method:"POST",
             data:{"operation":"Del","market_id":market_id},
             success:function(respuesta)
@@ -182,7 +182,7 @@ $("#subirImgCanales").change(function(){
 
         $.ajax({
 
-            url:"ajax/Canales.ajax.php",
+            url:"ajax/canales.ajax.php",
             method: "POST",
             data: datos,
             cache: false,
