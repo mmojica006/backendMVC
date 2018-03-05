@@ -29,9 +29,8 @@
     <!-- bootstrap slider -->
     <link rel="stylesheet" href="vistas/plugins/bootstrap-slider/slider.css">
 
-    <!-- Google Font -->
-<!--    <link rel="stylesheet"-->
-<!--          href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">-->
+<!--     Google Font-->
+    <link rel="stylesheet"        href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
 
     <!-- Bootstrap Color Picker -->
     <link rel="stylesheet" href="vistas/bower_components/bootstrap-colorpicker/dist/css/bootstrap-colorpicker.min.css">
