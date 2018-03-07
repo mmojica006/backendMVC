@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="573f7e01-d7d5-4fe5-b8de-fc5ec289e5fd" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vistas/plantilla.php" afterPath="$PROJECT_DIR$/vistas/plantilla.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modelos/constante.modelo.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ajax/nosotros.ajax.php" afterPath="$PROJECT_DIR$/ajax/nosotros.ajax.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vistas/js/gestorNosotros.js" afterPath="$PROJECT_DIR$/vistas/js/gestorNosotros.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,90 +21,83 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="sitio.modelo.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/modelos/sitio.modelo.php">
+      <file leaf-file-name="gestorNosotros.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vistas/js/gestorNosotros.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="393">
-              <caret line="91" column="11" lean-forward="false" selection-start-line="91" selection-start-column="11" selection-end-line="91" selection-end-column="11" />
+            <state relative-caret-position="3621">
+              <caret line="213" column="24" lean-forward="false" selection-start-line="213" selection-start-column="4" selection-end-line="213" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vistas/bower_components/ckeditor/config.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="nosotros.ajax.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ajax/nosotros.ajax.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="512">
+              <caret line="66" column="15" lean-forward="true" selection-start-line="66" selection-start-column="15" selection-end-line="66" selection-end-column="15" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="constante.modelo.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/modelos/constante.modelo.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="16" lean-forward="false" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="nosotros.controlador.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controladores/nosotros.controlador.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="614">
+              <caret line="104" column="27" lean-forward="false" selection-start-line="104" selection-start-column="27" selection-end-line="104" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="595">
+              <caret line="35" column="24" lean-forward="false" selection-start-line="35" selection-start-column="24" selection-end-line="35" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vistas/plugins/kcfinder-3.12/conf/config.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1513">
+              <caret line="99" column="8" lean-forward="false" selection-start-line="99" selection-start-column="8" selection-end-line="99" selection-end-column="8" />
               <folding>
-                <marker date="1520283119252" expanded="true" signature="158:172" ph="SELECT * FRO... ${$tabla}" />
-                <marker date="1520283119252" expanded="true" signature="395:442" ph="UPDATE ${$ta... " />
-                <marker date="1520283119252" expanded="true" signature="778:926" ph="UPDATE ${$ta... " />
-                <marker date="1520283119252" expanded="true" signature="1517:1585" ph="UPDATE ${$ta... " />
-                <marker date="1520283119252" expanded="true" signature="2018:2066" ph="UPDATE ${$ta... " />
+                <element signature="e#7#401#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="plantilla.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/vistas/plantilla.php">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vistas/plugins/kcfinder-3.12/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="24" lean-forward="true" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="canales.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vistas/modulos/canales.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="21" column="25" lean-forward="true" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="menu.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vistas/modulos/lateral/menu.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" column="53" lean-forward="false" selection-start-line="21" selection-start-column="53" selection-end-line="21" selection-end-column="53" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="inicio.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vistas/modulos/inicio.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="8" lean-forward="false" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sitio.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vistas/modulos/sitio.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="24" column="47" lean-forward="false" selection-start-line="24" selection-start-column="47" selection-end-line="24" selection-end-column="47" />
-              <folding>
-                <element signature="e#543#689#0#PHP" expanded="true" />
-                <element signature="e#1290#1406#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="contacto.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vistas/modulos/contacto.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="26" column="8" lean-forward="false" selection-start-line="26" selection-start-column="8" selection-end-line="61" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="productos.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vistas/modulos/productos.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="24" column="18" lean-forward="false" selection-start-line="24" selection-start-column="18" selection-end-line="37" selection-end-column="30" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -109,18 +106,8 @@
       <file leaf-file-name="nosotros.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vistas/modulos/nosotros.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="24" column="17" lean-forward="false" selection-start-line="24" selection-start-column="17" selection-end-line="63" selection-end-column="30" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="cabezote.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vistas/modulos/cabezote.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="3298">
+              <caret line="194" column="104" lean-forward="false" selection-start-line="194" selection-start-column="85" selection-end-line="194" selection-end-column="104" />
               <folding />
             </state>
           </provider>
@@ -137,14 +124,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>todo-list</find>
-      <find>idSlide</find>
-      <find>nombreSlide</find>
-      <find>TODO</find>
-      <find>ajaxCambiarSlide</find>
-      <find>indice</find>
-      <find>VISOR</find>
-      <find>INDICE</find>
       <find>area</find>
       <find>guardarInfoContacto</find>
       <find>Contacto</find>
@@ -167,6 +146,14 @@
       <find>item</find>
       <find>canales.ajax.php</find>
       <find>guardarImgCanales</find>
+      <find>guardarMegaTurbo</find>
+      <find>guardarInfoNosotros1</find>
+      <find>titulo</find>
+      <find>INFORMACION INICIAL</find>
+      <find>base</find>
+      <find>filebrowserImageBrowseLinkUrl</find>
+      <find>uploadURL</find>
+      <find>guardarInfoNosotros2</find>
     </findStrings>
     <replaceStrings>
       <replace>Canales</replace>
@@ -191,7 +178,6 @@
         <option value="$PROJECT_DIR$/vistas/modulos/slide.php" />
         <option value="$PROJECT_DIR$/controladores/contacto.controlador.php" />
         <option value="$PROJECT_DIR$/vistas/js/sitio.js" />
-        <option value="$PROJECT_DIR$/vistas/js/gestorNosotros.js" />
         <option value="$PROJECT_DIR$/modelos/contacto.modelo.php" />
         <option value="$PROJECT_DIR$/ajax/contacto.ajax.php" />
         <option value="$PROJECT_DIR$/vistas/js/gestorContacto.js" />
@@ -219,7 +205,6 @@
         <option value="$PROJECT_DIR$/vistas/modulos/tarifarioContrato.php" />
         <option value="$PROJECT_DIR$/vistas/modulos/inicio.php" />
         <option value="$PROJECT_DIR$/vistas/modulos/sitio.php" />
-        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/.htaccess" />
         <option value="$PROJECT_DIR$/modelos/sitio.modelo.php" />
         <option value="$PROJECT_DIR$/controladores/sitio.controlador.php" />
@@ -229,6 +214,11 @@
         <option value="$PROJECT_DIR$/vistas/modulos/nosotros.php" />
         <option value="$PROJECT_DIR$/vistas/modulos/canales.php" />
         <option value="$PROJECT_DIR$/vistas/plantilla.php" />
+        <option value="$PROJECT_DIR$/vistas/plugins/kcfinder-3.12/conf/config.php" />
+        <option value="$PROJECT_DIR$/vistas/js/gestorNosotros.js" />
+        <option value="$PROJECT_DIR$/modelos/constante.modelo.php" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/ajax/nosotros.ajax.php" />
       </list>
     </option>
   </component>
@@ -260,6 +250,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -282,14 +274,12 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="vistas" />
+              <option name="myItemId" value="modelos" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -400,18 +390,23 @@
       <workItem from="1520260615179" duration="167000" />
       <workItem from="1520263081332" duration="2401000" />
       <workItem from="1520281839976" duration="6273000" />
-      <workItem from="1520292835824" duration="780000" />
+      <workItem from="1520292835824" duration="2800000" />
+      <workItem from="1520349809105" duration="2852000" />
+      <workItem from="1520358290237" duration="2744000" />
+      <workItem from="1520366640725" duration="2657000" />
+      <workItem from="1520371348933" duration="4088000" />
+      <workItem from="1520375892695" duration="1448000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="103657000" />
+    <option name="totallyTimeSpent" value="119466000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29904053" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31503198" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -463,147 +458,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/vistas/modulos/sitio/codigos.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vistas/modulos/sitio/colores.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="33" column="18" lean-forward="true" selection-start-line="33" selection-start-column="18" selection-end-line="33" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vistas/js/sitio.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ajax/sitio.ajax.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3026">
-          <caret line="178" column="13" lean-forward="false" selection-start-line="178" selection-start-column="13" selection-end-line="178" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vistas/js/gestorSitio.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6341">
-          <caret line="373" column="30" lean-forward="false" selection-start-line="373" selection-start-column="18" selection-end-line="373" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vistas/modulos/sitio/emailDestino.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="121" lean-forward="true" selection-start-line="15" selection-start-column="121" selection-end-line="15" selection-end-column="121" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controladores/productos.controlador.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="55" lean-forward="false" selection-start-line="5" selection-start-column="55" selection-end-line="5" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ajax/productos.ajax.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="665">
-          <caret line="41" column="56" lean-forward="false" selection-start-line="41" selection-start-column="56" selection-end-line="41" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vistas/modulos/perfiles.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="26" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="45" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modelos/productos.modelo.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="27" lean-forward="false" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ajax/tipsPreguntas.ajax.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="68" lean-forward="false" selection-start-line="16" selection-start-column="46" selection-end-line="16" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controladores/contacto.controlador.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vistas/modulos/tipPreguntas.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="93" column="49" lean-forward="false" selection-start-line="93" selection-start-column="49" selection-end-line="93" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controladores/canales.controlador.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="64" lean-forward="false" selection-start-line="14" selection-start-column="58" selection-end-line="14" selection-end-column="64" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ajax/nosotros.ajax.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="21" column="53" lean-forward="true" selection-start-line="21" selection-start-column="53" selection-end-line="21" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modelos/tarifarioContrato.modelo.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controladores/tarifarioContrato.controlador.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="59" lean-forward="false" selection-start-line="22" selection-start-column="59" selection-end-line="22" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ajax/tarCont.ajax.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="60" lean-forward="false" selection-start-line="14" selection-start-column="60" selection-end-line="14" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controladores/nosotros.controlador.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="850">
-          <caret line="68" column="63" lean-forward="false" selection-start-line="68" selection-start-column="63" selection-end-line="68" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modelos/nosotros.modelo.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="28" lean-forward="false" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/modelos/tipPreguntas.modelo.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -615,20 +469,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="20" column="51" lean-forward="true" selection-start-line="20" selection-start-column="51" selection-end-line="20" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controladores/plantilla.controlador.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controladores/visitas.controlador.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -664,12 +504,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="30" lean-forward="true" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
-          <folding>
-            <marker date="1518465998302" expanded="true" signature="157:172" ph="select * fro... ${$tabla}" />
-            <marker date="1518465998302" expanded="true" signature="405:452" ph="UPDATE ${$ta... " />
-            <marker date="1518465998302" expanded="true" signature="1058:1133" ph="UPDATE ${$ta... " />
-            <marker date="1518465998302" expanded="true" signature="1708:1807" ph="UPDATE ${$ta... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -680,18 +514,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/modelos/administradores.modelo.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vistas/modulos/inicio.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="8" lean-forward="false" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -699,10 +525,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
           <caret line="24" column="47" lean-forward="false" selection-start-line="24" selection-start-column="47" selection-end-line="24" selection-end-column="47" />
-          <folding>
-            <element signature="e#543#689#0#PHP" expanded="true" />
-            <element signature="e#1290#1406#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -710,7 +532,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -732,7 +553,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -740,14 +560,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controladores/administradores.controlador.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="33" column="49" lean-forward="false" selection-start-line="33" selection-start-column="43" selection-end-line="33" selection-end-column="49" />
         </state>
       </provider>
     </entry>
@@ -755,15 +567,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="36" column="0" lean-forward="true" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -771,7 +574,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="21" column="53" lean-forward="false" selection-start-line="21" selection-start-column="53" selection-end-line="21" selection-end-column="53" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -786,7 +588,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="835">
           <caret line="110" column="32" lean-forward="false" selection-start-line="110" selection-start-column="32" selection-end-line="110" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -794,21 +595,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-4985">
           <caret line="80" column="5" lean-forward="true" selection-start-line="80" selection-start-column="5" selection-end-line="80" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modelos/sitio.modelo.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="393">
-          <caret line="91" column="11" lean-forward="false" selection-start-line="91" selection-start-column="11" selection-end-line="91" selection-end-column="11" />
-          <folding>
-            <marker date="1520283119252" expanded="true" signature="158:172" ph="SELECT * FRO... ${$tabla}" />
-            <marker date="1520283119252" expanded="true" signature="395:442" ph="UPDATE ${$ta... " />
-            <marker date="1520283119252" expanded="true" signature="778:926" ph="UPDATE ${$ta... " />
-            <marker date="1520283119252" expanded="true" signature="1517:1585" ph="UPDATE ${$ta... " />
-            <marker date="1520283119252" expanded="true" signature="2018:2066" ph="UPDATE ${$ta... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -816,7 +602,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
           <caret line="26" column="8" lean-forward="false" selection-start-line="26" selection-start-column="8" selection-end-line="61" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -824,15 +609,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="24" column="18" lean-forward="false" selection-start-line="24" selection-start-column="18" selection-end-line="37" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vistas/modulos/nosotros.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="17" lean-forward="false" selection-start-line="24" selection-start-column="17" selection-end-line="63" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -840,14 +616,212 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="21" column="25" lean-forward="true" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vistas/plantilla.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="24" lean-forward="true" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
+        <state relative-caret-position="136">
+          <caret line="8" column="28" lean-forward="true" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modelos/sitio.modelo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="393">
+          <caret line="91" column="11" lean-forward="false" selection-start-line="91" selection-start-column="11" selection-end-line="91" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vistas/plugins/kcfinder-3.12/browse.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vistas/plugins/kcfinder-3.12/js_localize.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vistas/plugins/kcfinder-3.12/upload.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vistas/plugins/kcfinder-3.12/upload/.htaccess">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vistas/plugins/kcfinder-3.12/conf/upload.htaccess">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vistas/plugins/kcfinder-3.12/conf/.htaccess">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modelos/nosotros.modelo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="72" column="27" lean-forward="false" selection-start-line="72" selection-start-column="27" selection-end-line="72" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modelos/administradores.modelo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controladores/visitas.controlador.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controladores/slide.controlador.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controladores/plantilla.controlador.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controladores/perfiles.controlador.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controladores/mensajes.controlador.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controladores/contacto.controlador.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controladores/canales.controlador.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="64" lean-forward="false" selection-start-line="14" selection-start-column="58" selection-end-line="14" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controladores/administradores.controlador.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="33" column="49" lean-forward="false" selection-start-line="33" selection-start-column="43" selection-end-line="33" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vistas/plugins/kcfinder-3.12/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vistas/plugins/kcfinder-3.12/conf/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1513">
+          <caret line="99" column="8" lean-forward="false" selection-start-line="99" selection-start-column="8" selection-end-line="99" selection-end-column="8" />
+          <folding>
+            <element signature="e#7#401#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vistas/bower_components/ckeditor/ckeditor.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vistas/modulos/nosotros.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3298">
+          <caret line="194" column="104" lean-forward="false" selection-start-line="194" selection-start-column="85" selection-end-line="194" selection-end-column="104" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vistas/js/gestorNosotros.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3621">
+          <caret line="213" column="24" lean-forward="false" selection-start-line="213" selection-start-column="4" selection-end-line="213" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="35" column="24" lean-forward="false" selection-start-line="35" selection-start-column="24" selection-end-line="35" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modelos/constante.modelo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="16" lean-forward="false" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vistas/bower_components/ckeditor/config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controladores/nosotros.controlador.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="614">
+          <caret line="104" column="27" lean-forward="false" selection-start-line="104" selection-start-column="27" selection-end-line="104" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ajax/nosotros.ajax.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="512">
+          <caret line="66" column="15" lean-forward="true" selection-start-line="66" selection-start-column="15" selection-end-line="66" selection-end-column="15" />
           <folding />
         </state>
       </provider>

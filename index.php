@@ -29,6 +29,7 @@ require_once "modelos/sitio.modelo.php";
 require_once "modelos/contacto.modelo.php";
 require_once "modelos/tipPreguntas.modelo.php";
 require_once "modelos/tarifarioContrato.modelo.php";
+require_once  "modelos/constante.modelo.php";
 
 
 $plantilla = new ControladorPlantilla();
