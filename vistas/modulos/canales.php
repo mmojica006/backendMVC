@@ -142,8 +142,8 @@ $apikey = "AIzaSyB8xnUNTHZQB3g1rhpIuDvHbsswXvSQl0M";
 
                             <label for="comment">Descripción:</label>
 
-                            <textarea class="form-control cambioScript" rows="5" id="contactDescripcion"
-                                      name="contactDescripcion">
+                            <textarea class="form-control cambioScript" rows="5" id="descripcion"
+                                      name="descripcion">
 
          <?php echo $dataCanales["descripcion"]; ?>
 

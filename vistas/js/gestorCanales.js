@@ -2,11 +2,7 @@
  * Created by Mosses on 16/02/2018.
  */
 
-loadCKEbasic("contactDescripcion");
-
-
-
-
+loadCKEbasic("descripcion");
 
 var dataTable = $('#user_data').DataTable({
     "processing":true,
@@ -285,7 +281,7 @@ $("#guardarDataBanner").click(function(){
     datos.append("bannerDesc",bannerDesc);
 
     $.ajax({
-        url:"ajax/contacto.ajax.php",
+        url:"ajax/canales.ajax.php",
         method: "POST",
         data: datos,
         cache:false,
@@ -318,6 +314,57 @@ $("#guardarDataBanner").click(function(){
 
 });
 
+
+
+
+$("#guardarInfoCanales").click(function(){
+
+    for (var instanceName in CKEDITOR.instances) {
+        CKEDITOR.instances[instanceName].updateElement();
+    }
+
+    var titulo =  $("#titulo").val();
+    var descripcion = $("#descripcion").val();
+
+
+
+    var datos = new FormData();
+    datos.append("titulo",titulo);
+    datos.append("descripcion",descripcion);
+
+    $.ajax({
+        url:"ajax/canales.ajax.php",
+        method: "POST",
+        data: datos,
+        cache:false,
+        contentType:false,
+        processData: false,
+        dataType: "json",
+        success: function (respuesta){
+
+            if(respuesta.num === 0){
+
+                swal({
+                    title: "Cambios guardados",
+                    text: "Datos Actualizados",
+                    type: "success",
+                    confirmButtonText: "¡Cerrar!"
+                });
+
+            }else{
+                swal({
+                    title: "Error al guardar los datos",
+                    text: respuesta.msg,
+                    type: "error",
+                    confirmButtonText: "¡Cerrar!"
+                });
+            }
+
+        }
+
+    });
+
+});
 
 
 function loadCKEbasic(id) {
