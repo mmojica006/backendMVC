@@ -8,7 +8,7 @@ USUARIOS
 	<!-- dropdown-toggle -->
 	<a href="#" class="dropdown-toggle" data-toggle="dropdown">
 	
-		<img src="vistas/dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
+		<img src="vistas/img/usuarios/default/image-not-found.png" class="user-image" alt="User Image">
 		
 		<span class="hidden-xs">Testing</span>
 	
@@ -20,7 +20,7 @@ USUARIOS
 
 		<li class="user-header">
 		
-			<img src="vistas/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+			<img src="vistas/img/usuarios/default/image-not-found.png" class="img-circle" alt="User Image">
 
 			<p>
                 Testing
