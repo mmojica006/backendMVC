@@ -94,6 +94,13 @@ class AjaxSitio{
 		echo $respuesta;
 
 	}
+    public $emailDestino;
+
+    public function ajaxEmailDestino(){
+        $respuesta = ControladorSitio::ctrActualizarEmail($this->emailDestino);
+        echo $respuesta;
+
+    }
 
 
 
@@ -161,3 +168,14 @@ if(isset($_POST["googleAnalytics"])){
 
 }
 
+/*=============================================
+CAMBIAR EMAIL DEL CONTACTO DESTINO
+=============================================*/
+
+if(isset($_POST["emailDestino"])){
+
+    $objEmail = new AjaxSitio();
+    $objEmail ->emailDestino = $_POST["emailDestino"];
+    $objEmail -> ajaxEmailDestino();
+
+}

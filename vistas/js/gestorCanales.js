@@ -2,9 +2,126 @@
  * Created by Mosses on 16/02/2018.
  */
 
-loadCKEbasic("contactDescripcion");
+loadCKEbasic("descripcion");
+
+var dataTable = $('#user_data').DataTable({
+    "processing":true,
+    "serverSide":true,
+    "order":[],
+    "ajax":{
+        url:"ajax/canales.ajax.php",
+        type:"POST"
+    },
+    "columnDefs":[
+        {
+            "targets":[0, 3, 4],
+            "orderable":false,
+        },
+    ],
+
+});
 
 
+
+$('#add_button').click(function(){
+    $('#user_form')[0].reset();
+    $('.modal-title').text("Agregar");
+    $('#action').val("Add");
+    $('#operation').val("Add");
+    $('#user_uploaded_image').html('');
+});
+
+
+
+$(document).on('submit', '#user_form', function(event){
+    event.preventDefault();
+    var sucursal = $('#sucursal').val();
+    var latitud = $('#latitud').val();
+    var longitud = $('#longitud').val();
+
+    if(sucursal != '' && latitud != '' && longitud != '')
+    {
+        $.ajax({
+            url:"ajax/canales.ajax.php",
+            method:'POST',
+            data:new FormData(this),
+            contentType:false,
+            processData:false,
+            success:function(data)
+            {
+
+
+                $('#user_form')[0].reset();
+                $('#userModal').modal('hide');
+                dataTable.ajax.reload();
+
+                swal({
+                    title: "Direcciones de Sucursales",
+                    text: "¡Registro Actualizado!",
+                    type: "success",
+                    confirmButtonText: "¡Cerrar!"
+                });
+
+
+            }
+        });
+    }
+    else
+    {
+        swal({
+            title: "Error al guardar el registro",
+            text: 'Hacen falta datos' ,
+            type: "error",
+            confirmButtonText: "¡Cerrar!"
+        });
+    }
+});
+
+
+$(document).on('click', '.update', function(){
+
+    var market_id = $(this).attr("id");
+
+    $.ajax({
+        url:"ajax/canales.ajax.php",
+        method:"POST",
+        data:{market_id:market_id},
+        dataType:"json",
+        success:function(data)
+        {
+            $('#userModal').modal('show');
+            $('#sucursal').val(data.name);
+            $('#latitud').val(data.lat);
+            $('#longitud').val(data.lng);
+
+            $('.modal-title').text("Actualizar");
+            $('#market_id').val(market_id);
+            $('#action').val("Actualizar");
+            $('#operation').val("Edit");
+
+        }
+    })
+});
+
+$(document).on('click', '.delete', function(){
+    var market_id = $(this).attr("id");
+    if(confirm("Esta seguro de borrar el registro?"))
+    {
+        $.ajax({
+            url:"ajax/canales.ajax.php",
+            method:"POST",
+            data:{"operation":"Del","market_id":market_id},
+            success:function(respuesta)
+            {
+                    dataTable.ajax.reload();
+            }
+        });
+    }
+    else
+    {
+        return false;
+    }
+});
 
 $("#subirImgCanales").change(function(){
 
@@ -61,7 +178,7 @@ $("#subirImgCanales").change(function(){
 
         $.ajax({
 
-            url:"ajax/Canales.ajax.php",
+            url:"ajax/canales.ajax.php",
             method: "POST",
             data: datos,
             cache: false,
@@ -69,8 +186,6 @@ $("#subirImgCanales").change(function(){
             processData: false,
             dataType: "json",
             success: function(respuesta){
-
-
 
                 if(respuesta.num === 0){
 
@@ -166,7 +281,7 @@ $("#guardarDataBanner").click(function(){
     datos.append("bannerDesc",bannerDesc);
 
     $.ajax({
-        url:"ajax/contacto.ajax.php",
+        url:"ajax/canales.ajax.php",
         method: "POST",
         data: datos,
         cache:false,
@@ -199,6 +314,57 @@ $("#guardarDataBanner").click(function(){
 
 });
 
+
+
+
+$("#guardarInfoCanales").click(function(){
+
+    for (var instanceName in CKEDITOR.instances) {
+        CKEDITOR.instances[instanceName].updateElement();
+    }
+
+    var titulo =  $("#titulo").val();
+    var descripcion = $("#descripcion").val();
+
+
+
+    var datos = new FormData();
+    datos.append("titulo",titulo);
+    datos.append("descripcion",descripcion);
+
+    $.ajax({
+        url:"ajax/canales.ajax.php",
+        method: "POST",
+        data: datos,
+        cache:false,
+        contentType:false,
+        processData: false,
+        dataType: "json",
+        success: function (respuesta){
+
+            if(respuesta.num === 0){
+
+                swal({
+                    title: "Cambios guardados",
+                    text: "Datos Actualizados",
+                    type: "success",
+                    confirmButtonText: "¡Cerrar!"
+                });
+
+            }else{
+                swal({
+                    title: "Error al guardar los datos",
+                    text: respuesta.msg,
+                    type: "error",
+                    confirmButtonText: "¡Cerrar!"
+                });
+            }
+
+        }
+
+    });
+
+});
 
 
 function loadCKEbasic(id) {

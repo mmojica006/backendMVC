@@ -7,6 +7,17 @@ loadCKEbasic("valores");
 loadCKEbasic("nosotrosDescripcion");
 
 
+
+$.post("ajax/nosotros.ajax.php",
+    {"action":"RutaServidor"},
+    function(response){
+    console.log(response);
+
+
+
+});
+
+
 $("#subirImgNosotros").change(function(){
 
     var img = this.files[0];
@@ -158,7 +169,7 @@ $("#guardarInfoNosotros1").click(function(){
     }
 
     var titulo =  $("#titulo").val();
-    var descripcion = $("#descripcion").val();
+    var descripcion = $("#nosotrosDescripcion").val();
 
 
 
@@ -209,8 +220,6 @@ $("#guardarInfoNosotros2").click(function(){
     var mision =  $("#mision").val();
     var vision = $("#vision").val();
     var valores = $("#valores").val();
-
-
 
     var datos = new FormData();
     datos.append("mision",mision);
@@ -268,7 +277,7 @@ function loadCKEbasic(id) {
 
     CKEDITOR.on('dialogDefinition', function (e) {
 
-        console.log('Ready');
+
         var dialogName = e.data.name;
         var dialogDefinition = e.data.definition;
 
@@ -277,7 +286,7 @@ function loadCKEbasic(id) {
         if ( dialogName == 'image' )
         {
 
-            dialogDefinition.removeContents( 'Link' );
+            dialogDefinition.removeContents( 'link' );
             dialogDefinition.removeContents( 'advanced' );
 
             dialogDefinition.dialog.resize( 600, 200 );
@@ -299,11 +308,10 @@ function loadCKEbasic(id) {
 
             altFieldBrowser.label ='Upload image';
 
-
-
-
-
         }
+
+
+
 
     });
 
@@ -329,6 +337,7 @@ function loadCKEbasic(id) {
     CKEDITOR.config.fontSize_sizes='8/8px;9/9px;10/10px;11/11px;12/12px;14/14px;16/16px;18/18px;20/20px;22/22px' ;
     CKEDITOR.config.baseFloatZIndex = 9000;
 
+    
 
     CKEDITOR.config.filebrowserBrowseUrl =  './vistas/plugins/kcfinder-3.12/browse.php?opener=ckeditor&type=files';
     CKEDITOR.config.filebrowserImageBrowseUrl = './vistas/plugins/kcfinder-3.12/browse.php?opener=ckeditor&type=images';
@@ -338,6 +347,10 @@ function loadCKEbasic(id) {
     CKEDITOR.config.filebrowserFlashUploadUrl = './vistas/plugins/kcfinder-3.12/upload.php?opener=ckeditor&type=flash';
 
     CKEDITOR.config.removeDialogTabs = 'image:Upload;image:Link;image:advanced';
+    CKEDITOR.config.baseUrl = "http://www.yourdomain.com/assets/images/";
+
+
+
 
 
 

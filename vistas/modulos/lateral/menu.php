@@ -19,9 +19,9 @@ MENU
 
    <li><a href="canales"><i class="fa fa-map-marker"></i> <span>Gestor Canales de atención</span></a></li>
 
-  <li><a href="usuarios"><i class="fa fa-users"></i> <span>Gestor Usuarios</span></a></li>
+  <li><a href="tipPreguntas"><i class="fa fa-question"></i> <span>Tips y Preguntas</span></a></li>
 
-  <li><a href="mensajes"><i class="fa fa-envelope"></i> <span>Gestor Mensajes</span></a></li>
+  <li><a href="tarifarioContrato"><i class="fa fa-bank"></i> <span>Tarifario y Contrato</span></a></li>
 
   <li><a href="perfiles"><i class="fa fa-key"></i> <span>Gestor Perfiles</span></a></li>
 

@@ -365,6 +365,41 @@ $("#guardarRedesSociales").click(function(){
 
 })
 
+
+$("#guardarEmailContacto").click(function(){
+
+    var valorEmail = $("#idEmailDestino").val();
+
+    var datos = new FormData();
+    datos.append("emailDestino", valorEmail);
+
+    $.ajax({
+
+        url:"ajax/sitio.ajax.php",
+        method: "POST",
+        data: datos,
+        cache: false,
+        contentType: false,
+        processData: false,
+        success: function(respuesta){
+
+            if(respuesta == "ok"){
+
+                swal({
+                    title: "Cambios guardados",
+                    text: "¡La plantilla ha sido actualizada correctamente!",
+                    type: "success",
+                    confirmButtonText: "¡Cerrar!"
+                });
+
+            }
+
+        }
+
+    })
+
+})
+
 /*=============================================
 CAMBIAR CÓDIGOS
 =============================================*/
