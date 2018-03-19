@@ -102,6 +102,7 @@ if (isset($_SESSION["validarSesionBackend"]) && $_SESSION["validarSesionBackend"
 
         if (
             $_GET["ruta"] == "inicio" ||
+            $_GET["ruta"] == "bienvenidos" ||
             $_GET["ruta"] == "sitio" ||
             $_GET["ruta"] == "contacto" ||
             $_GET["ruta"] == "slide" ||

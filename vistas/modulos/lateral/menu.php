@@ -4,7 +4,7 @@ MENU
 
 <ul class="sidebar-menu">
 
-	<li class="active"><a href="inicio"><i class="fa fa-home"></i> <span>Inicio</span></a></li>
+	<li class="active"><a href="bienvenidos"><i class="fa fa-home"></i> <span>Inicio</span></a></li>
 
     <li><a href="sitio"><i class="fa fa-files-o"></i> <span>Gestor Sitio</span></a></li>
 

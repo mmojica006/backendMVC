@@ -8,9 +8,9 @@ USUARIOS
 	<!-- dropdown-toggle -->
 	<a href="#" class="dropdown-toggle" data-toggle="dropdown">
 	
-		<img src="vistas/dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
+		<img src="vistas/img/usuarios/default/image-not-found.png" class="user-image" alt="User Image">
 		
-		<span class="hidden-xs">Tutoriales a tu Alcance</span>
+		<span class="hidden-xs">Testing</span>
 	
 	</a>
 	<!-- dropdown-toggle -->
@@ -20,10 +20,10 @@ USUARIOS
 
 		<li class="user-header">
 		
-			<img src="vistas/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+			<img src="vistas/img/usuarios/default/image-not-found.png" class="img-circle" alt="User Image">
 
 			<p>
-			Tutoriales a tu Alcance
+                Testing
 			</p>
 		
 		</li>
@@ -32,7 +32,7 @@ USUARIOS
 		
 			<div class="pull-left">
 				
-				<a href="perfil" class="btn btn-default btn-flat">Perfil</a>
+				<a href="perfiles" class="btn btn-default btn-flat">Perfil</a>
 			
 			</div>
 			

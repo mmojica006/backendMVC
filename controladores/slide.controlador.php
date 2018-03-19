@@ -24,10 +24,11 @@ class ControladorSlide{
 
         $tabla = "slide";
 
+        $value["orden"] =0;
         $traerSlide = ModeloSlide::mdlMostrarSlide($tabla);
 
         foreach ($traerSlide as $key => $value) {
-            
+
         }
 
         $orden = $value["orden"] + 1;

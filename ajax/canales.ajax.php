@@ -46,7 +46,6 @@ class AjaxCanales
     }
 
     public $draw;
-
     public function getDataTable()
     {
         $dataPost = array();

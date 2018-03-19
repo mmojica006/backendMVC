@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="573f7e01-d7d5-4fe5-b8de-fc5ec289e5fd" name="Default" comment="" />
+=======
+    <list default="true" id="573f7e01-d7d5-4fe5-b8de-fc5ec289e5fd" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+<<<<<<< HEAD
+=======
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controladores/canales.controlador.php" afterPath="$PROJECT_DIR$/controladores/canales.controlador.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modelos/canales.modelo.php" afterPath="$PROJECT_DIR$/modelos/canales.modelo.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vistas/js/gestorCanales.js" afterPath="$PROJECT_DIR$/vistas/js/gestorCanales.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vistas/modulos/canales.php" afterPath="$PROJECT_DIR$/vistas/modulos/canales.php" />
+>>>>>>> 5dab1c51cfeb1b2762232522f9b1f3c97c7573bd
+    </list>
+>>>>>>> 6c2d4dda65ec4f9680ac50b15fc4e2e5ed2a0b99
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,6 +27,72 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
+<<<<<<< HEAD
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="canales.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vistas/modulos/canales.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="31" column="51" lean-forward="false" selection-start-line="31" selection-start-column="51" selection-end-line="31" selection-end-column="51" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="gestorCanales.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vistas/js/gestorCanales.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="canales.controlador.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/controladores/canales.controlador.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="90" column="43" lean-forward="false" selection-start-line="90" selection-start-column="20" selection-end-line="90" selection-end-column="43" />
+              <folding>
+                <element signature="n#ctrActualizarImgCanales#0;n#ControladorCanales#0;n#!!top" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="canales.modelo.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/modelos/canales.modelo.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="493">
+              <caret line="58" column="20" lean-forward="false" selection-start-line="58" selection-start-column="20" selection-end-line="58" selection-end-column="20" />
+              <folding>
+                <element signature="n#mdlActualizarImgFondo#0;n#ModeloCanales#0;n#!!top" expanded="false" />
+                <marker date="1519125578784" expanded="true" signature="171:186" ph="select * fro... ${$tabla}" />
+                <marker date="1519125578784" expanded="true" signature="465:512" ph="UPDATE ${$ta... " />
+                <marker date="1519125578784" expanded="true" signature="1208:1229" ph="select * fro... markers" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="contacto.modelo.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/modelos/contacto.modelo.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="476">
+              <caret line="28" column="24" lean-forward="false" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="24" />
+              <folding>
+                <marker date="1518838681010" expanded="true" signature="157:172" ph="select * fro... ${$tabla}" />
+                <marker date="1518838681010" expanded="true" signature="405:452" ph="UPDATE ${$ta... " />
+                <marker date="1518838681010" expanded="true" signature="1058:1133" ph="UPDATE ${$ta... " />
+                <marker date="1518838681010" expanded="true" signature="1708:1807" ph="UPDATE ${$ta... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+=======
     <splitter split-orientation="horizontal" split-proportion="0.6681223">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
@@ -81,6 +160,7 @@
         </leaf>
       </split-second>
     </splitter>
+>>>>>>> 5dab1c51cfeb1b2762232522f9b1f3c97c7573bd
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -265,6 +345,7 @@
       </pane>
       <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -359,6 +440,11 @@
       <workItem from="1518577899965" duration="3430000" />
       <workItem from="1518738007694" duration="7000" />
       <workItem from="1518836596760" duration="5508000" />
+<<<<<<< HEAD
+      <workItem from="1519124508781" duration="3237000" />
+      <workItem from="1520783880752" duration="762000" />
+      <workItem from="1520785198473" duration="201000" />
+=======
       <workItem from="1519124508781" duration="2654000" />
       <workItem from="1519168100935" duration="1393000" />
       <workItem from="1519243793180" duration="12000" />
@@ -383,22 +469,46 @@
       <workItem from="1520375892695" duration="1448000" />
       <workItem from="1520549234223" duration="1797000" />
       <workItem from="1520551361743" duration="306000" />
+<<<<<<< HEAD
       <workItem from="1521495533155" duration="29000" />
+=======
+>>>>>>> 5dab1c51cfeb1b2762232522f9b1f3c97c7573bd
+>>>>>>> 6c2d4dda65ec4f9680ac50b15fc4e2e5ed2a0b99
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="121598000" />
+=======
+<<<<<<< HEAD
+    <option name="totallyTimeSpent" value="38185000" />
+=======
+    <option name="totallyTimeSpent" value="121569000" />
+>>>>>>> 5dab1c51cfeb1b2762232522f9b1f3c97c7573bd
+>>>>>>> 6c2d4dda65ec4f9680ac50b15fc4e2e5ed2a0b99
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
+<<<<<<< HEAD
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14712153" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+=======
+<<<<<<< HEAD
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3540091" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+=======
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14552239" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+>>>>>>> 6c2d4dda65ec4f9680ac50b15fc4e2e5ed2a0b99
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18418202" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+>>>>>>> 5dab1c51cfeb1b2762232522f9b1f3c97c7573bd
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -409,7 +519,11 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+<<<<<<< HEAD
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+=======
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32827735" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+>>>>>>> 5dab1c51cfeb1b2762232522f9b1f3c97c7573bd
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
@@ -449,8 +563,13 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/vistas/js/gestorContacto.js">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="3485">
+          <caret line="205" column="38" lean-forward="true" selection-start-line="205" selection-start-column="38" selection-end-line="205" selection-end-column="38" />
+=======
         <state relative-caret-position="1779">
           <caret line="194" column="0" lean-forward="false" selection-start-line="194" selection-start-column="0" selection-end-line="194" selection-end-column="0" />
+>>>>>>> 5dab1c51cfeb1b2762232522f9b1f3c97c7573bd
         </state>
       </provider>
     </entry>
@@ -463,8 +582,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/vistas/css/plantilla.css">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="561">
+          <caret line="144" column="46" lean-forward="false" selection-start-line="144" selection-start-column="46" selection-end-line="144" selection-end-column="46" />
+=======
         <state relative-caret-position="1513">
           <caret line="89" column="16" lean-forward="false" selection-start-line="89" selection-start-column="16" selection-end-line="89" selection-end-column="16" />
+>>>>>>> 5dab1c51cfeb1b2762232522f9b1f3c97c7573bd
         </state>
       </provider>
     </entry>
@@ -477,8 +601,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/vistas/modulos/inicio.php">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="578">
+          <caret line="34" column="38" lean-forward="true" selection-start-line="34" selection-start-column="38" selection-end-line="34" selection-end-column="38" />
+=======
         <state relative-caret-position="170">
           <caret line="10" column="8" lean-forward="false" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
+>>>>>>> 5dab1c51cfeb1b2762232522f9b1f3c97c7573bd
         </state>
       </provider>
     </entry>
@@ -505,8 +634,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/vistas/modulos/cabezote/notificaciones.php">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="561">
+          <caret line="144" column="46" lean-forward="false" selection-start-line="144" selection-start-column="46" selection-end-line="144" selection-end-column="46" />
+=======
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+>>>>>>> 5dab1c51cfeb1b2762232522f9b1f3c97c7573bd
         </state>
       </provider>
     </entry>
@@ -589,8 +723,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/vistas/plugins/kcfinder-3.12/upload.php">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="421">
+          <caret line="144" column="46" lean-forward="false" selection-start-line="144" selection-start-column="46" selection-end-line="144" selection-end-column="46" />
+=======
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+>>>>>>> 5dab1c51cfeb1b2762232522f9b1f3c97c7573bd
         </state>
       </provider>
     </entry>
@@ -603,8 +742,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/vistas/plugins/kcfinder-3.12/conf/upload.htaccess">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="3485">
+          <caret line="205" column="38" lean-forward="false" selection-start-line="205" selection-start-column="38" selection-end-line="205" selection-end-column="38" />
+=======
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+>>>>>>> 5dab1c51cfeb1b2762232522f9b1f3c97c7573bd
         </state>
       </provider>
     </entry>
@@ -659,15 +803,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/controladores/mensajes.controlador.php">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="549">
+          <caret line="91" column="29" lean-forward="false" selection-start-line="91" selection-start-column="29" selection-end-line="91" selection-end-column="29" />
+=======
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+>>>>>>> 5dab1c51cfeb1b2762232522f9b1f3c97c7573bd
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controladores/administradores.controlador.php">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="4700">
+          <caret line="345" column="1" lean-forward="true" selection-start-line="345" selection-start-column="1" selection-end-line="345" selection-end-column="1" />
+=======
         <state relative-caret-position="561">
           <caret line="33" column="49" lean-forward="false" selection-start-line="33" selection-start-column="43" selection-end-line="33" selection-end-column="49" />
+>>>>>>> 5dab1c51cfeb1b2762232522f9b1f3c97c7573bd
         </state>
       </provider>
     </entry>
@@ -680,8 +834,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/vistas/plugins/kcfinder-3.12/conf/config.php">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="323">
+          <caret line="19" column="23" lean-forward="false" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="23" />
+=======
         <state relative-caret-position="1513">
           <caret line="99" column="8" lean-forward="false" selection-start-line="99" selection-start-column="8" selection-end-line="99" selection-end-column="8" />
+>>>>>>> 5dab1c51cfeb1b2762232522f9b1f3c97c7573bd
         </state>
       </provider>
     </entry>
@@ -694,30 +853,54 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/vistas/modulos/nosotros.php">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="527">
+          <caret line="31" column="30" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="45" selection-end-column="28" />
+=======
         <state relative-caret-position="3298">
           <caret line="194" column="104" lean-forward="false" selection-start-line="194" selection-start-column="85" selection-end-line="194" selection-end-column="104" />
           <folding />
+>>>>>>> 5dab1c51cfeb1b2762232522f9b1f3c97c7573bd
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="-2123">
+          <caret line="52" column="67" lean-forward="false" selection-start-line="52" selection-start-column="67" selection-end-line="52" selection-end-column="67" />
+=======
         <state relative-caret-position="595">
           <caret line="35" column="24" lean-forward="false" selection-start-line="35" selection-start-column="24" selection-end-line="35" selection-end-column="24" />
+<<<<<<< HEAD
+=======
+          <folding />
+>>>>>>> 5dab1c51cfeb1b2762232522f9b1f3c97c7573bd
+>>>>>>> 6c2d4dda65ec4f9680ac50b15fc4e2e5ed2a0b99
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/modelos/constante.modelo.php">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="2091">
+          <caret line="123" column="0" lean-forward="false" selection-start-line="123" selection-start-column="0" selection-end-line="123" selection-end-column="0" />
+=======
         <state relative-caret-position="34">
           <caret line="2" column="16" lean-forward="false" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="16" />
+>>>>>>> 5dab1c51cfeb1b2762232522f9b1f3c97c7573bd
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vistas/bower_components/ckeditor/config.js">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="1479">
+          <caret line="87" column="17" lean-forward="false" selection-start-line="87" selection-start-column="17" selection-end-line="87" selection-end-column="17" />
+=======
         <state relative-caret-position="187">
           <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+>>>>>>> 5dab1c51cfeb1b2762232522f9b1f3c97c7573bd
         </state>
       </provider>
     </entry>
@@ -730,23 +913,42 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ajax/nosotros.ajax.php">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="136">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+=======
         <state relative-caret-position="512">
           <caret line="66" column="15" lean-forward="false" selection-start-line="66" selection-start-column="15" selection-end-line="66" selection-end-column="15" />
+>>>>>>> 5dab1c51cfeb1b2762232522f9b1f3c97c7573bd
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vistas/js/gestorNosotros.js">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="158">
+          <caret line="11" column="27" lean-forward="false" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
+=======
         <state relative-caret-position="3621">
           <caret line="213" column="24" lean-forward="false" selection-start-line="213" selection-start-column="4" selection-end-line="213" selection-end-column="24" />
           <folding />
+>>>>>>> 5dab1c51cfeb1b2762232522f9b1f3c97c7573bd
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controladores/contacto.controlador.php">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="493">
+          <caret line="58" column="20" lean-forward="false" selection-start-line="58" selection-start-column="20" selection-end-line="58" selection-end-column="20" />
+=======
         <state relative-caret-position="306">
+<<<<<<< HEAD
           <caret line="94" column="42" lean-forward="false" selection-start-line="94" selection-start-column="42" selection-end-line="94" selection-end-column="42" />
+=======
+          <caret line="94" column="42" lean-forward="true" selection-start-line="94" selection-start-column="42" selection-end-line="94" selection-end-column="42" />
+>>>>>>> 5dab1c51cfeb1b2762232522f9b1f3c97c7573bd
+>>>>>>> 6c2d4dda65ec4f9680ac50b15fc4e2e5ed2a0b99
           <folding>
             <element signature="n#ctrActualizarImgContacto#0;n#ControladorContacto#0;n#!!top" expanded="false" />
           </folding>
@@ -755,7 +957,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/modelos/contacto.modelo.php">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="816">
+=======
+<<<<<<< HEAD
+        <state relative-caret-position="68">
+          <caret line="4" column="40" lean-forward="false" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="40" />
+=======
+        <state relative-caret-position="289">
+>>>>>>> 6c2d4dda65ec4f9680ac50b15fc4e2e5ed2a0b99
           <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="75" selection-end-column="5" />
           <folding>
             <marker date="1518465998302" expanded="true" signature="157:172" ph="select * fro... ${$tabla}" />
@@ -766,6 +976,18 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+=======
+    <entry file="file://$PROJECT_DIR$/ajax/contacto.ajax.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="31" selection-end-column="5" />
+          <folding />
+>>>>>>> 5dab1c51cfeb1b2762232522f9b1f3c97c7573bd
+        </state>
+      </provider>
+    </entry>
+>>>>>>> 6c2d4dda65ec4f9680ac50b15fc4e2e5ed2a0b99
     <entry file="file://$PROJECT_DIR$/ajax/canales.ajax.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
@@ -776,8 +998,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/controladores/canales.controlador.php">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="816">
+=======
+<<<<<<< HEAD
+        <state relative-caret-position="476">
+          <caret line="28" column="24" lean-forward="false" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="24" />
+=======
+        <state relative-caret-position="648">
+>>>>>>> 6c2d4dda65ec4f9680ac50b15fc4e2e5ed2a0b99
           <caret line="346" column="43" lean-forward="false" selection-start-line="346" selection-start-column="43" selection-end-line="346" selection-end-column="43" />
+>>>>>>> 5dab1c51cfeb1b2762232522f9b1f3c97c7573bd
           <folding>
             <element signature="n#ctrActualizarImgCanales#0;n#ControladorCanales#0;n#!!top" expanded="false" />
             <element signature="n#ctrActualizarDireccion#0;n#ControladorCanales#0;n#!!top" expanded="false" />
@@ -792,6 +1023,21 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/vistas/modulos/canales.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="31" column="51" lean-forward="false" selection-start-line="31" selection-start-column="51" selection-end-line="31" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vistas/js/gestorCanales.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+=======
     <entry file="file://$PROJECT_DIR$/modelos/canales.modelo.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4063">
@@ -809,12 +1055,24 @@
             <marker date="1520550899355" expanded="true" signature="5129:5228" ph="UPDATE ${$ta... " />
             <marker date="1520550899355" expanded="true" signature="5933:6008" ph="UPDATE ${$ta... " />
           </folding>
+>>>>>>> 5dab1c51cfeb1b2762232522f9b1f3c97c7573bd
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vistas/modulos/canales.php">
+    <entry file="file://$PROJECT_DIR$/controladores/canales.controlador.php">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="2448">
+=======
+<<<<<<< HEAD
+        <state relative-caret-position="238">
+          <caret line="90" column="43" lean-forward="false" selection-start-line="90" selection-start-column="20" selection-end-line="90" selection-end-column="43" />
+          <folding>
+            <element signature="n#ctrActualizarImgCanales#0;n#ControladorCanales#0;n#!!top" expanded="false" />
+          </folding>
+=======
+        <state relative-caret-position="510">
+>>>>>>> 6c2d4dda65ec4f9680ac50b15fc4e2e5ed2a0b99
           <caret line="144" column="96" lean-forward="false" selection-start-line="144" selection-start-column="85" selection-end-line="144" selection-end-column="96" />
           <folding />
         </state>
@@ -841,6 +1099,7 @@
         <state relative-caret-position="-83">
           <caret line="20" column="20" lean-forward="true" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
           <folding />
+>>>>>>> 5dab1c51cfeb1b2762232522f9b1f3c97c7573bd
         </state>
       </provider>
     </entry>

@@ -30,16 +30,16 @@
                 </div>
             </div>
             <div class="box-body">
-                <div class="container">
-                    <div class="jumbotron">
-                        <h1>Bienvenidos al panel de Administración</h1>
-                        <p>Sistema de gestión de contenidos desarrollado para la empresa CREDIEXPRESS</p>
-                    </div>
-                </div>
+               <div class="container">
+                   <div class="jumbotron">
+                       <h1>Bienvenidos al panel de Administración</h1>
+                       <p>Sistema de gestión de contenidos desarrollado para la empresa CREDIEXPRESS</p>
+                   </div>
+               </div>
             </div>
             <!-- /.box-body -->
             <div class="box-footer">
-                <p class="text-sm text-right">Desarrollado por Moises Mojica Rivas | musicmojica@gmail.com | 505 89166772</p>
+               <p class="text-sm text-right">Desarrollado por Moises Mojica Rivas | musicmojica@gmail.com | 505 89166772</p>
                 <p></p>
             </div>
             <!-- /.box-footer-->

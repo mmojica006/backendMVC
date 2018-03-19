@@ -31,7 +31,7 @@ class   ControladorAdministradores{
 
 					echo '<script>
 
-						window.location = "inicio";
+						window.location = "bienvenidos";
 
 					</script>';
 
