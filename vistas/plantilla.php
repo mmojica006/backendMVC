@@ -116,6 +116,7 @@ if (isset($_SESSION["validarSesionBackend"]) && $_SESSION["validarSesionBackend"
             $_GET["ruta"] == "mensajes" ||
             $_GET["ruta"] == "perfiles" ||
             $_GET["ruta"] == "perfil" ||
+            $_GET["ruta"] == "reclamo" ||
             $_GET["ruta"] == "salir"
         ) {
 

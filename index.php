@@ -13,6 +13,7 @@ require_once "controladores/sitio.controlador.php";
 require_once "controladores/contacto.controlador.php";
 require_once "controladores/tipPreguntas.controlador.php";
 require_once  "controladores/tarifarioContrato.controlador.php";
+require_once  "controladores/reclamo.controlador.php";
 
 
 
@@ -30,6 +31,7 @@ require_once "modelos/contacto.modelo.php";
 require_once "modelos/tipPreguntas.modelo.php";
 require_once "modelos/tarifarioContrato.modelo.php";
 require_once  "modelos/constante.modelo.php";
+require_once  "modelos/reclamo.modelo.php";
 
 
 $plantilla = new ControladorPlantilla();

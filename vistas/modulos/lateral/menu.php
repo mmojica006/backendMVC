@@ -9,6 +9,7 @@ MENU
     <li><a href="sitio"><i class="fa fa-files-o"></i> <span>Gestor Sitio</span></a></li>
 
 	<li><a href="contacto"><i class="fa fa-files-o"></i> <span>Gestor Contacto</span></a></li>
+    <li><a href="reclamo"><i class="fa fa-files-o"></i> <span>Gestor Reclamo</span></a></li>
 
 	<li><a href="slide"><i class="fa fa-edit"></i> <span>Gestor Slide</span></a></li>
 
