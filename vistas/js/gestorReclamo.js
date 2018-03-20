@@ -3,10 +3,12 @@ loadCKEbasic("reclamoDescripcion");
 
 
 
+
 var dataTable = $('#user_data').DataTable({
     "processing":true,
     "serverSide":true,
     "order":[],
+
     "ajax":{
         url:"ajax/reclamo.ajax.php",
         type:"POST"
@@ -17,7 +19,7 @@ var dataTable = $('#user_data').DataTable({
             "orderable":false,
         },
     ],
-
+    "language":"idioma_español",
 });
 
 
