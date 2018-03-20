@@ -31,8 +31,42 @@ class AjaxReclamo{
     }
 
 
+    public $draw;
+    public function getDataTable()
+    {
+        $dataPost = array();
+        if (isset($_POST["search"]["value"])) {
+            $dataPost["search"] = $_POST["search"]["value"];
+        }
+        if (isset($_POST["order"])) {
+            $dataPost["order"] = $_POST["order"];
+        }
+        if (isset($_POST["length"]) || ($_POST["length"] != -1)) {
+            $dataPost["start"] = $_POST["start"];
+            $dataPost["length"] = $_POST["length"];
+        }
+
+        $dataPost["draw"] = $this->draw;
+
+
+        $classObj = new ControladorReclamo();
+        $response = $classObj->queryDataTableController($dataPost);
+        echo $response;
+    }
+
+
+
+
 
 }
+
+
+if (isset($_POST["draw"])) {
+    $c = new AjaxReclamo();
+    $c->draw = $_POST["draw"];
+    $c->getDataTable();
+}
+
 
 if (isset($_POST["titulo"])){
     $formulario = new AjaxReclamo();

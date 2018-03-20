@@ -3,6 +3,22 @@ loadCKEbasic("reclamoDescripcion");
 
 
 
+var dataTable = $('#user_data').DataTable({
+    "processing":true,
+    "serverSide":true,
+    "order":[],
+    "ajax":{
+        url:"ajax/reclamo.ajax.php",
+        type:"POST"
+    },
+    "columnDefs":[
+        {
+            "targets":[0, 3, 4],
+            "orderable":false,
+        },
+    ],
+
+});
 
 
 $("#guardarInfoReclamo").click(function(){

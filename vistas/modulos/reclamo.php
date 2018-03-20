@@ -127,7 +127,42 @@ $dataReclamo = ControladorReclamo::ctrSeleccionarreclamo();
 
         </div>
 
+        <div class="row">
+            <div class="col-md-12">
+                <div class="box box-primary">
+                    <div class="container box">
 
+
+                        <div class="table-responsive">
+                            <br/>
+                            <div align="right">
+                                <h3 class="box-title" align="center">Reclamos Registrados</h3>
+
+                            </div>
+                            <br/><br/>
+                            <table id="user_data" class="table table-bordered table-striped">
+                                <thead>
+                                <tr>
+                                    <th >Nombre</th>
+                                    <th >Cédula</th>
+                                    <th >Sucursal</th>
+                                    <th >Descripción</th>
+                                    <th >Fecha</th>
+                                    <th ></th>
+                                    <th></th>
+                                </tr>
+                                </thead>
+                            </table>
+
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+            </div>
+        </div>
 
     </section>
 
