@@ -148,8 +148,7 @@ $dataReclamo = ControladorReclamo::ctrSeleccionarreclamo();
                                     <th >Sucursal</th>
                                     <th >Descripción</th>
                                     <th >Fecha</th>
-                                    <th ></th>
-                                    <th></th>
+
                                 </tr>
                                 </thead>
                             </table>

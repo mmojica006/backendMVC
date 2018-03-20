@@ -50,8 +50,6 @@ class ControladorReclamo{
             $sub_array[] = $row["Sucursal"];
             $sub_array[] = $row["Descripcion"];
             $sub_array[] = $row["fecha"];
-            $sub_array[] = '<button type="button" name="update" id="' . $row["id"] . '" class="btn btn-warning btn-xs update">Editar</button>';
-            $sub_array[] = '<button type="button" name="delete" id="' . $row["id"] . '" class="btn btn-danger btn-xs delete">Borrar</button>';
             $data[] = $sub_array;
         }
 
