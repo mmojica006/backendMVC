@@ -21,73 +21,26 @@ $dataProductos = ControladorProductos::ctrSeleccionarProductos();
 
 
                 <div class="box box-primary ">
-
-<!--                    <div class="box-header with-border">-->
-<!--                        <h3 class="box-title">IMAGEN FONDO</h3>-->
-<!--                        <div class="box-tools pull-right">-->
-<!--                            <button type="button" class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip"-->
-<!--                                    title="Collapse">-->
-<!---->
-<!--                                <i class="fa fa-minus"></i>-->
-<!---->
-<!--                            </button>-->
-<!---->
-<!---->
-<!--                        </div>-->
-<!---->
-<!--                    </div>-->
-
-<!--                    <div class="box-body">-->
-<!---->
-<!--                        <div class="form-group">-->
-<!---->
-<!--                            <label>Cambiar Fondo</label>-->
-<!---->
-<!--                            <p class="pull-right">-->
-<!---->
-<!--                                <img src="--><?php //echo $dataProductos["imgFondo"]; ?><!--"-->
-<!--                                     class="img-thumbnail previsualizarImgProducto" width="200px">-->
-<!---->
-<!--                            </p>-->
-<!---->
-<!--                            <input type="file" id="subirImgProducto">-->
-<!---->
-<!--                            <p class="help-block">Tamaño recomendado 1200px * 625px</p>-->
-<!---->
-<!--                        </div>-->
-<!---->
-<!--                    </div>-->
-<!--                    <div class="box-footer">-->
-<!--                        <button type="button" id="guardarImgProducto" class="btn btn-primary pull-right">Guardar-->
-<!--                            Imagen-->
-<!--                        </button>-->
-<!--                    </div>-->
-
-
                     <div class="box-header with-border">
 
-                        <h3 class="box-title">BANNER</h3>
+                        <h3 class="box-title">INICIO</h3>
 
                     </div>
 
-
                     <div class="box-body">
-                        <form id="formBannerInfo">
-                            <div class="form-group">
-                                <label for="exampleInputEmail1">Titulo</label>
-                                <input required type="text" class="form-control" id="bannerTitulo" name="bannerTitulo"
-                                       placeholder="Escriba el título"
-                                       value=" <?php echo $dataProductos["bannertitulo"]; ?> ">
-                            </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Titulo</label>
+                            <input type="text" class="form-control" id="bannerTitulo" name="bannerTitulo"
+                                   placeholder="Escriba el título" value=" <?php echo $dataProductos["titulo"]; ?>">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Descripción</label>
+                            <input type="text" class="form-control" id="bannerDesc"
+                                   placeholder="Escriba una Descripción"
+                                   value=" <?php echo $dataProductos["descripcion"]; ?>">
+                        </div>
 
-                            <div class="form-group">
-                                <label>Descripción</label>
-                                <input required type="text" class="form-control" id="bannerDesc" name="bannerDesc"
-                                       placeholder="Escriba una Descripción"
-                                       value=" <?php echo $dataProductos["bannerdescripcion"]; ?>">
-                            </div>
 
-                        </form>
                     </div>
 
                     <div class="box-footer">
@@ -102,7 +55,7 @@ $dataProductos = ControladorProductos::ctrSeleccionarProductos();
                 <div class="box box-default ">
 
                     <div class="box-header with-border">
-                        <h3 class="box-title">CREDIPYME</h3>
+                        <h3 class="box-title">Capital de Trabajo</h3>
                         <div class="box-tools pull-right">
                             <button type="button" class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip"
                                     title="Collapse">
@@ -122,8 +75,8 @@ $dataProductos = ControladorProductos::ctrSeleccionarProductos();
                         <form id="formCrediPyme">
                             <div class="form-group">
 
-                            <textarea  class="required"  type="text" class="form-control" id="credipyme" name="credipyme">
-                                 <?php echo $dataProductos["crediPyme"]; ?>
+                            <textarea  class="required"  type="text" class="form-control" id="capitalTrabajo" name="capitalTrabajo">
+                                 <?php echo $dataProductos["capitalTrabajo"]; ?>
                             </textarea>
                             </div>
 
@@ -132,7 +85,7 @@ $dataProductos = ControladorProductos::ctrSeleccionarProductos();
 
                     <div class="box-footer">
 
-                        <button type="button" id="guardarCrediPyme" class="btn btn-primary pull-right">Guardar
+                        <button type="button" id="guardarCapitalTrabajo" class="btn btn-primary pull-right">Guardar
                         </button>
 
                     </div>
@@ -143,46 +96,7 @@ $dataProductos = ControladorProductos::ctrSeleccionarProductos();
                 <div class="box box-warning ">
 
                     <div class="box-header with-border">
-                        <h3 class="box-title">CREDINEGOCIOS</h3>
-                        <div class="box-tools pull-right">
-                            <button type="button" class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip"
-                                    title="Collapse">
-
-                                <i class="fa fa-minus"></i>
-
-                            </button>
-
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="box-body">
-                        <div class="form-group">
-
-                            <textarea type="text" class="form-control" id="crediNegocio" name="crediNegocio">
-                                 <?php echo $dataProductos["crediNegocios"]; ?>
-                            </textarea>
-                        </div>
-
-
-                    </div>
-
-                    <div class="box-footer">
-
-                        <button type="button" id="guardarCrediNegocio" class="btn btn-primary pull-right">Guardar
-                        </button>
-
-                    </div>
-
-
-                </div>
-
-                <div class="box box-warning ">
-
-                    <div class="box-header with-border">
-                        <h3 class="box-title">ACTIVO PRODUCTIVO</h3>
+                        <h3 class="box-title">Activo Productivo</h3>
                         <div class="box-tools pull-right">
                             <button type="button" class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip"
                                     title="Collapse">
@@ -201,7 +115,7 @@ $dataProductos = ControladorProductos::ctrSeleccionarProductos();
                         <div class="form-group">
 
                             <textarea type="text" class="form-control" id="activoProductivo" name="activoProductivo">
-                                 <?php echo $dataProductos["productivo"]; ?>
+                                 <?php echo $dataProductos["activoProductivo"]; ?>
                             </textarea>
                         </div>
 
@@ -210,13 +124,15 @@ $dataProductos = ControladorProductos::ctrSeleccionarProductos();
 
                     <div class="box-footer">
 
-                        <button type="button" id="guardarActivo" class="btn btn-primary pull-right">Guardar
+                        <button type="button" id="guardarActivoProductivo" name="guardarActivoProductivo" class="btn btn-primary pull-right">Guardar
                         </button>
 
                     </div>
 
 
                 </div>
+
+
 
 
             </div>
@@ -229,7 +145,7 @@ $dataProductos = ControladorProductos::ctrSeleccionarProductos();
                 <div class="box box-danger ">
 
                     <div class="box-header with-border">
-                        <h3 class="box-title">MICROTURBO</h3>
+                        <h3 class="box-title">Mejora de Negocio</h3>
                         <div class="box-tools pull-right">
                             <button type="button" class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip"
                                     title="Collapse">
@@ -248,15 +164,15 @@ $dataProductos = ControladorProductos::ctrSeleccionarProductos();
 
                         <div class="form-group">
 
-                            <textarea class="form-control cambioScript" rows="5" id="microTurbo" name="microTurbo">
-                                  <?php echo $dataProductos["microturbo"]; ?>
+                            <textarea class="form-control cambioScript" rows="5" id="mejoraNegocio" name="mejoraNegocio">
+                                  <?php echo $dataProductos["mejoraNegocio"]; ?>
                           </textarea>
 
                         </div>
 
                     </div>
                     <div class="box-footer">
-                        <button type="button" id="guardarMicroTurbo" class="btn btn-primary pull-right">Guardar
+                        <button type="button" id="guardarMejoraNegocio" class="btn btn-primary pull-right">Guardar
                         </button>
                     </div>
 
@@ -266,7 +182,7 @@ $dataProductos = ControladorProductos::ctrSeleccionarProductos();
                 <div class="box box-success ">
 
                     <div class="box-header with-border">
-                        <h3 class="box-title">TURBO</h3>
+                        <h3 class="box-title">CrediActivos</h3>
                         <div class="box-tools pull-right">
                             <button type="button" class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip"
                                     title="Collapse">
@@ -287,64 +203,24 @@ $dataProductos = ControladorProductos::ctrSeleccionarProductos();
 
 
 
-                            <textarea class="form-control cambioScript" rows="5" id="turbo" name="turbo">
+                            <textarea class="form-control cambioScript" rows="5" id="crediActivo" name="crediActivo">
 
-         <?php echo $dataProductos["turbo"]; ?>
+                                 <?php echo $dataProductos["crediActivos"]; ?>
 
-          </textarea>
+                                  </textarea>
 
                         </div>
 
                     </div>
                     <div class="box-footer">
-                        <button type="button" id="guardarTurbo" class="btn btn-primary pull-right">Guardar
+                        <button type="button" id="guardarCrediActivos" class="btn btn-primary pull-right">Guardar
                         </button>
                     </div>
 
 
                 </div>
 
-                <div class="box box-info ">
 
-                    <div class="box-header with-border">
-                        <h3 class="box-title">MEGA TURBO</h3>
-                        <div class="box-tools pull-right">
-                            <button type="button" class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip"
-                                    title="Collapse">
-
-                                <i class="fa fa-minus"></i>
-
-                            </button>
-
-
-                        </div>
-
-                    </div>
-
-                    <div class="box-body">
-
-
-                        <div class="form-group">
-
-
-
-                            <textarea class="form-control cambioScript" rows="5" id="activoMegaTurbo"
-                                      name="activoMegaTurbo">
-
-         <?php echo $dataProductos["megaturbo"]; ?>
-
-          </textarea>
-
-                        </div>
-
-                    </div>
-                    <div class="box-footer">
-                        <button type="button" id="guardarMegaTurbo" class="btn btn-primary pull-right">Guardar
-                        </button>
-                    </div>
-
-
-                </div>
 
 
             </div>

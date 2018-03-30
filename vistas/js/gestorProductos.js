@@ -3,118 +3,25 @@
  */
 
 
-loadCKEbasic("credipyme");
-loadCKEbasic("crediNegocio");
+
+loadCKEbasic("capitalTrabajo");
 loadCKEbasic("activoProductivo");
-loadCKEbasic("microTurbo");
-loadCKEbasic("turbo");
-loadCKEbasic("activoMegaTurbo");
+loadCKEbasic("mejoraNegocio");
+loadCKEbasic("crediActivo");
 
 
-$("#subirImgProducto").change(function () {
 
-    var img = this.files[0];
-
-
-    if (img["type"] != "image/jpeg" && img["type"] != "image/png") {
-
-        $("#subirImgProducto").val("");
-
-        swal({
-            title: "Error al subir la imagen",
-            text: "¡La imagen debe estar en formato JPG o PNG!",
-            type: "error",
-            confirmButtonText: "¡Cerrar!"
-        });
-
-
-    }
-    else if (img["size"] > 2000000) {
-
-        $("#subirImgProducto").val("");
-
-        swal({
-            title: "Error al subir la imagen",
-            text: "¡La imagen no debe pesar más de 2MB!",
-            type: "error",
-            confirmButtonText: "¡Cerrar!"
-        });
-
-        /*=============================================
-         PREVISUALIZAMOS LA IMAGEN
-         =============================================*/
-
-    } else {
-
-        var datosImg = new FileReader;
-        datosImg.readAsDataURL(img);
-
-        $(datosImg).on("load", function (event) {
-
-            var rutaImagen = event.target.result;
-
-            $(".previsualizarImgProducto").attr("src", rutaImagen);
-
-        })
-
-    }
-
-    $("#guardarImgProducto").click(function () {
-        var datos = new FormData();
-        datos.append("imgProducto", img);
-
-        $.ajax({
-
-            url: "ajax/productos.ajax.php",
-            method: "POST",
-            data: datos,
-            cache: false,
-            contentType: false,
-            processData: false,
-            dataType: "json",
-            success: function (respuesta) {
-
-
-                if (respuesta.num === 0) {
-
-                    swal({
-                        title: "Cambios guardados",
-                        text: "¡Fondo Actualizado!",
-                        type: "success",
-                        confirmButtonText: "¡Cerrar!"
-                    });
-
-                } else if (respuesta.num === 1) {
-
-                    swal({
-                        title: "Error al subir la imagen",
-                        text: respuesta.msg,
-                        type: "error",
-                        confirmButtonText: "¡Cerrar!"
-                    });
-                }
-
-
-            }
-
-        });
-
-
-    });
-
-
-});
 
 
 $("#guardarDataBanner").click(function () {
-    if ($('#formBannerInfo').valid()) {
+
 
         var bannerTitulo = $("#bannerTitulo").val();
         var bannerDesc = $("#bannerDesc").val();
 
         var datos = new FormData();
-        datos.append("bannerTitulo", bannerTitulo);
-        datos.append("bannerDesc", bannerDesc);
+        datos.append("titulo", bannerTitulo);
+        datos.append("descripcion", bannerDesc);
 
         $.ajax({
             url: "ajax/productos.ajax.php",
@@ -147,22 +54,22 @@ $("#guardarDataBanner").click(function () {
             }
 
         });
-    }
+
 });
 
 
-$("#guardarCrediPyme").click(function () {
+$("#guardarCapitalTrabajo").click(function () {
     for (var instanceName in CKEDITOR.instances) {
         CKEDITOR.instances[instanceName].updateElement();
     }
 
-    if ($('#formCrediPyme').valid()) {
 
 
-        var credipyme = $("#credipyme").val();
+
+        var capitalTrabajo = $("#capitalTrabajo").val();
 
         var datos = new FormData();
-        datos.append("credipyme", credipyme);
+        datos.append("capitalTrabajo", capitalTrabajo);
 
 
         $.ajax({
@@ -195,19 +102,19 @@ $("#guardarCrediPyme").click(function () {
             }
 
         });
-    }
+
 });
 
 
 
-$("#guardarCrediNegocio").click(function () {
+$("#guardarActivoProductivo").click(function () {
     for (var instanceName in CKEDITOR.instances) {
         CKEDITOR.instances[instanceName].updateElement();
     }
-        var crediNegocio = $("#crediNegocio").val();
+        var activoProductivo = $("#activoProductivo").val();
 
         var datos = new FormData();
-        datos.append("crediNegocio", crediNegocio);
+        datos.append("activoProductivo", activoProductivo);
 
 
         $.ajax({
@@ -243,7 +150,7 @@ $("#guardarCrediNegocio").click(function () {
 
 });
 
-$("#guardarActivo").click(function () {
+$("#guardarMejoraNegocio").click(function () {
     for (var instanceName in CKEDITOR.instances) {
         CKEDITOR.instances[instanceName].updateElement();
     }
@@ -421,76 +328,6 @@ $("#guardarMegaTurbo").click(function () {
 });
 
 
-$(function() {
-
-
-    $("form").each(function(){
-
-   // $("#formBannerInfo").validate({
-        $(this).validate({
-        rules: {
-            bannerTitulo: {
-                required: true,
-                minlength: 5
-
-            },
-            bannerDesc: {
-
-                minlength: 5
-            },
-            credipyme: {
-                required: function () {
-                    CKEDITOR.instances.credipyme.updateElement();
-                }
-            }
-        },
-        messages: {
-            bannerTitulo:{
-                required:  "Ingrese un título para el banner",
-                minlength: "El mínimo es de 5 caracteres"
-
-            },
-            bannerDesc: {
-                required: "Ingrese una descripción",
-                minlength: "El mínimo es de 5 caracteres"
-
-
-            },
-            credipyme:"Valor requerido"
-
-        },
-        errorElement: "em",
-        errorPlacement: function (error, element) {
-            // Add the `help-block` class to the error element
-            error.addClass("help-block");
-
-            if (element.prop("type") === "checkbox") {
-                error.insertAfter(element.parent("label"));
-            } else {
-                error.insertAfter(element);
-            }
-        },
-        highlight: function (element, errorClass, validClass) {
-            $(element).parents(".col-sm-5").addClass("has-error").removeClass("has-success");
-        },
-        unhighlight: function (element, errorClass, validClass) {
-            $(element).parents(".col-sm-5").addClass("has-success").removeClass("has-error");
-        }
-
-
-    });
-    // triggers validation without submit
-    $('#guardarDataBanner').on('click', function () {
-        if ($('#formBannerInfo').valid()) {
-            //  alert('form is valid');
-        }
-    });
-
-
-    });
-
-
-});
 
 
 function loadCKEbasic(id) {

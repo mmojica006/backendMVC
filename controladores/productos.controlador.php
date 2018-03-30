@@ -1,6 +1,17 @@
 <?php
 class ControladorProductos{
 
+    static public function ctrActualizarForm($datos){
+        $tabla = "tbl_productos";
+        $id=1;
+        $respuesta = ModeloProductos::mdlActualizarForm($tabla,$id,$datos);
+
+
+        return $respuesta;
+    }
+
+
+
     public function ctrSeleccionarProductos(){
         $tabla = "tbl_productos";
         $respuesta = ModeloProductos::mdlSeleccionarProductos($tabla);
@@ -82,10 +93,10 @@ class ControladorProductos{
         return $respuesta;
     }
 
-    static public function ctrActualizarCrediPyme($texto){
+    static public function ctrActualizarCapitalTrabajo($texto){
         $tabla = "tbl_productos";
         $id=1;
-        $respuesta = ModeloProductos::mdlActualizarCrediPyme($tabla,$id,$texto);
+        $respuesta = ModeloProductos::mdlActualizarCapitalTrabajo($tabla,$id,$texto);
         return $respuesta;
     }
 

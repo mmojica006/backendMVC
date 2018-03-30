@@ -37,17 +37,13 @@ class AjaxProductos{
         echo json_encode($respuesta);
     }
 
-    public $credipymeText;
-    public function ajaxCambiarCrediPyme(){
-        $respuesta = ControladorProductos::ctrActualizarCrediPyme($this->credipymeText);
+    public $capitalTrabajo;
+    public function ajaxCambiarCapitalTrabajo(){
+        $respuesta = ControladorProductos::ctrActualizarCapitalTrabajo($this->capitalTrabajo);
         echo json_encode($respuesta);
     }
 
-    public $crediNegocio;
-    public function ajaxCambiarCrediNegocio(){
-        $respuesta = ControladorProductos::ctrActualizarCrediNegocio($this->crediNegocio);
-        echo json_encode($respuesta);
-    }
+
 
     public $activoProductivo;
     public function ajaxCambiarProductivo(){
@@ -85,7 +81,7 @@ if (isset($_FILES["imgProducto"])){
 }
 
 if (isset($_POST["titulo"])){
-    $obj2 = new AjaxContacto();
+    $obj2 = new AjaxProductos();
     $obj2->titulo = $_POST["titulo"];
     $obj2->descripcion = $_POST["descripcion"];
     $obj2->ajaxCambiarFormulario();
@@ -100,19 +96,13 @@ if (isset($_POST["bannerTitulo"])){
 
 }
 
-if (isset($_POST["credipyme"])){
+if (isset($_POST["capitalTrabajo"])){
     $obj3= new AjaxProductos();
-    $obj3->credipymeText = $_POST["credipyme"];
-    $obj3->ajaxCambiarCrediPyme();
+    $obj3->capitalTrabajo = $_POST["capitalTrabajo"];
+    $obj3->ajaxCambiarCapitalTrabajo();
 
 }
 
-if (isset($_POST["crediNegocio"])){
-    $obj3= new AjaxProductos();
-    $obj3->crediNegocio = $_POST["crediNegocio"];
-    $obj3->ajaxCambiarCrediNegocio();
-
-}
 
 if (isset($_POST["activoProductivo"])){
     $obj3= new AjaxProductos();

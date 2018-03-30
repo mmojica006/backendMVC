@@ -109,13 +109,13 @@ class ModeloProductos
 
     }
 
-    static public function mdlActualizarCrediPyme($tabla, $id, $texto)
+    static public function mdlActualizarCapitalTrabajo($tabla, $id, $texto)
     {
         $response = [];
 
-        $stmt = Conexion::conectar()->prepare("UPDATE $tabla SET crediPyme = :crediPyme WHERE id =:id");
+        $stmt = Conexion::conectar()->prepare("UPDATE $tabla SET capitalTrabajo = :capitalTrabajo WHERE id =:id");
 
-        $stmt->bindParam(":crediPyme", $texto, PDO::PARAM_STR);
+        $stmt->bindParam(":capitalTrabajo", $texto, PDO::PARAM_STR);
         $stmt->bindParam(":id", $id, PDO::PARAM_INT);
         $stmt->execute();
 
@@ -165,9 +165,9 @@ class ModeloProductos
     {
         $response = [];
 
-        $stmt = Conexion::conectar()->prepare("UPDATE $tabla SET productivo = :productivo WHERE id =:id");
+        $stmt = Conexion::conectar()->prepare("UPDATE $tabla SET activoProductivo = :activoProductivo WHERE id =:id");
 
-        $stmt->bindParam(":productivo", $texto, PDO::PARAM_STR);
+        $stmt->bindParam(":activoProductivo", $texto, PDO::PARAM_STR);
         $stmt->bindParam(":id", $id, PDO::PARAM_INT);
         $stmt->execute();
 
