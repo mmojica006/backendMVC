@@ -3,7 +3,7 @@ $dataProductos = ControladorProductos::ctrSeleccionarProductos();
 
 
 ?>
-
++
 <div class="content-wrapper">
     <section class="content-header">
         <h1>Gestor Productos</h1>

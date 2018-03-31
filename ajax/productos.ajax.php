@@ -51,15 +51,15 @@ class AjaxProductos{
         echo json_encode($respuesta);
     }
 
-    public $microTurbo;
-    public function ajaxCambiarMicroTurbo(){
-        $respuesta = ControladorProductos::ctrActualizarMicroTurbo($this->microTurbo);
+    public $mejoraNegocio;
+    public function ajaxCambiarMejoraNegocio(){
+        $respuesta = ControladorProductos::ctrActualizarMejoraNegocio($this->mejoraNegocio);
         echo json_encode($respuesta);
     }
 
-    public $turbo;
-    public function ajaxCambiarTurbo(){
-        $respuesta = ControladorProductos::ctrActualizarTurbo($this->turbo);
+    public $crediActivo;
+    public function ajaxCambiarCrediActivo(){
+        $respuesta = ControladorProductos::ctrActualizarCrediActivo($this->crediActivo);
         echo json_encode($respuesta);
     }
 
@@ -111,17 +111,18 @@ if (isset($_POST["activoProductivo"])){
 
 }
 
-if (isset($_POST["microTurbo"])){
+if (isset($_POST["mejoraNegocio"])){
+
     $obj4= new AjaxProductos();
-    $obj4->microTurbo = $_POST["microTurbo"];
-    $obj4->ajaxCambiarMicroTurbo();
+    $obj4->mejoraNegocio = $_POST["mejoraNegocio"];
+    $obj4->ajaxCambiarMejoraNegocio();
 
 }
 
-if (isset($_POST["turbo"])){
+if (isset($_POST["crediActivo"])){
     $obj4= new AjaxProductos();
-    $obj4->turbo = $_POST["turbo"];
-    $obj4->ajaxCambiarTurbo();
+    $obj4->crediActivo = $_POST["crediActivo"];
+    $obj4->ajaxCambiarCrediActivo();
 
 }
 

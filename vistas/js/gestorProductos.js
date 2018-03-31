@@ -154,10 +154,11 @@ $("#guardarMejoraNegocio").click(function () {
     for (var instanceName in CKEDITOR.instances) {
         CKEDITOR.instances[instanceName].updateElement();
     }
-    var activoProductivo = $("#activoProductivo").val();
+    var mejoraNegocio = $("#mejoraNegocio").val();
+
 
     var datos = new FormData();
-    datos.append("activoProductivo", activoProductivo);
+    datos.append("mejoraNegocio", mejoraNegocio);
 
 
     $.ajax({
@@ -195,14 +196,14 @@ $("#guardarMejoraNegocio").click(function () {
 
 
 
-$("#guardarMicroTurbo").click(function () {
+$("#guardarCrediActivos").click(function () {
     for (var instanceName in CKEDITOR.instances) {
         CKEDITOR.instances[instanceName].updateElement();
     }
-    var microTurbo = $("#microTurbo").val();
+    var crediActivo = $("#crediActivo").val();
 
     var datos = new FormData();
-    datos.append("microTurbo", microTurbo);
+    datos.append("crediActivo", crediActivo);
 
 
     $.ajax({

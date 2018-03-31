@@ -187,13 +187,14 @@ class ModeloProductos
 
     }
 
-    static public function mdlActualizarMicroturbo($tabla, $id, $texto)
+    static public function mdlActualizarMejoraNegocio($tabla, $id, $texto)
     {
         $response = [];
 
-        $stmt = Conexion::conectar()->prepare("UPDATE $tabla SET microturbo = :microturbo WHERE id =:id");
 
-        $stmt->bindParam(":microturbo", $texto, PDO::PARAM_STR);
+        $stmt = Conexion::conectar()->prepare("UPDATE $tabla SET mejoraNegocio = :mejoraNegocio WHERE id =:id");
+
+        $stmt->bindParam(":mejoraNegocio", $texto, PDO::PARAM_STR);
         $stmt->bindParam(":id", $id, PDO::PARAM_INT);
         $stmt->execute();
 
@@ -213,13 +214,13 @@ class ModeloProductos
 
     }
 
-    static public function mdlActualizarTurbo($tabla, $id, $texto)
+    static public function mdlActualizarCrediActivo($tabla, $id, $texto)
     {
         $response = [];
 
-        $stmt = Conexion::conectar()->prepare("UPDATE $tabla SET turbo = :turbo WHERE id =:id");
+        $stmt = Conexion::conectar()->prepare("UPDATE $tabla SET crediActivos = :crediActivos WHERE id =:id");
 
-        $stmt->bindParam(":turbo", $texto, PDO::PARAM_STR);
+        $stmt->bindParam(":crediActivos", $texto, PDO::PARAM_STR);
         $stmt->bindParam(":id", $id, PDO::PARAM_INT);
         $stmt->execute();
 

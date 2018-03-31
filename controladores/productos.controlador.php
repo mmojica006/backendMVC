@@ -114,17 +114,17 @@ class ControladorProductos{
         return $respuesta;
     }
 
-    static public function ctrActualizarMicroTurbo($texto){
+    static public function ctrActualizarMejoraNegocio($texto){
         $tabla = "tbl_productos";
         $id=1;
-        $respuesta = ModeloProductos::mdlActualizarMicroturbo($tabla,$id,$texto);
+        $respuesta = ModeloProductos::mdlActualizarMejoraNegocio($tabla,$id,$texto);
         return $respuesta;
     }
 
-    static public function ctrActualizarTurbo($texto){
+    static public function ctrActualizarCrediActivo($texto){
         $tabla = "tbl_productos";
         $id=1;
-        $respuesta = ModeloProductos::mdlActualizarTurbo($tabla,$id,$texto);
+        $respuesta = ModeloProductos::mdlActualizarCrediActivo($tabla,$id,$texto);
         return $respuesta;
     }
 
