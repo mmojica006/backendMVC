@@ -45,5 +45,60 @@ class ModeloTarifarioContrato{
 
     }
 
+    static public function mdlActualizarEstadoContrato($tabla,$id,$datos){
+        $response = [];
+
+
+        $stmt = Conexion::conectar()->prepare("UPDATE $tabla SET contratoEstado = :contratoEstado WHERE id =:id");
+        $stmt->bindParam(":contratoEstado", $datos["estadoContrato"], PDO::PARAM_INT);
+        $stmt->bindParam(":id", $id, PDO::PARAM_INT);
+        $stmt->execute();
+        if($stmt->errorCode()== 0){
+            $response["num"]=0;
+            $response["msg"]="OK";
+
+
+        }else{
+
+            $response["num"]=$stmt->errorCode();
+            $response["msg"]=$stmt->errorInfo();
+
+        }
+        return  $response;
+
+        $stmt->close();
+        $stmt = null;
+
+
+    }
+
+    static public function mdlActualizarFilePdf($tabla, $id, $item, $valor){
+        $response = [];
+
+        $stmt = Conexion::conectar()->prepare("UPDATE $tabla SET $item = :$item WHERE id = :id");
+
+        $stmt->bindParam(":".$item, $valor, PDO::PARAM_STR);
+        $stmt->bindParam(":id", $id, PDO::PARAM_INT);
+        $stmt->execute();
+
+
+        if($stmt->errorCode()== 0){
+            $response["num"]=0;
+            $response["msg"]="OK";
+
+
+        }else{
+
+            $response["num"]=$stmt->errorCode();
+            $response["msg"]=$stmt->errorInfo();
+
+        }
+        return  $response;
+
+        $stmt->close();
+        $stmt = null;
+
+    }
+
 
 }

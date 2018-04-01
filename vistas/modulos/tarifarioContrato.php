@@ -97,36 +97,6 @@ $dataTarCont = ControladorTarifarioContrato::ctrSeleccionarTarCont();
 
                     </div>
 
-                    <div class="box-body">
-
-                        <div class="form-group">
-
-                            <label>Subir Archivo</label>
-
-                            <p class="pull-right">
-
-                                <img src="vistas/img/plantilla/pdf-icon.png"
-                                     class=" previsualizarImgPdf" width="200px" <?php  if ($dataTarCont['contratoDesc']!=''): ?>style="display: block" <?php endif;?>>
-
-                            </p>
-
-                            <input type="file" id="subirPdf">
-
-
-
-                        </div>
-
-                    </div>
-                    <div class="box-footer">
-                        <button type="button" id="guardarPdf" class="btn btn-primary pull-right">Guardar Archivo
-                        </button>
-                    </div>
-
-                    <div class="box-header with-border">
-
-                        <h3 class="box-title">Actualizar Estado</h3>
-
-                    </div>
 
                     <div class="box-body">
                         <div class="form-group">
@@ -143,8 +113,32 @@ $dataTarCont = ControladorTarifarioContrato::ctrSeleccionarTarCont();
 
                     <div class="box-footer">
 
-                        <button type="button" id="guardarEstado" class="btn btn-primary pull-right">Guardar</button>
+                        <button type="button" id="guardarEstadoContrato" class="btn btn-primary pull-right">Guardar</button>
 
+                    </div>
+                    <div class="box-body">
+
+                        <div class="form-group">
+
+                            <label>Subir Archivo</label>
+
+                            <p class="pull-right">
+
+                                <img src="vistas/img/plantilla/pdf-icon.png"
+                                     class=" previsualizarImgPdf" width="50px" <?php  if ($dataTarCont['contratoDesc']!=''): ?>style="display: block" <?php endif;?>>
+
+                            </p>
+
+                            <input type="file" id="subirPdf">
+
+
+
+                        </div>
+
+                    </div>
+                    <div class="box-footer">
+                        <button type="button" id="guardarPdf" name="guardarPdf" class="btn btn-primary pull-right">Guardar Archivo
+                        </button>
                     </div>
 
 

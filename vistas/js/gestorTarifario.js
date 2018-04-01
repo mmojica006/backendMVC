@@ -36,13 +36,79 @@ $("#subirPdf").change(function () {
 
     } else {
 
-        $(".previsualizarImgPdf").after('<div class="alert alert-success">Imagen Cargada</div>');
+        $(".previsualizarImgPdf").after('<div class="msgCargado alert alert-success fade in">Archivo Cargada</div>');
 
 
 
     }
 
+    $("#guardarPdf").click(function(){
+
+        if ($("#subirPdf").val()!=''){
+
+            var datos = new FormData();
+
+            datos.append("archivoPdf",pdfFile);
+         
+
+            $.ajax({
+
+                url:"ajax/tarCont.ajax.php",
+                method: "POST",
+                data: datos,
+                cache: false,
+                contentType: false,
+                processData: false,
+                dataType: "json",
+                success: function(respuesta){
+
+
+
+
+                    if(respuesta.num === 0){
+
+
+                        $('.msgCargado').css('display','none');
+                        $(".previsualizarImgPdf").show();
+                        swal({
+                            title: "Contrato",
+                            text: "¡Formulario Actualizado!",
+                            type: "success",
+                            confirmButtonText: "¡Cerrar!"
+                        });
+
+
+
+                    }else if(respuesta.num === 1){
+
+                        swal({
+                            title: "Error al subir el archivo",
+                            text: respuesta.msg ,
+                            type: "error",
+                            confirmButtonText: "¡Cerrar!"
+                        });
+                    }
+
+
+                }
+
+            });
+
+
+
+        }else{
+            swal({
+                title: "Campo requerido",
+                text: "¡Debe subir un archivo!",
+                type: "error",
+                confirmButtonText: "¡Cerrar!"
+            });
+
+        }
+    });
+
 });
+
 
 
 $("#guardarTarCont").click(function () {
@@ -82,7 +148,7 @@ $("#guardarTarCont").click(function () {
             } else if (respuesta.num === 1) {
 
                 swal({
-                    title: "Error al subir la imagen",
+                    title: "Error al guardar la data",
                     text: respuesta.msg,
                     type: "error",
                     confirmButtonText: "¡Cerrar!"
@@ -97,6 +163,87 @@ $("#guardarTarCont").click(function () {
 
 });
 
+
+$("#guardarEstadoContrato").click(function () {
+    for (var instanceName in CKEDITOR.instances) {
+        CKEDITOR.instances[instanceName].updateElement();
+    }
+    var datos = new FormData();
+    var estadoContrato = $('input[name=ActiveContrato]:checked').val();
+
+    datos.append("estadoContrato", estadoContrato);
+    $.ajax({
+
+        url: "ajax/tarCont.ajax.php",
+        method: "POST",
+        data: datos,
+        cache: false,
+        contentType: false,
+        processData: false,
+        dataType: "json",
+        success: function (respuesta) {
+
+
+            if (respuesta.num === 0) {
+                swal({
+                    title: "Cambios guardados",
+                    text: "¡Tarifario Actualizado!",
+                    type: "success",
+                    confirmButtonText: "¡Cerrar!"
+                });
+
+            } else if (respuesta.num === 1) {
+
+                swal({
+                    title: "Error al guardar la data",
+                    text: respuesta.msg,
+                    type: "error",
+                    confirmButtonText: "¡Cerrar!"
+                });
+            }
+
+
+        }
+
+    });
+
+
+});
+
+$("#subirPdf").change(function(){
+   var filePDF = this.files[0];
+   console.log(filePDF);
+
+   if (filePDF["type"]!="application/pdf"){
+       $("#subirPdf").val("");
+
+       swal({
+           title: "Error al subir el archivo",
+           text: "¡Solamente se aceptan formato PDF!",
+           type: "error",
+           confirmButtonText: "¡Cerrar!"
+       });
+
+   }
+   else if(filePDF["size"] > 2000000){
+
+       $("#subirPdf").val("");
+
+       swal({
+           title: "Error al subir el archivo",
+           text: "¡El archivo no puede pesar mas de 2MB!",
+           type: "error",
+           confirmButtonText: "¡Cerrar!"
+       });
+
+       /*=============================================
+        PREVISUALIZAMOS LA IMAGEN
+        =============================================*/
+
+   }
+
+
+});
 
 function loadCKEbasic(id) {
     var instance = CKEDITOR.instances[id];
