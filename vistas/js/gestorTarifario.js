@@ -1,4 +1,25 @@
+
+
+
 loadCKEbasic("tarifarioDesc");
+
+
+var dataTable = $('#user_dataEEFF').DataTable({
+    "processing":true,
+    "serverSide":true,
+    "order":[],
+    "ajax":{
+        url:"ajax/tarCont.ajax.php",
+        type:"POST"
+    },
+    "columnDefs":[
+        {
+            "targets":[0, 1, 2],
+            "orderable":false,
+        },
+    ],
+
+});
 
 
 $("#subirPdf").change(function () {
@@ -49,7 +70,7 @@ $("#subirPdf").change(function () {
             var datos = new FormData();
 
             datos.append("archivoPdf",pdfFile);
-         
+
 
             $.ajax({
 
@@ -210,6 +231,8 @@ $("#guardarEstadoContrato").click(function () {
 
 });
 
+
+
 $("#subirPdf").change(function(){
    var filePDF = this.files[0];
    console.log(filePDF);
@@ -243,6 +266,172 @@ $("#subirPdf").change(function(){
    }
 
 
+});
+
+$("#guardarEstadoEEFF").click(function () {
+    for (var instanceName in CKEDITOR.instances) {
+        CKEDITOR.instances[instanceName].updateElement();
+    }
+    var datos = new FormData();
+    var estadoEEFF = $('input[name=ActiveEEFF]:checked').val();
+
+    datos.append("estadoEEFF", estadoEEFF);
+    $.ajax({
+
+        url: "ajax/tarCont.ajax.php",
+        method: "POST",
+        data: datos,
+        cache: false,
+        contentType: false,
+        processData: false,
+        dataType: "json",
+        success: function (respuesta) {
+
+
+            if (respuesta.num === 0) {
+                swal({
+                    title: "Cambios guardados",
+                    text: "¡Formulario Actualizado!",
+                    type: "success",
+                    confirmButtonText: "¡Cerrar!"
+                });
+
+            } else if (respuesta.num === 1) {
+
+                swal({
+                    title: "Error al guardar la data",
+                    text: respuesta.msg,
+                    type: "error",
+                    confirmButtonText: "¡Cerrar!"
+                });
+            }
+
+
+        }
+
+    });
+
+
+});
+
+
+
+$("#archivosEEFF").change(function(){
+    var fileEEFF = this.files[0];
+    console.log(fileEEFF);
+
+    if (fileEEFF["type"]!="application/pdf"){
+        $("#archivosEEFF").val("");
+
+        swal({
+            title: "Error al subir el archivo",
+            text: "¡Solamente se aceptan formato PDF!",
+            type: "error",
+            confirmButtonText: "¡Cerrar!"
+        });
+
+    }
+    else if(fileEEFF["size"] > 2000000){
+
+        $("#archivosEEFF").val("");
+
+        swal({
+            title: "Error al subir el archivo",
+            text: "¡El archivo no puede pesar mas de 2MB!",
+            type: "error",
+            confirmButtonText: "¡Cerrar!"
+        });
+
+
+    }else {
+
+        $("#archivosEEFF").after('<div class="msgArcEEFF alert alert-success fade in">Archivo Cargado</div>');
+    }
+
+
+    $("#guardarEEFF").click(function(){
+
+        if ($("#archivosEEFF").val()!=''){
+
+            var datos = new FormData();
+
+            datos.append("uploadEEFF",fileEEFF);
+            $.ajax({
+                url:"ajax/tarCont.ajax.php",
+                method: "POST",
+                data: datos,
+                cache: false,
+                contentType: false,
+                processData: false,
+                dataType: "json",
+                success: function(respuesta){
+
+                    if(respuesta.num === 0){
+
+                        $('.msgArcEEFF ').css('display','none');
+                        $("#archivosEEFF").val("");
+                       // $(".previsualizarImgPdf").show();
+                        swal({
+                            title: "EEFF",
+                            text: "¡Formulario Actualizado!",
+                            type: "success",
+                            confirmButtonText: "¡Cerrar!"
+                        });
+
+
+                        $('#user_dataEEFF').DataTable().ajax.reload();
+
+                    }else if(respuesta.num === 1){
+
+                        swal({
+                            title: "Error al subir el archivo",
+                            text: respuesta.msg ,
+                            type: "error",
+                            confirmButtonText: "¡Cerrar!"
+                        });
+                    }
+
+
+                }
+
+            });
+
+
+
+        }else{
+            swal({
+                title: "Campo requerido",
+                text: "¡Debe subir un archivo!",
+                type: "error",
+                confirmButtonText: "¡Cerrar!"
+            });
+
+        }
+    });
+
+
+});
+
+
+$(document).on('click', '.delete', function(){
+    var idFile= $(this).attr("id");
+    var tagName = $(this).attr("tag");
+    if(confirm("Esta seguro de borrar el registro?"))
+    {
+        $.ajax({
+            url:"ajax/tarCont.ajax.php",
+            method:"POST",
+            data:{"operation":"Del","idFile":idFile,"tagName":tagName},
+            success:function(respuesta)
+            {
+                dataTable.ajax.reload();
+            }
+        });
+    }
+    else
+    {
+        return false;
+    }
 });
 
 function loadCKEbasic(id) {
@@ -331,6 +520,7 @@ function loadCKEbasic(id) {
 
 
 }
+
 
 
 

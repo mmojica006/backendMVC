@@ -143,6 +143,95 @@ $dataTarCont = ControladorTarifarioContrato::ctrSeleccionarTarCont();
 
 
                 </div>
+
+                <div class="box box-success ">
+
+                    <div class="box-header with-border">
+                        <h3 class="box-title">EEFF</h3>
+                        <div class="box-tools pull-right">
+                            <button type="button" class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip"
+                                    title="Collapse">
+
+                                <i class="fa fa-minus"></i>
+
+                            </button>
+
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="box-body">
+                        <div class="form-group">
+
+                            <label for="ActiveEEFF">Activo</label>
+                            <input id="ActiveEEFF" type="radio" name="ActiveEEFF" value="1"<?php if ($dataTarCont['eeffEstado'] == 1): ?> checked = "checked"<?php endif; ?> />
+
+                            <label for="ActiveEEFF">Inactivo</label>
+                            <input id="ActiveEEFF" type="radio" name="ActiveEEFF" value="0"<?php if ($dataTarCont['eeffEstado'] != 1): ?> checked = "checked"<?php endif; ?> />
+                        </div>
+
+
+                    </div>
+
+                    <div class="box-footer">
+
+                        <button type="button" id="guardarEstadoEEFF" class="btn btn-primary pull-right">Guardar</button>
+
+                    </div>
+                    <div class="box-body">
+
+                        <div class="form-group">
+
+                            <label>Subir Archivo</label>
+
+
+
+                            <input type="file" id="archivosEEFF" name="archivosEEFF"  multiple=true class="file-loading">
+
+
+
+                        </div>
+
+                    </div>
+                    <div class="box-footer">
+                        <button type="button" id="guardarEEFF" name="guardarEEFF" class="btn btn-primary pull-right">Guardar Archivo
+                        </button>
+                    </div>
+
+
+                </div>
+
+                <div class="box box-primary">
+                    <div class="container box">
+
+
+                        <div class="table-responsive">
+                            <br/>
+                            <div align="right">
+                                <h3 class="box-title" align="center">Estados Financieros</h3>
+
+                            </div>
+                            <br/><br/>
+                            <table id="user_dataEEFF" class="table table-bordered table-striped">
+                                <thead>
+                                <tr>
+                                    <th >Id</th>
+                                    <th >Nombre</th>
+                                    <th ></th>
+
+
+                                </tr>
+                                </thead>
+                            </table>
+
+                        </div>
+                    </div>
+
+
+                </div>
+
             </div>
         </div>
 
@@ -152,4 +241,10 @@ $dataTarCont = ControladorTarifarioContrato::ctrSeleccionarTarCont();
 </div>
 <!-- /.content-wrapper -->
 
+<?php
+$directory = "../vistas/files/pdfFinancieros/";
+$images = glob($directory . "*.*");
+?>
+
 <script src="vistas/js/gestorTarifario.js"></script>
+

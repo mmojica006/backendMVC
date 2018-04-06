@@ -70,8 +70,12 @@
     <!-- CK Editor -->
     <script src="vistas/bower_components/ckeditor/ckeditor.js"></script>
 
+
+
     <!-- JQUERY VALIDATOR -->
     <script src="vistas/plugins/jquery.validate.js"></script>
+
+
 </head>
 
 <body class="hold-transition skin-blue  sidebar-mini login-page">
