@@ -70,6 +70,14 @@ class AjaxProductos{
     }
 
 
+    public $agroNegocio;
+    public function ajaxCambiarAgroNegocio(){
+        $respuesta = ControladorProductos::ctrActualizarAgroNegocio($this->agroNegocio);
+        echo json_encode($respuesta);
+    }
+
+
+
 
 
 }
@@ -130,5 +138,13 @@ if (isset($_POST["activoMegaTurbo"])){
     $obj4= new AjaxProductos();
     $obj4->megaTurbo = $_POST["activoMegaTurbo"];
     $obj4->ajaxCambiarMegaTurbo();
+
+}
+
+
+if (isset($_POST["agroNegocio"])){
+    $obj5= new AjaxProductos();
+    $obj5->agroNegocio = $_POST["agroNegocio"];
+    $obj5->ajaxCambiarAgroNegocio();
 
 }

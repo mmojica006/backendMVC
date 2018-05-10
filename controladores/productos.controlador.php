@@ -135,5 +135,12 @@ class ControladorProductos{
         return $respuesta;
     }
 
+    static public function ctrActualizarAgroNegocio($texto){
+        $tabla = "tbl_productos";
+        $id=1;
+        $respuesta = ModeloProductos::mdlActualizarAgroNegocio($tabla,$id,$texto);
+        return $respuesta;
+    }
+
 
 }

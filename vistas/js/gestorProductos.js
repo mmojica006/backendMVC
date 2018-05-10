@@ -8,6 +8,8 @@ loadCKEbasic("capitalTrabajo");
 loadCKEbasic("activoProductivo");
 loadCKEbasic("mejoraNegocio");
 loadCKEbasic("crediActivo");
+loadCKEbasic("agroNegocio");
+
 
 
 
@@ -329,7 +331,48 @@ $("#guardarMegaTurbo").click(function () {
 });
 
 
+$("#guardarAgroNegocio").click(function () {
+    for (var instanceName in CKEDITOR.instances) {
+        CKEDITOR.instances[instanceName].updateElement();
+    }
+    var agroNegocio = $("#agroNegocio").val();
 
+    var datos = new FormData();
+    datos.append("agroNegocio", agroNegocio);
+
+
+    $.ajax({
+        url: "ajax/productos.ajax.php",
+        method: "POST",
+        data: datos,
+        cache: false,
+        contentType: false,
+        processData: false,
+        dataType: "json",
+        success: function (respuesta) {
+            if (respuesta.num === 0) {
+
+                swal({
+                    title: "Cambios guardados",
+                    text: "Datos Actualizados",
+                    type: "success",
+                    confirmButtonText: "¡Cerrar!"
+                });
+
+            } else {
+                swal({
+                    title: "Error al guardar los datos",
+                    text: respuesta.msg,
+                    type: "error",
+                    confirmButtonText: "¡Cerrar!"
+                });
+            }
+
+        }
+
+    });
+
+});
 
 function loadCKEbasic(id) {
     var instance = CKEDITOR.instances[id];
