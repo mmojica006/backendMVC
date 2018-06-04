@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="677bcc24-9bc9-46de-a838-ae7ba2963b03" name="CrediExpressFTP" url="http://backend.crediexpress.com.ni">
+        <fileTransfer host="crediexpress.com.ni" port="21" rootFolder="/public_html/backend">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
